@@ -32,7 +32,7 @@
 
     "normalSkillName": "Normal Skill - Camouflage",
     "fluxCost": 3,
-    "memoryNodes": {"node1": "0EM", "node2": "0EM"},
+    "memoryNodes": {},
     "normalSkillDesc": "Renova enters the Camouflage state for 2 Cycles.\nCaomuflage: The opponents' attacks have 40% chance to miss Renova. This state will end if she takes an action or takes DMG from an opponent.",
 
     "riftedSkillName": "Rifted Skill - Sniper Mode",

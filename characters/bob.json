@@ -32,7 +32,7 @@
 
     "normalSkillName": "Normal Skill - Large Dart",
     "fluxCost": 1,
-    "memoryNodes": {"node1": "0EM", "node2": "0EM"},
+    "memoryNodes": {},
     "normalSkillDesc": "Bob throws a Large Dart towards the opponent dealing 188 (+48% Physical ATK) as Physical DMG.",
 
     "riftedSkillName": "Rifted Skill - Poison Fumes",

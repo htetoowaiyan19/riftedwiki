@@ -32,7 +32,7 @@
 
     "normalSkillName": "Normal Skill - Sanguine Cleave",
     "fluxCost": 3,
-    "memoryNodes": {"node1": "0EM", "node2": "0EM"},
+    "memoryNodes": {},
     "normalSkillDesc": "Vyrka consumes 16% of her Max HP and cleaves through the opponent, dealing 198 (+33% Physical ATK) (+18% Current HP) as Destruction DMG.",
 
     "riftedSkillName": "Rifted Skill - Crimson Cataclysm",

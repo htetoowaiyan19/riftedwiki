@@ -32,7 +32,7 @@
 
     "normalSkillName": "Normal Skill - Slash",
     "fluxCost": 2,
-    "memoryNodes": {"node1": "0EM", "node2": "0EM"},
+    "memoryNodes": {},
     "normalSkillDesc": "Lance slashes the opponent dealing 122 (+67% Physical ATK) as Physical DMG.",
 
     "riftedSkillName": "Rifted Skill - Lion's Claw",

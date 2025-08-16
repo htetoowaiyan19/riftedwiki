@@ -32,7 +32,7 @@
 
     "normalSkillName": "Normal Skill - Spear Strike",
     "fluxCost": 3,
-    "memoryNodes": {"node1": "0EM", "node2": "0EM"},
+    "memoryNodes": {},
     "normalSkillDesc": "Rider strikes the opponent with Spear dealing 200 (+45% Physical ATK) as Physical DMG and reducing their Physical DEF by 20% for 2 Cycles.",
 
     "riftedSkillName": "Rifted Skill - Call of The Dragon's Fury",

@@ -14,54 +14,49 @@
     "baseCritDamage": "50.0%",
     "substat": "CRIT Rate: 2.2%",
     "riftedFaction": "Rifted Technology",
-    "riftedTech": "Destruction",
+    "riftedTech": "Quantum",
     "riftedDisc": "",
-    "faction": "Power",
+    "faction": "Agile",
 
-    "passiveName": "Bloodforged Heart",
-    "passiveDesc": "Vyrka has 3 HP bars at the beginning of the battle. When she loses 1 HP bar, she gains 36% DMG Bonus. When Vyrka deals DMG to the opponent, she will recover 40% of that DMG as HP. When dealing DMG greater than 30% of her Max HP, she will gain 1 stack of Fury Shard.\n\nSpecial Active Skill: When Vyrka has 3 Fury Shards, she can recover 1 of her HP bars.",
+    "passiveName": "Observation",
+    "passiveDesc": "For each of the team members alive including Zinnki, Zinnki gains 16% DMG Bonus.",
     "riftedTalent": "Rifted Technology",
-    "rTalentDesc": "Vyrka's Normal and Charged Attacks generate 1 Flux.",
+    "rTalentDesc": "Zinnki's Normal and Charged Attacks generate 1 Flux.",
 
-    "normalAttackName": "Normal Attack - Iron Claws",
-    "normalAttackDesc": "Vyrka deals 40% Physical ATK as Physical DMG to the opponent.",
+    "normalAttackName": "Normal Attack - Crystal Shards",
+    "normalAttackDesc": "Zinnki releases 3 Crystal Shards, each dealing 8 (+12% Physical ATK) as Physical DMG.",
 
-    "chargedAttackName": "Charged Attack - Bleeding Fangs",
-    "chargeCost": 20,
-    "chargedAttackDesc": "Vyrka deals 60% Physical ATK as Physical DMG to the opponent.",
+    "chargedAttackName": "Charged Attack - Data Extraction",
+    "chargeCost": 30,
+    "chargedAttackDesc": "Zinnki extracts 3 Crystal Shards out of the targeted opponent and pierce them, each dealing 13 (+18% Physical ATK) as Physcial DMG.",
 
-    "normalSkillName": "Normal Skill - Sanguine Cleave",
-    "fluxCost": 3,
-    "memoryNodes": {"node1": "0EM", "node2": "0EM"},
-    "normalSkillDesc": "Vyrka consumes 16% of her Max HP and cleaves through the opponent, dealing 198 (+33% Physical ATK) (+18% Current HP) as Destruction DMG.",
+    "normalSkillName": "Normal Skill - Quantum Tunneling",
+    "fluxCost": 4,
+    "memoryNodes": {},
+    "normalSkillDesc": "Zinnki's paralyzes the selected team member and enters Quantum Tunneling. In this state, they will share the same HP inherited from the member whose HP is greater than the other, and 60% of the paralyzed member's Physical ATK, Magic PWR, Physical DEF, and Magic DEF will be transferred to Zinnki. Zinnki will passively generate 8 Surges per Cycle during this state. Casting this skill will exit this state.",
 
-    "riftedSkillName": "Rifted Skill - Crimson Cataclysm",
+    "riftedSkillName": "Rifted Skill - Crystal Borrow",
     "surgeCost": 60,
     "energyCost": 0,
-    "riftedSkillDesc": "Vyrka consumes an entier HP bar and erupts with a devastating strike, dealing 144 (+27% Physical ATK) (+46% Consumed HP Bar) as True DMG.",
+    "riftedSkillDesc": "If Zinnki has 60 Surges or more, Zinnki absorbs all quantum shards and releases the energy to the target dealing 114 (+44% Physical ATK) as Physical DMG. If Zinnki has full Surge, the DMG is converted into Quantum DMG.",
 
-    "fragment1Name": "F1 - Last Stand",
-    "fragment1Desc": "When Vyrka has only 1 HP bar left, her Physical, Magical and Reaction RES are increased by 36%.",
-    "fragment2Name": "F2 - Commitment",
-    "fragment2Desc": "Vyrka's Normal Attacks increases her Max HP by 16% for 2 Cycles, max 32%.",
-    "fragment3Name": "F3 - Death's Wishes",
-    "fragment3Desc": "\"Sanguine Cleave\" level is increased by 3.",
-    "fragment4Name": "F4 - Lady of The Valley",
-    "fragment4Desc": "If Vyrka's HP increases or decreases, her CRIT Rate is increased by 12%. The HP effects will ignore the incoming DMG.",
-    "fragment5Name": "F5 - Shattered Past",
-    "fragment5Desc": "\"Crimson Cataclysm\" level is increased by 3.",
-    "fragment6Name": "F6 - Almighty Fury",
-    "fragment6Desc": "Max HP is increased by 20%. Fury Shards can be stacked up to 5 times. When casting her Special Active Skill, the excess amount of Fury Shards will be absorbed into a Shield equals to 200% Vyrka's Physical ATK. The absorbed Fury Shards will explode, each dealing 40% Vyrka's Physical ATK multiplied by 2% Current HP as Destruction DMG.",
+    "fragment1Name": "F1 - No Latency",
+    "fragment1Desc": "Zinnki's Normal and Charged Attacks will generate an extra Crystal Shard.",
+    "fragment2Name": "F2 - Reactive Tunneling",
+    "fragment2Desc": "Zinnki's will inherit CRIT Rate, and CRIT DMG of the paralyzed member during Quantum Tunneling.",
+    "fragment3Name": "F3 - Divided by Zero",
+    "fragment3Desc": "\"Quantum Tunneling\" level is increased by 3.",
+    "fragment4Name": "F4 - Spacetime Breakthrough",
+    "fragment4Desc": "Zinnki's Energy Efficiency is increased by 20%. Casting Crystal Borrow will reduces the opponent's Physical RES by 60% and Quantum RES by 40%.",
+    "fragment5Name": "F5 - Accumulated Accumulations",
+    "fragment5Desc": "\"Crystal Borrow\" level is increased by 3.",
+    "fragment6Name": "F6 - Ma'Lady",
+    "fragment6Desc": "During Quantum Tunneling, Zinnki gains 40% Quantum DMG Bonus and her Normal and Charged Attacks are converted into Quantum DMG.",
 
     "log": {
         "record1": {
-            "version": "1.4Alpha [2025-05-18]",
-            "description": "Vyrka (↑): Implementation of Charged Attack and Stat changes.\n[New Attack] Charged Attack (Energy:20): Bleeding Fangs - Vyrka deals 60% Physical ATK as Physical DMG to the opponent.\n\tPhysical ATK: 0 >> 200\n\tPhysical DEF: 0 >> 30\n\tMagic DEF: 0 >> 30"
-        },
-
-        "record2": {
             "version": "1.0Beta [Unknown]",
-            "description": "Vyrka (↑): We want Vyrka to perform better in battlefields and utilize her special HP mechnic more often.\n\tFlux Capacity: 0 >> 5\n\t\"Sanguine Cleave\" Flux Cost: 0 >> 3\n\t\"Crimson Cataclysm\" Surge Cost: 0 >> 60\n\n[Ta;emt: Bloodforged Heart] (↑)\n[New Effect] Vyrka's Normal and Charged Attacks generate 1 Flux.\n\tDMG Bonus after losing HP bar: 30% >> 36%\n\n[Normal Skill: Sanguine Cleave] (↑)\n\tHP consumed: 30% >> 16%\n\tSanguine Cleave's DMG: 200 (+40% Physical ATK) (+6% Current HP) as Physical DMG >> 198 (+33% Physical ATK) (+18% Current HP) as Destruction DMG\n\n[Rifted Skill: Crimson Cataclysm] (~)\n\tCrimson Cataclysm DMG: 150 (+40% Physical ATK) (+30% Consumed HP Bar) >> 144 (+27% Physical ATK) (+46% Consumed HP Bar)"
+            "description": "Unreleased"
         }
     }
 }

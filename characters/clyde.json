@@ -32,7 +32,7 @@
 
     "normalSkillName": "Normal Skill - Graviton Mark Protocol",
     "fluxCost": 3,
-    "memoryNodes": {"node1": "0EM", "node2": "0EM"},
+    "memoryNodes": {},
     "normalSkillDesc": "Clyde strikes nearby opponents using Eclipser, dealing 112 (+48% Physical ATK) as Quantum DMG and applying Graviton Mark: Temporal Latch to opponents hit for 8 Cycles. Temporal Latch: Gradually deals 12 (+18% Physical ATK) as Physical DMG each Cycle. Entropy Core: After an opponent is affected by Temporal Latch for 2 Cycles, it will transform into Entropy Code dealing 98 (+51% Physical ATK) as Quantum DMG each Cycle. This effect carries over the duration from Temporal Latch.",
 
     "riftedSkillName": "Rifted Skill - Collapse Singularity",
