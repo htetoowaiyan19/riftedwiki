@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Character Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0b1e3d;
+      color: #dfeaff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2, h5 {
+      color: #9bc9ff;
+    }
+
+    .btn-back {
+      background: linear-gradient(135deg, #1a3c6e, #274c8e);
+      color: #e0efff;
+      font-weight: bold;
+      border: 2px solid #3a5c88;
+      border-radius: 10px;
+      padding: 8px 18px;
+      transition: all 0.2s ease;
+      box-shadow: 0 0 8px rgba(100, 160, 255, 0.3);
+    }
+
+    .btn-back:hover {
+      background: linear-gradient(135deg, #274c8e, #3560b0);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 0 12px rgba(150,200,255,0.5);
+    }
+
+    /* === Stat Table Improvements === */
+    .stat-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .stat-table td {
+      padding: 12px 16px;
+      border: none !important;
+      background-color: #11284a;
+      color: #e8f1ff;
+      vertical-align: middle;
+    }
+    .stat-table tr:nth-child(even) td {
+      background-color: #0e1f3c;
+    }
+    .stat-table td strong {
+      color: #82c4ff;
+      font-weight: 600;
+    }
+
+    .box {
+      background-color: #132b50;
+      border: 2px solid #3a5c88;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(100, 160, 255, 0.2);
+    }
+
+    .highlight-number { color: #33c5ff; font-weight: bold; }
+    .fragment-entry { border-top: 1px solid #3a5c88; padding-top: 10px; margin-top: 10px; }
+    .description { white-space: pre-wrap; }
+
+    /* === Character List Grid === */
+    .char-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .char-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-weight: bold;
+      min-width: 200px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    }
+    .char-item span:first-child {
+      font-size: 1.1rem;
+    }
+    .char-item span:last-child {
+      font-size: 0.85rem;
+      padding: 4px 8px;
+      border-radius: 8px;
+      background: rgba(0,0,0,0.25);
+    }
+    .char-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 12px rgba(150,200,255,0.4);
+    }
+    .released {
+      background: linear-gradient(145deg, #004d40, #00695c);
+      color: #e0fff5;
+    }
+    .unreleased {
+      background: linear-gradient(145deg, #4e0a15, #6d1b26);
+      color: #ffe0e0;
+    }
+
+    /* === Description highlights (unchanged from you) === */
+    .description .Physical-ATK { color: yellow; font-weight: bold; }
+    .description .Magic-PWR { color: magenta; font-weight: bold; }
+    .description .Physical-DEF { color: orange; font-weight: bold; }
+    .description .Magic-DEF { color: #66ccff; font-weight: bold; }
+    .description .Physical-DMG { color: yellow; font-weight: bold; }
+    .description .Magic-DMG { color: magenta; font-weight: bold; }
+    .description .Quantum-DMG { color: #c792ea; font-weight: bold; }
+    .description .Fusion-DMG { color: #ff6b81; font-weight: bold; }
+    .description .Destruction-DMG { color: white; font-weight: bold; }
+    .description .Artificial-DMG { color: #66faff; font-weight: bold; }
+    .description .Sharp-DMG { color: darkred; font-weight: bold; }
+    .description .Flame-DMG { color: red; font-weight: bold; }
+    .description .Frost-DMG { color: #66ccff; font-weight: bold; }
+    .description .Volte-DMG { color: #ffee66; font-weight: bold; }
+    .description .Tide-DMG { color: #3366cc; font-weight: bold; }
+    .description .Gale-DMG { color: #66fadd; font-weight: bold; }
+    .description .Special-Active-Skill {color: #9bc9ff; font-weight: bold;}
+  </style>
+</head>
+<body>
+  <div class="container" style="max-width: 1100px; margin: auto;">
+    <div id="loader">
+      <h2>Search Characters</h2>
+      <input type="text" id="searchBar" class="form-control w-50" placeholder="Type to search..." onkeyup="filterList()" />
+      <div class="char-list" id="characterList"></div>
+    </div>
+
+    <div id="content" style="display:none">
+      <button class="btn-back mb-3" onclick="backToList()">⬅ Back</button>
+      <h1 id="characterName">Character Name</h1>
+      <table class="table stat-table" id="coreStats"></table>
+      <div class="box" id="passiveBox"></div>
+      <div class="box" id="skillBox"></div>
+      <div class="box" id="fragmentBox"></div>
+      <div class="box" id="logBox" style="display:none;"></div>
+    </div>
+  </div>
+
+  <!-- keep your script unchanged -->
+  <script>
+    let characters = [];
+
+    // Load index.json (list of characters)
+    fetch("characters/index.json")
+      .then(res => res.json())
+      .then(data => {
+        characters = data;
+        renderCharacterList(data);
+      })
+      .catch(err => {
+        document.getElementById("characterList").innerHTML =
+          "<p class='text-danger'>Error loading character list.</p>";
+      });
+
+    function renderCharacterList(data) {
+      const list = document.getElementById("characterList");
+      list.innerHTML = "";
+      data.forEach(char => {
+        const item = document.createElement("div");
+        item.className = `char-item ${char.version[1]}`;
+        const versionBadge = `<span>${char.version[1] === "unreleased" ? "Upcoming" : char.version[0]}</span>`;
+        item.innerHTML = `<span>${char.name}</span>${versionBadge}`;
+        item.onclick = () => loadCharacter(`characters/${char.file}`);
+        list.appendChild(item);
+      });
+    }
+
+    function filterList() {
+      const query = document.getElementById("searchBar").value.toLowerCase();
+      const filtered = characters.filter(c => c.name.toLowerCase().includes(query));
+      renderCharacterList(filtered);
+    }
+
+    function backToList() {
+      document.getElementById("content").style.display = "none";
+      document.getElementById("loader").style.display = "block";
+    }
+
+    function loadCharacter(path) {
+      fetch(path)
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          displayData(data);
+        })
+        .catch(err => alert("Error loading file: " + err.message));
+    }
+
+    function formatKey(key) {
+      const map = {
+        baseAtk: "ATK", basePwr: "PWR",
+        basePhyDef: "Physical DEF", baseMagDef: "Magic DEF",
+        baseHp: "HP", baseCharge: "Charge",
+        baseCritRate: "Crit Rate", baseCritDamage: "Crit Damage",
+        riftedFaction: "Rifted Faction", riftedTech: "Rifted Technology",
+        riftedDisc: "Rifted Disorder", faction: "Faction",
+        baseFluxCapacity: "Flux Capacity", baseSurgeCapacity: "Surge Capacity",
+        baseEchoMemroyCapacity: "Echo Memory Capacity", baseMaxEnergy: "Max Energy",
+        substat: "Substat", version: "Version"
+      };
+      return map[key] || key;
+    }
+
+    function highlightKeywords(text) {
+      const keywordMap = {
+        "Physical ATK": "Physical-ATK", "Magic PWR": "Magic-PWR",
+        "Physical DEF": "Physical-DEF", "Magic DEF": "Magic-DEF",
+        "Physical DMG": "Physical-DMG", "Magic DMG": "Magic-DMG",
+        "Quantum DMG": "Quantum-DMG", "Fusion DMG": "Fusion-DMG",
+        "Destruction DMG": "Destruction-DMG", "Artificial DMG": "Artificial-DMG",
+        "Sharp DMG": "Sharp-DMG", "Flame DMG": "Flame-DMG",
+        "Frost DMG": "Frost-DMG", "Volte DMG": "Volte-DMG",
+        "Tide DMG": "Tide-DMG", "Gale DMG": "Gale-DMG",
+        "Special Active Skill": "Special-Active-Skill"
+      };
+
+      Object.entries(keywordMap).forEach(([word, className]) => {
+        const regex = new RegExp(`(?<!class=["'])(${word})(?!["'])`, "g");
+        text = text.replace(regex, `<span class="${className}">$1</span>`);
+      });
+
+      // highlight numbers
+      text = text.replace(/(\d+(\.\d+)?%?)/g, '<span class="highlight-number">$1</span>');
+      return text.replace(/\n/g, "<br>");
+    }
+
+    function displayData(data) {
+      document.getElementById("characterName").textContent = data.name;
+
+      // Core stats
+      const coreStatsTable = document.getElementById("coreStats");
+      const leftStats = ["baseAtk","basePwr","basePhyDef","baseMagDef","baseHp","baseCharge"];
+      const rightStats = ["baseCritRate","baseCritDamage","riftedFaction",
+        data.riftedFaction === "Rifted Technology" ? "riftedTech" : "riftedDisc","faction","substat"];
+      const specialStats = data.riftedFaction === "Rifted Technology" ?
+        ["baseFluxCapacity","baseSurgeCapacity"] : ["baseEchoMemroyCapacity","baseMaxEnergy"];
+
+      let rows = "";
+      for (let i=0;i<Math.max(leftStats.length,rightStats.length);i++) {
+        const leftKey = leftStats[i]; const rightKey = rightStats[i];
+        rows += `<tr>
+          <td><strong>${formatKey(leftKey)}</strong>: ${data[leftKey]||""}</td>
+          <td><strong>${formatKey(rightKey)}</strong>: ${data[rightKey]||""}</td>
+        </tr>`;
+      }
+      specialStats.forEach(stat=>{
+        rows += `<tr><td colspan="2"><strong>${formatKey(stat)}</strong>: ${data[stat]||""}</td></tr>`;
+      });
+      rows += `<tr><td colspan="2"><strong>Version</strong>: ${data.version||""}</td></tr>`;
+      coreStatsTable.innerHTML = rows;
+
+      // Passive
+      document.getElementById("passiveBox").innerHTML = `
+        <h2>Talent: ${data.passiveName}</h2>
+        <p class="description">${highlightKeywords(data.passiveDesc||"")}</p>
+        <h5>${data.riftedTalent||""}</h5>
+        <p class="description">${highlightKeywords(data.rTalentDesc||"")}</p>
+      `;
+
+      // Skills
+      const skillBox = document.getElementById("skillBox");
+      skillBox.innerHTML = `<h2>Skills</h2>`;
+      const attacks = [
+        { name: data.normalAttackName, desc: data.normalAttackDesc },
+        { name: data.chargedAttackName, desc: data.chargedAttackDesc, resource:`Charge Cost: ${data.chargeCost}` },
+        { name: data.normalSkillName, desc: data.normalSkillDesc, resource:`Flux Cost: ${data.fluxCost}, Memory Nodes: ${(Object.values(data.memoryNodes||{})).join(", ")}` },
+        { name: data.riftedSkillName, desc: data.riftedSkillDesc, resource:`Surge Cost: ${data.surgeCost}, Energy Cost: ${data.energyCost}` }
+      ];
+      attacks.forEach(({name,desc,resource})=>{
+        if(!name&&!desc) return;
+        skillBox.innerHTML += `<div class="fragment-entry">
+          <h4>${name||""}</h4>
+          ${resource?`<p><strong>${resource}</strong></p>`:""}
+          <p class="description">${highlightKeywords(desc||"")}</p>
+        </div>`;
+      });
+
+      // Fragments
+      const fragmentBox = document.getElementById("fragmentBox");
+      fragmentBox.innerHTML = `<h2>Fragments</h2>`;
+      for(let i=1;i<=6;i++){
+        if(!data[`fragment${i}Name`]&&!data[`fragment${i}Desc`]) continue;
+        fragmentBox.innerHTML += `<div class="fragment-entry">
+          <h4>${data[`fragment${i}Name`]||""}</h4>
+          <p class="description">${highlightKeywords(data[`fragment${i}Desc`]||"")}</p>
+        </div>`;
+      }
+
+      // Logs
+      if(data.log){
+        const logBox = document.getElementById("logBox");
+        logBox.style.display="block";
+        logBox.innerHTML = `<h2>Update Log</h2>`;
+        Object.entries(data.log).forEach(([k,record])=>{
+          logBox.innerHTML += `<div class="fragment-entry">
+            <strong>${record.version}</strong><br>
+            <span class="description">${highlightKeywords(record.description||"")}</span>
+          </div>`;
+        });
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+[
+  { "name": "Lance", "file": "lance.json", "version": ["1.0Alpha", "released"] },
+  { "name": "Bob", "file": "bob.json", "version": ["1.0Alpha", "released"] },
+  { "name": "Elsa", "file": "elsa.json", "version": ["1.0Alpha", "released"] },
+  { "name": "Rider", "file": "rider.json", "version": ["1.0Alpha", "released"] },
+  { "name": "Renova", "file": "renova.json", "version": ["1.0Alpha", "released"] },
+  { "name": "Aurora", "file": "aurora.json", "version": ["1.1Alpha", "released"] },
+  { "name": "Vyrka", "file": "vyrka.json", "version": ["1.3Alpha", "released"] },
+  { "name": "Clyde", "file": "clyde.json", "version": ["1.4Alpha", "released"] },
+  { "name": "Zinnki", "file": "zinnki.json", "version": ["1.0Beta", "unreleased"] }
+]

@@ -1,0 +1,82 @@
+{
+    "name": "Renova",
+    "baseAtk": 220,
+    "basePwr": 0,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1600,
+    "baseCharge": 100,
+    "baseFluxCapacity": 5,
+    "baseSurgeCapacity": 80,
+    "baseEchoMemroyCapacity": 0,
+    "baseMaxEnergy": 0,
+    "baseCritRate": "5.0%",
+    "baseCritDamage": "50.0%",
+    "substat": "CRIT Rate: 2.2%",
+    "riftedFaction": "Rifted Technology",
+    "riftedTech": "Fusion",
+    "riftedDisc": "",
+    "faction": "Projectile",
+
+    "passiveName": "Lethal Bullet",
+    "passiveDesc": "When Renova casts Normal or Rifted Skill, her Normal and Charged Attacks become enhanced gaining 144% DMG Bonus and are converted into Fusion DMG. All team members gains 1% CRIT Rate per 8% Renova's CRIT DMG.",
+    "riftedTalent": "Rifted Technology",
+    "rTalentDesc": "Renova's Normal and Charged Attacks generate 1 Flux. If they're enhanced, generate 1 extra Flux.",
+
+    "normalAttackName": "Normal Attack - Precise Calculation",
+    "normalAttackDesc": "Renova deals 40% Physical ATK as Physical DMG to the opponent.",
+
+    "chargedAttackName": "Charged Attack - Annihilation",
+    "chargeCost": 30,
+    "chargedAttackDesc": "Renova deals 60% Physical ATK as Physical DMG to the opponent.",
+
+    "normalSkillName": "Normal Skill - Camouflage",
+    "fluxCost": 3,
+    "memoryNodes": {"node1": "0EM", "node2": "0EM"},
+    "normalSkillDesc": "Renova enters the Camouflage state for 2 Cycles.\nCaomuflage: The opponents' attacks have 40% chance to miss Renova. This state will end if she takes an action or takes DMG from an opponent.",
+
+    "riftedSkillName": "Rifted Skill - Sniper Mode",
+    "surgeCost": 80,
+    "energyCost": 0,
+    "riftedSkillDesc": "Renova charges her Rifle and fires Heavy Bullets to all opponents each dealing 211 (+43% Physical ATK) as Fusion DMG while increasing all team members' CRIT Rate by 10% and CRIT DMG by 20% for 3 Cycles.",
+
+    "fragment1Name": "F1 - \"A Gift Far From Home\"",
+    "fragment1Desc": "Renova's Charged Attack \"Annihilation\" generates 1 extra Flux.",
+    "fragment2Name": "F2 - Access Denied",
+    "fragment2Desc": "Renova's actions will no longer end Camouflage state. In Camouflage state, opponents' attacks have 70% chance to miss Renova. If the opponent missed Renova, Camouflage state will reset its duration. This effect has 5 Cycles Cooldown.",
+    "fragment3Name": "F3 - Sequence of Series",
+    "fragment3Desc": "\"Sniper Mode\" level is increased by 3.",
+    "fragment4Name": "F4 - Sequence of Unwanted Memories",
+    "fragment4Desc": "If Renova is in team, all party members Normal and Charged Attack DMG is increased by 60%.",
+    "fragment5Name": "F5 - Sequence of Happy Memories",
+    "fragment5Desc": "\"Camouflage\" level is increased by 3.",
+    "fragment6Name": "F6 - Precision Mechanism",
+    "fragment6Desc": "If Renova is in team, all party members gains 10% CRIT Rate. Every 5 Critical Hits triggered by any team member except Renova, Renova will fires an Enhanced Bullet at the target opponent dealing 222 (+68% Physical ATK) as Fusion Follow-Up DMG.",
+
+    "log": {
+        "record1": {
+            "version": "1.0Alpha [2025-04-18]",
+            "description": "Release"
+        },
+
+        "record2": {
+            "version": "1.1Alpha [2025-04-24]",
+            "description": "Renova (↓): Renova’s passive performs very well, and Renova is overpowered by her Camouflage effect, making her almost impossible to hit. So, we’ve decided to slightly reduce the scalable damage of her passive and moderately reduce the chance of missing Renova while keeping her Cooldowns the same.\n\n[Talent: Lethal Bullet] (↓)\n\tLethal Bullet DMG: 200 (+40% Base ATK) >> 200 (+30% Base ATK)\n\n[Normal Skill: Camouflage] (↓)\n\tCamouflage Miss Chance: 70% >> 40%"
+        },
+
+        "record3": {
+            "version": "1.2Alpha [2025-04-25]",
+            "description": "Renova (↓): Renova's camouflage cannot be counter by freeze making her to survive more and deal more damage.\n[Normal Skill: Camouflage] (↓)\n\t[New Effect] Renova's camouflage can now be interrupted by freeze."
+        },
+
+        "record4": {
+            "version": "1.4Alpha [2025-05-18]",
+            "description": "Renova (↑): Implementation of Charged Attack and Stat changes.\n[New Attack] Charged Attack (Energy:30): Annihilation - Renova deals 60% Physical ATK as Physical DMG to the opponent. If the attack is enhanced, deals 200 (+60% Physical ATK) as True DMG.\n\tPhysical ATK: 0 >> 220\n\tPhysical DEF: 0 >> 50\n\tMagic DEF: 0 >> 30"
+        },
+
+        "record5": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Renova (↑): As team battles are implemented, we want Renova as a DPS Supporter instead of pure burst DPS.\n\tFlux Capacity: 0 >> 5\n\t\"Camouflage\" Flux Cost: 0 >> 3\n\t\"Sniper Mode\" Surge Cost: 0 >> 80\n\n[Talent: Lethal Bullet] (~)\n\t[Removed] Removed CRIT Rate boost.\n\t[New Effect] Renova's Normal and Charged Attacks generate 1 Flux.\n\t[New Effect] All team members gains 1% CRIT Rate per 8% Renova's CRIT DMG.\n\tDMG Bonus: 200 (+30% Physical ATK) as True DMG >> 144% DMG Bonus and are converted into Fusion DMG.\n\n[Normal Skill: Camouflage] (↓)\n\t[New Effect] If Renova takes an action or takes DMG from an opponent, her Camouflage state will end early.\n\n[Revamped Rifted Skill: Sniper Mode]\nRenova charges her Rifle and fires Heavy Bullets to all opponents, each dealing 211 (+43% Physical ATK) as Fusion DMG while increasing all team members' CRIT Rate by 10% and CRIT DMG by 20% for 3 Cycles."
+        }
+    }
+}

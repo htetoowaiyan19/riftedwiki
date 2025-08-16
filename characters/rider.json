@@ -1,0 +1,82 @@
+{
+    "name": "Rider",
+    "baseAtk": 200,
+    "basePwr": 0,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 2000,
+    "baseCharge": 100,
+    "baseFluxCapacity": 5,
+    "baseSurgeCapacity": 80,
+    "baseEchoMemroyCapacity": 0,
+    "baseMaxEnergy": 0,
+    "baseCritRate": "5.0%",
+    "baseCritDamage": "50.0%",
+    "substat": "CRIT Rate: 2.2%",
+    "riftedFaction": "Rifted Technology",
+    "riftedTech": "Strength",
+    "riftedDisc": "",
+    "faction": "Melee",
+
+    "passiveName": "Penetrable Boundary",
+    "passiveDesc": "Rider gains 20% Physical PEN and 15% CRIT Rate at the start of the battle.",
+    "riftedTalent": "Rifted Technology",
+    "rTalentDesc": "Rider's Normal and Charged Attacks generate 1 Flux.",
+
+    "normalAttackName": "Normal Attack - Swirling Rage",
+    "normalAttackDesc": "Rider deals 40% Physical ATK as Physical DMG to the opponent.",
+
+    "chargedAttackName": "Charged Attack - Outsmart",
+    "chargeCost": 20,
+    "chargedAttackDesc": "Rider deals 60% Physical ATK as Physical DMG to the opponent.",
+
+    "normalSkillName": "Normal Skill - Spear Strike",
+    "fluxCost": 3,
+    "memoryNodes": {"node1": "0EM", "node2": "0EM"},
+    "normalSkillDesc": "Rider strikes the opponent with Spear dealing 200 (+45% Physical ATK) as Physical DMG and reducing their Physical DEF by 20% for 2 Cycles.",
+
+    "riftedSkillName": "Rifted Skill - Call of The Dragon's Fury",
+    "surgeCost": 80,
+    "energyCost": 0,
+    "riftedSkillDesc": "Rider transforms into Fury state consuming 6 (+12% Current HP) (+28% Physical ATK) HP each round. In Fury state, his Normal Attacks become enhanced dealing 40% extra DMG and deal 60% of Normal Attack DMG as Follow-Up Attack. This state lasts 5 rounds. After the Fury state ends, Riider will recover 70% of his Lost HP from all DMG taken during the Fury state. The Fury state will end early if Rider has less than 30% HP. Fury state ending early will not trigger the HP Regen effect.\nWhile in Fury state, Rider's Normal and Charged Attacks generate 1 extra Flux.",
+
+    "fragment1Name": "F1 - Judgement from Beyond",
+    "fragment1Desc": "Rifted Skill \"Call of The Dragon's Fury\" HP Regen effect will trigger even if the Fury state is ended early.",
+    "fragment2Name": "F2 - Boundless Buddies",
+    "fragment2Desc": "In Fury state, all oppponents' Physical RES is decreased by 20%. When the entire team is composed of Strength members, Physical RES is further decreased by 40% and Rider gains 40% Normal Attack DMG Bonus.",
+    "fragment3Name": "F3 - Neverending Strength",
+    "fragment3Desc": "\"Call of The Dragon's Fury\" level is increased by 3.",
+    "fragment4Name": "F4 - Exiled Wishes",
+    "fragment4Desc": "Rider gains 20% CRIT Rate and 40% CRIT DMG during Fury state.",
+    "fragment5Name": "F5 - Spear of The Seventh Flame",
+    "fragment5Desc": "\"Spear Strike\" level is increased by 3.",
+    "fragment6Name": "F6 - \"My Lord's Light Bestowed Upon All\"",
+    "fragment6Desc": "When casting Normal Attacks duing Fury state, the shade of \"The Seventh Dragonlord of Flames\" will be summoned, dealing 214 (+46% Physical ATK) as Physical DMG 4 times consecutively and finally dealing 368 (+277% Physical ATK) as Physical DMG.",
+
+    "log": {
+        "record1": {
+            "version": "1.0Alpha [2025-04-18]",
+            "description": "Release"
+        },
+
+        "record2": {
+            "version": "1.2Alpha [2025-04-25]",
+            "description": "Rider (↑): Rider can be defeated very easily while he is in Fury state. So, we decided to slightly reduce the percentage of HP consumed and increased his Base HP.\n\tBase HP: 1,800 >> 2,000\n\n[Rifted Skill: Call of The Dragon's Fury] (↑)\n\tFury state HP Comsumption: 20% Current HP >> 15% Current HP"
+        },
+
+        "record3": {
+            "version": "1.3Alpha [2025-04-30]",
+            "description": "Rider (↑): Rider HP recovery after Fury state is based on his HP lost from Fury state. Since previous adjustment reduced his hp lost, his HP gain is also reduced. So we decided his hp gain to scale off from all damages he received.\n\n[Rifted Skill: Call of The Dragon's Fury] (↑)\n\tHP Recovery: 80% HP Lost from Self Sacrifice >> 70% HP Lost from all DMG"
+        },
+
+        "record4": {
+            "version": "1.4Alpha [2025-05-18]",
+            "description": "Rider (↑): Implementation of Charged Attack and Stat changes.\n[New Attack] Charged Attack (Energy:20): Outsmart - Rider deals 60% Physical ATK as Physical DMG to the opponent.\n\tPhysical ATK: 0 >> 200\n\tPhysical DEF: 0 >> 30\n\tMagic DEF: 0 >> 30"
+        },
+
+        "record5": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Rider (↑): Rider survivability is too low when facing opponent with burst DMG, he can be defeated very early. We added a limit on Rider's Fury state to prevent very low HP drops.\n\tFlux Capacity: 0 >> 5\n\t\"Spear Strike\" Flux Cost: 0 >> 3\n\t\"Call of The Dragon's Fury\" Surge Cost: 0 >> 80\n\n[Talent: Penetrable Boundary] (↑)\n\t[New Effect] Rider's Normal and Charged Attacks generate 1 Flux.\n\n[Rifted Skill: Call of The Dragon's Fury] (~)\n\tHP Recovery: 15% Current HP >> 6 (+12% Current HP) (+28% Physical ATK) HP\n\t[New Effect] The Fury state will end early if Rider has less than 30% HP. Fury state ending early will not trigger the HP Regen effect.\n\t[New Effect] While in Fury state, Rider Normal and Charged Attacks generate 1 extra Flux."
+        }
+    }
+}

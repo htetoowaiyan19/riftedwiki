@@ -1,0 +1,77 @@
+{
+    "name": "Lance",
+    "baseAtk": 200,
+    "basePwr": 0,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 2100,
+    "baseCharge": 100,
+    "baseFluxCapacity": 3,
+    "baseSurgeCapacity": 60,
+    "baseEchoMemroyCapacity": 0,
+    "baseMaxEnergy": 0,
+    "baseCritRate": "5.0%",
+    "baseCritDamage": "50.0%",
+    "substat": "Physical ATK%: 4.4%",
+    "riftedFaction": "Rifted Technology",
+    "riftedTech": "Strength",
+    "riftedDisc": "",
+    "faction": "Melee",
+
+    "passiveName": "Charging",
+    "passiveDesc": "If Lance isn't interrupted by opponent attacks, his Physical ATK is increased by 15%, max 2 stacks.",
+    "riftedTalent": "Rifted Technology",
+    "rTalentDesc": "Lance's Normal and Charged Attacks generate 1 Flux.",
+
+    "normalAttackName": "Normal Attack - Sword Strike",
+    "normalAttackDesc": "Lance deals 40% Physical ATK as Physical DMG to the opponent.",
+
+    "chargedAttackName": "Charged Attack - Piercing",
+    "chargeCost": 30,
+    "chargedAttackDesc": "Lance deals 60% Physical ATK as Physical DMG to the opponent while reducing opponent's Physical DEF by 20% for 1 Cycle.",
+
+    "normalSkillName": "Normal Skill - Slash",
+    "fluxCost": 2,
+    "memoryNodes": {"node1": "0EM", "node2": "0EM"},
+    "normalSkillDesc": "Lance slashes the opponent dealing 122 (+67% Physical ATK) as Physical DMG.",
+
+    "riftedSkillName": "Rifted Skill - Lion's Claw",
+    "surgeCost": 60,
+    "energyCost": 0,
+    "riftedSkillDesc": "Lance summons Lion's Claw and slashes the opponent dealing 214 (+43% Physical ATK) (+22% Opponent Lost HP) as True DMG.",
+
+    "fragment1Name": "F1 - Nourishing Energy",
+    "fragment1Desc": "Casting Normal Skill \"Slash\" increases Lance's Physical ATK and Physical DEF by 20% for 2 Cycles.",
+    "fragment2Name": "F2 - Swiftness",
+    "fragment2Desc": "Casting Normal Skill \"Slash\" has 50% chance to generate 1 Flux, 10% chance to generate an extra Flux.",
+    "fragment3Name": "F3 - Recharge",
+    "fragment3Desc": "\"Slash\" level is increased by 3.",
+    "fragment4Name": "F4 - Vengeance",
+    "fragment4Desc": "If Lance has 2 Charging stacks, wraps himself inside a Vengeance shield. During this period, 8% of all incoming DMG will be inflicted back to the DMG dealer as Magic DMG.",
+    "fragment5Name": "F5 - Dire Cutout",
+    "fragment5Desc": "\"Lion's Claw\" level is increased by 3.",
+    "fragment6Name": "F6 - Unstoppable Dragonlord",
+    "fragment6Desc": "Lance will recover 14 (+63% Physical ATK) HP each Cycle. If Lance has 2 Charging stacks, every members' attacks will cast a follow-up attack \"Fury Spear\" that strikes down the opponent daling 143 (+77% Physical ATK) as Physical DMG.",
+
+    "log": {
+        "record1": {
+            "version": "1.0Alpha [2025-04-18]",
+            "description": "Release"
+        },
+
+        "record2": {
+            "version": "1.3Alpha [2025-04-30]",
+            "description": "Lance (former Knight) (↓): Lance (former Knight) is extremely powerful since release with his burst potential from his skills. So, we decide to reduce the damage of his Normal Skill and Rifted Skill.\n\n[Normal Skill: Slash] (↓)\n\tSlash DMG: 300 (+40% Physical ATK) >> 100 (+60% Physical ATK)\n\n[Rifted Skill: Lion's Claw] (↓)\n\tLion's Claw DMG: 300 (+60% Physical ATK) (+20% Opponent Lost HP) >> 200 (+60% Physical ATK) (+10% of Opponent Lost HP)"
+        },
+
+        "record3": {
+            "version": "1.4Alpha [2025-05-18]",
+            "description": "Lance (former Knight) (↑): Implementation of Charged Attack and Stat changes.\n[New Attack] Charged Attack (Energy:20): Piercing - Lance (former Knight) deals 60% Physical ATK as Physical DMG to the opponent while reducing opponent's Physical DEF by 20% for 1 Cycle.\n\tPhysical ATK: 0 >> 200\n\tPhysical DEF: 0 >> 50\n\tMagic DEF: 0 >> 30\n\nName Changes: Knight >> Lance"
+        },
+
+        "record4": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Lance (↑): Lance become weaker against newer characters and his simple skill set. We slightly increased his Normal and Rifted Skill DMG scaling.\n\tPhysical DEF: 50 >> 30\n\tFlux Capacity: 0 >> 3\n\t\"Slash\" Flux Cost: 0 >> 2\n\t\"Lion's Claw\" Surge Cost: 0 >> 60\n\n[Talent: Charging] (↑)\n[New Effect] Lance's Normal and Charged Attacks generate 1 Flux.\n\n[Charged Attack: Piercing] (↓)\n\tCharge Cost: 20 >> 30\n\n[Normal Skill: Slash] (↑)\n\tSlash DMG: 100 (+60% Physical ATK) >> 122 (+67% Physical ATK)\n\n[Rifted Skill: Lion's Claw] (↑)\n\tLion's Claw DMG: 200 (+60% Physical ATK) (+10% Opponent Lost HP) >> 214 (+43% Physical ATK) (+22% Opponent Lost HP)"
+        }
+    }
+}

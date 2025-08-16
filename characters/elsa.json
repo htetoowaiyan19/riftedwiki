@@ -1,0 +1,77 @@
+{
+    "name": "Elsa",
+    "baseAtk": 0,
+    "basePwr": 200,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1600,
+    "baseCharge": 100,
+    "baseFluxCapacity": 0,
+    "baseSurgeCapacity": 0,
+    "baseEchoMemroyCapacity": 6,
+    "baseMaxEnergy": 80,
+    "baseCritRate": "5.0%",
+    "baseCritDamage": "50.0%",
+    "substat": "Magic PWR%: 4.4%",
+    "riftedFaction": "Rifted Disorder",
+    "riftedTech": "",
+    "riftedDisc": "Volte",
+    "faction": "Magical",
+
+    "passiveName": "Aftershock",
+    "passiveDesc": "Elsa's attacks have 60% chance to trigger a Follow-Up attack that deals 40% of the original DMG.",
+    "riftedTalent": "Rifted Disorder",
+    "rTalentDesc": "Elsa's Normal and Charged Attacks accumulate 1 Echo Memory and 5 Energy. Dealing Disorder DMG accumulates 10 Energy.",
+
+    "normalAttackName": "Normal Attack - Sparkle",
+    "normalAttackDesc": "Elsa deals 40% Magic PWR as Magic DMG to the opponent.",
+
+    "chargedAttackName": "Charged Attack - Electricution",
+    "chargeCost": 20,
+    "chargedAttackDesc": "Elsa deals 60% Magic PWR as Magic DMG to the opponent.",
+
+    "normalSkillName": "Normal Skill - Temporial Shock",
+    "fluxCost": 0,
+    "memoryNodes": {"node1": "2EM", "node2": "4EM", "node3": "6EM"},
+    "normalSkillDesc": "[2EM] Elsa shock the opponent with Temporial Shock dealing 94 (+28% Magic PWR) as Magic DMG.\n[4EM] Elsa shock the opponent with Temporial Shock dealing 163 (+44% Magic PWR) as Volte DMG. If this attack hits a target, Elsa gains 1 stack of Serpent Lightning.\n[6EM] Elsa shock the opponent with Temporial Shock dealing 244 (+68% Magic PWR) as Volte DMG. If this attack hits a target, Elsa gains 2 stacks of Serpent Lightning.",
+
+    "riftedSkillName": "Rifted Skill - Serpent's Strike",
+    "surgeCost": 0,
+    "energyCost": 80,
+    "riftedSkillDesc": "Elsa strikes the opponent with Serpent's Strke dealing 292 (+68% Magic PWR) as Volte DMG. An extra stack of Serpent Lightning increases Serpent's Strike DMG by 15%, max 15 stacks.",
+
+    "fragment1Name": "F1 - Serpent's Blessing",
+    "fragment1Desc": "If Elsa's attacks failed to trigger an Aftershock, the chance of triggering it is increased by 5%. This effect will reset when the Aftershock is triggered.",
+    "fragment2Name": "F2 - Enhancing Echoes",
+    "fragment2Desc": "Elsa will always have 2 Echo Memories. Elsa Memory Capacity is increased by 2 and an additional Memory Node is added to her Normal Skill.\n[8EM] Elsa shock the opponent with Temporial Shock dealing 312 (+82% Magic PWR) as Volte DMG. If this attack hits a target, Elsa gains 3 stacks of Serpent Lightning.",
+    "fragment3Name": "F3 - The Last Sea",
+    "fragment3Desc": "\"Temporial Shock\" level is increased by 3.",
+    "fragment4Name": "F4 - Supercharged",
+    "fragment4Desc": "Aftershock applies Supercharged to oponent for 2 Cycles, decreasing their Volte RES by 40%.",
+    "fragment5Name": "F5 - Power of The Stroms",
+    "fragment5Desc": "\"Serpent's Strike\" level is increased by 3.",
+    "fragment6Name": "F6 - The Final Execution",
+    "fragment6Desc": "After casting Serpent's Strike, all accumulated Serpent Lightning stacks will deal additional 332 (+58% Magic PWR) as Volte Follow-Up DMG per stack.",
+
+    "log": {
+        "record1": {
+            "version": "1.0Alpha [2025-04-18]",
+            "description": "Release"
+        },
+
+        "record2": {
+            "version": "1.1Alpha [2025-04-24]",
+            "description": "Elsa (↓): Elsa is performing too well with her quick Serpent Lightning stacks, so we decided to increase the cooldown of her Normal Skill and slightly decrease the scalable damage of her Rifted Skill.\n[Normal Skill: Temporial Shock] (↓)\n\tCooldown: 3 >> 4\n\n[Rifted Skill: Serpent's Strike] (↓)\n\tSerpent's Strike DMG: 300 (+80% Base ATK) >> 300 (+70% Base ATK)"
+        },
+
+        "record3": {
+            "version": "1.4Alpha [2025-05-18]",
+            "description": "Elsa (~): Since Elsa is a mage type character, all of her attack will be converted to Magic DMG. Implementation of Charged Attack and Stat changes.\n[New Attack] Charged Attack (Energy:20): Electricution - Elsa deals 60% Magic PWR as Magic DMG to the opponent.\n\tMagic PWR: 0 >> 200\n\tPhysical DEF: 0 >> 30\n\tMagic DEF: 0 >> 30\n\n[Revamped Stats]\n\tPhysical DMG (Base ATK) >> Magic DMG (Magic PWR)"
+        },
+
+        "record4": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Elsa (↑): To fully utilize her Echo Memory mechanic, her skills will be revamped.\n\tEcho Memory Capacity: 0 >> 6\n\t\"Serpent's Strike\" Energy Cost: 0 >> 80\n\n[Talent: Aftershock] (↑)\n[New Effect] Elsa's Normal and Charged Attacks accumulate 1 Echo Memroy and 5 Energy. Dealing Disorder DMG accumulates 10 Energy.\n\n[Revamped Normal Skill: Temporial Shock]\n[2EM] Elsa shock the opponent with Temporial Shock dealing 94 (+28% Magic PWR) as Magic DMG.\n[4EM] Elsa shock the opponent with Temporial Shock dealing 163 (+44% Magic PWR) as Volte DMG. If this attack hits a target, Elsa gains 1 stack of Serpent Lightning.\n[6EM] Elsa shock the opponent with Temporial Shock dealing 244 (+68% Magic PWR) as Volte DMG. If this attack hits a target, Elsa gains 2 stacks of Serpent Lightning.\n\n[Rifted Skill: Serpent's Strike] (~)\n\tSerpent's Strike DMG: 300 (+70% Magic PWR) as Magic DMG >> 292 (+68% Magic PWR) as Volte DMG"
+        }
+    }
+}

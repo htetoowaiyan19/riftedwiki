@@ -1,0 +1,72 @@
+{
+    "name": "Aurora",
+    "baseAtk": 0,
+    "basePwr": 200,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1700,
+    "baseCharge": 100,
+    "baseFluxCapacity": 0,
+    "baseSurgeCapacity": 0,
+    "baseEchoMemroyCapacity": 8,
+    "baseMaxEnergy": 80,
+    "baseCritRate": "5.0%",
+    "baseCritDamage": "50.0%",
+    "substat": "Energy Efficiency%: 3.0%",
+    "riftedFaction": "Rifted Disorder",
+    "riftedTech": "",
+    "riftedDisc": "Frost",
+    "faction": "Magical",
+
+    "passiveName": "Icy Throne",
+    "passiveDesc": "If Aurora takes lethal DMG, she will instantly gain 30% Max HP while gaining DMG Immunity for the next Cycle. This effect has 16-Cycle Cooldown.",
+    "riftedTalent": "Rifted Disorder",
+    "rTalentDesc": "Aurora's Normal and Charged Attacks accumulate 1 Echo Memory and 5 Energy, max 6 Echo Memory Cells. Dealing Disorder DMG accumulates 10 Energy. Aurora has 2 Special Echo Memory Cells that cannot be obtained by the aforementioned means.",
+
+    "normalAttackName": "Normal Attack - Ice Spike",
+    "normalAttackDesc": "Aurora deals 40% Magic PWR as Magic DMG to the opponent.",
+
+    "chargedAttackName": "Charged Attack - Shattering Ice",
+    "chargeCost": 20,
+    "chargedAttackDesc": "Elsa deals 60% Magic PWR as Magic DMG to the opponent.",
+
+    "normalSkillName": "Normal Skill - Orb of Gentle Breeze",
+    "fluxCost": 0,
+    "memoryNodes": {"node1": "6EM", "node2": "8EM"},
+    "normalSkillDesc": "Aurora launches an Orb of Gentle Breeze, dealing 44 (+0% Magic PWR) as Magic DMG. Each Echo Memory will increases this skill's Magic PWR by 15%, max 75%.\n[6EM] Aurora launches an Orb of Gentle Breeze, dealing 114 (+82% Magic PWR) as Frost DMG. If Aurora has 8 Echo Memories [8EM], Mountains' Anchor will strike the opponent, dealing 177 (+188% Magic PWR) as Frost DMG. Mountains' Anchor can trigger Shattered effect if the opponent is Frozen.",
+
+    "riftedSkillName": "Rifted Skill - Eternal Breeze",
+    "surgeCost": 0,
+    "energyCost": 80,
+    "riftedSkillDesc": "Aurora blows an Eternal Breeze, dealing 22 (+43% Magic PWR) as Frost DMG to all opponents, freezing them by 1 Cycle. This skill generates 8 Echo Memories.",
+
+    "fragment1Name": "F1 - Perfect Timing",
+    "fragment1Desc": "If Aurora is in the team, if one of the team members triggered Freeze Reaction, Mountains' Anchor will strikes the targeted opponent dealing Frost Follow-Up DMG.",
+    "fragment2Name": "F2 - Frozen Moon",
+    "fragment2Desc": "If Aurora is in the team, Frozen opponents have their Physical RES reduced by 20% and Shattered DMG is increased by 40%.",
+    "fragment3Name": "F3 - Freezing Technique",
+    "fragment3Desc": "\"Orb of Gentle Breeze\" level is increased by 3.",
+    "fragment4Name": "F4 - Lost in The Snow",
+    "fragment4Desc": "Aurora Mountains' Anchor deals 100% increased DMG to Frozen opponents.",
+    "fragment5Name": "F5 - \"Stopping\" Rivers",
+    "fragment5Desc": "\"Eternal Breeze\" level is increased by 3.",
+    "fragment6Name": "F6 - Sub Zero",
+    "fragment6Desc": "Casting Eternal Breeze will generate a Heavy Snow Mist for 4 Cycles.\nHeavy Snow Mist: Energy Efficiency of the opponents inside the Mist is decreased by 20%. All team members of PROJECTILE, MELEE, and AGILE Factions gains 40% Frost DMG Bonus and their Normal and Charged Attacks become infused with Frost.",
+
+    "log": {
+        "record1": {
+            "version": "1.1Alpha [2025-04-24]",
+            "description": "Release"
+        },
+
+        "record2": {
+            "version": "1.4Alpha [2025-05-18]",
+            "description": "Aurora (~): Since Aurora is a mage type character, all of her attack will be converted to Magic DMG. Implementation of Charged Attack and Stat changes.\n[New Attack] Charged Attack (Energy:20): Shattering Ice - Aurora deals 60% Magic PWR as Magic DMG to the opponent.\n\tMagic PWR: 0 >> 200\n\tPhysical DEF: 0 >> 30\n\tMagic DEF: 0 >> 30\n\n[Revamped Stats]\n\tPhysical DMG (Base ATK) >> Magic DMG (Magic PWR)"
+        },
+
+        "record3": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Aurora (↑): To fully utilize her Echo Memory mechanic, her skills will be revamped.\n\tEcho Memory Capacity: 0 >> 8\n\t\"Eternal Breeze\" Energy Cost: 0 >> 80\n\n[Talent: Icy Throne] (↑)\n\t[New Effect] Aurora's Normal and Charged Attacks accumulate 1 Echo Memory and 5 Energy, max 6 Echo Memory Cells. Dealing Disorder DMG accumulates 10 Energy. Aurora has 2 Special Echo Memory Cells that cannot be obtained by the aforementioned means.\n\tCooldown: 22 Cycles >> 16 Cycles\n\n[Revamped Normal Skill: Orb of Gentle Breeze]\nAurora launches an Orb of Gentle Breeze, dealing 44 (+0% Magic PWR) as Magic DMG. Each Echo Memory will increases this skill's Magic PWR by 15%, max 75%.\n[6EM] Aurora launches an Orb of Gentle Breeze, dealing 114 (+82% Magic PWR) as Frost DMG. If Aurora has 8 Echo Memories [8EM], Mountains' Anchor will strike the opponent, dealing 177 (+188% Magic PWR) as Frost DMG. Mountains' Anchor can trigger Shattered effect if the opponent is Frozen.\n\n[Rifted Skill: Eternal Breeze] (~)\n\tEternal Breeze DMG: 80 (+60% Magic PWR) >> 22 (+43% Magic PWR)\n\tAbility: reset the Orb of Gentle Breeze's cooldown >> gains 8 Echo Memories"
+        }
+    }
+}

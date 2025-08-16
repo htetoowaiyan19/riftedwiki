@@ -1,0 +1,77 @@
+{
+    "name": "Bob",
+    "baseAtk": 180,
+    "basePwr": 180,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1700,
+    "baseCharge": 100,
+    "baseFluxCapacity": 3,
+    "baseSurgeCapacity": 60,
+    "baseEchoMemroyCapacity": 0,
+    "baseMaxEnergy": 0,
+    "baseCritRate": "5.0%",
+    "baseCritDamage": "50.0%",
+    "substat": "Magic PWR%: 4.4%",
+    "riftedFaction": "Rifted Technology",
+    "riftedTech": "Strength",
+    "riftedDisc": "",
+    "faction": "Power",
+
+    "passiveName": "Poison Dart",
+    "passiveDesc": "Every 4th attacks, infuses the attack with Poison, continuously dealing 38 (+22% Magic PWR) as Magic DMG to the opponent for 3 Cycles.",
+    "riftedTalent": "Rifted Technology",
+    "rTalentDesc": "Bob's Normal and Charged Attacks generate 1 Flux. Triggering Poison Dart generates 1 extra Flux.",
+
+    "normalAttackName": "Normal Attack - Dart",
+    "normalAttackDesc": "Bob deals 40% Physical ATK as Physical DMG to the opponent.",
+
+    "chargedAttackName": "Charged Attack - Darter",
+    "chargeCost": 20,
+    "chargedAttackDesc": "Bob deals 60% Physical ATK as Physical DMG to the opponent.",
+
+    "normalSkillName": "Normal Skill - Large Dart",
+    "fluxCost": 1,
+    "memoryNodes": {"node1": "0EM", "node2": "0EM"},
+    "normalSkillDesc": "Bob throws a Large Dart towards the opponent dealing 188 (+48% Physical ATK) as Physical DMG.",
+
+    "riftedSkillName": "Rifted Skill - Poison Fumes",
+    "surgeCost": 60,
+    "energyCost": 0,
+    "riftedSkillDesc": "Bob gas out Poison Fumes applying Poison to all opponents while continuously healing himself by 42 (+8% Physical ATK) (+16% Magic PWR) HP each Cycle. The Poison Fumes last 3 Cycles.",
+
+    "fragment1Name": "F1 - Heavy Load",
+    "fragment1Desc": "Magic PWR is increased by 80% Physical ATK.",
+    "fragment2Name": "F2 - Supercharged Infusions",
+    "fragment2Desc": "The amount of attacks required to trigger \"Poison Dart\" is reduced by 1.",
+    "fragment3Name": "F3 - Mist Thickens",
+    "fragment3Desc": "\"Poison Fumes\" level is increased by 3.",
+    "fragment4Name": "F4 - Very Special Potion",
+    "fragment4Desc": "Every instance of \"Poison Dart\" will trigger a Critical hit. At this moment, Crit DMG is increased by 150% for the same instance.",
+    "fragment5Name": "F5 - Not Too Small",
+    "fragment5Desc": "\"Large Dart\" level is increased by 3.",
+    "fragment6Name": "F6 - Suffocation",
+    "fragment6Desc": "\"Poison Fumes\" duration is increased by 1. During the \"Poison Fumes\", Bob gains 20% Physical RES and Magical RES.\nDealing Magic DMG to an opponent will mark them with Poison Mark. Poison Mark: deals 322 (+40% Magic PWR) as True DMG at 6th hit to the marked opponent.",
+
+    "log": {
+        "record1": {
+            "version": "1.0Alpha [2025-04-18]",
+            "description": "Release"
+        },
+
+        "record2": {
+            "version": "1.1Alpha [2025-04-24]",
+            "description": "Bob (former Goblin) (↑): Bob (former Goblin)’s attacks are too weak against other characters, so we slightly increase the scalable damage of his poison.\n[Talent: Poison Dart] (↑)\n\tPoison DMG: 40 (+15% Base ATK) >> 40 (+20% Base ATK)"
+        },
+
+        "record3": {
+            "version": "1.4Alpha [2025-05-18]",
+            "description": "Bob (former Goblin) (↑): We want Bob to shine in the battle and make him unique. Therefore, we decided to implement him to use both Physical ATK and Magic PWR. Implementation of Charged Attack and Stat changes.\n[New Attack] Charged Attack (Energy:20): Darter - Bob (former Goblin) deals 60% Physical ATK as Physical DMG to the opponent.\n\tPhysical ATK: 0 >> 180\n\tMagic PWR: 0 >> 180\n\tPhysical DEF: 0 >> 30\n\tMagic DEF: 0 >> 30\n\n[Talent: Poison Dart] (↑)\n\tPoison DMG: 40 (+20% Base ATK) Physical DMG >> 40 (+20% Magic PWR) Magic DMG\n\n[Rifted Skill: Poison Fumes] (↑)\n\tHP Recovery: 75 (+20% Base ATK) >> 50 (+20% Physical ATK) (+20% Magic PWR)\n\nName Changes: Goblin >> Bob"
+        },
+
+        "record4": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Bob (~): We want Bob to be better DoT DPS, so we decided to increase his DPS output and reduce his sustain.\n\tFlux Capacity: 0 >> 3\n\t\"Large Dart\" Flux Cost: 0 >> 1\n\t\"Poison Fumes\" Surge Cost: 0 >> 60\n\n[Talent: Poison Dart] (↑)\n[New Effect] Bob's Normal and Charged Attacks generate 1 Flux. Triggering Poison Dart generates 1 extra Flux.\n\tPoison DMG: 40 (+20% Magic PWR) >> 38 (+22% Magic PWR)\n\n[Normal Skill: Large Dart] (~)\n\tLarge Dart DMG: 200 (+30% Physical ATK) >> 188 (+48% Physical ATK)\n\n[Rifted Skill: Poison Fumes] (↓)\n\tHP Recovery: 50 (+20% Physical ATK) (+20% Magic PWR) >> 42 (+8% Physical ATK) (+16% Magic PWR)"
+        }
+    }
+}
