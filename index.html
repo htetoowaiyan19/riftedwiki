@@ -13,8 +13,13 @@
       margin: 0;
       padding: 20px;
     }
+
     h1, h2, h5 {
       color: #9bc9ff;
+    }
+
+    body, h1, h2, h3, h4, h5, h6, p, span, button, input, table, td, th {
+      font-family: "Trebuchet MS", Arial, sans-serif !important;
     }
 
     .btn-back {
@@ -79,6 +84,7 @@
       gap: 15px;
       margin-top: 20px;
     }
+
     .char-item {
       display: flex;
       justify-content: space-between;
@@ -91,26 +97,43 @@
       min-width: 200px;
       box-shadow: 0 0 6px rgba(0,0,0,0.3);
     }
+
     .char-item span:first-child {
       font-size: 1.1rem;
     }
+
     .char-item span:last-child {
       font-size: 0.85rem;
       padding: 4px 8px;
       border-radius: 8px;
       background: rgba(0,0,0,0.25);
     }
+
     .char-item:hover {
       transform: translateY(-3px);
       box-shadow: 0 0 12px rgba(150,200,255,0.4);
     }
+
     .released {
       background: linear-gradient(145deg, #004d40, #00695c);
       color: #e0fff5;
     }
+
     .unreleased {
       background: linear-gradient(145deg, #4e0a15, #6d1b26);
       color: #ffe0e0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 15px;
+    }
+
+    /* Back button mobile tap state */
+    .btn-back:active {
+      transform: scale(0.96);
+      box-shadow: 0 0 6px rgba(150,200,255,0.6);
     }
 
     /* === Description highlights (unchanged from you) === */
@@ -254,12 +277,26 @@
 
       let rows = "";
       for (let i=0;i<Math.max(leftStats.length,rightStats.length);i++) {
-        const leftKey = leftStats[i]; const rightKey = rightStats[i];
+        const leftKey = leftStats[i];
+        const rightKey = rightStats[i];
+
+        let leftVal = data[leftKey] || "";
+        let rightVal = data[rightKey] || "";
+
+        // Format Crit Rate & Crit Damage with %
+        if (leftKey === "baseCritRate" || leftKey === "baseCritDamage") {
+          leftVal = parseFloat(leftVal).toFixed(1) + "%";
+        }
+        if (rightKey === "baseCritRate" || rightKey === "baseCritDamage") {
+          rightVal = parseFloat(rightVal).toFixed(1) + "%";
+        }
+
         rows += `<tr>
-          <td><strong>${formatKey(leftKey)}</strong>: ${data[leftKey]||""}</td>
-          <td><strong>${formatKey(rightKey)}</strong>: ${data[rightKey]||""}</td>
+          <td><strong>${formatKey(leftKey)}</strong>: ${leftVal}</td>
+          <td><strong>${formatKey(rightKey)}</strong>: ${rightVal}</td>
         </tr>`;
       }
+
       specialStats.forEach(stat=>{
         rows += `<tr><td colspan="2"><strong>${formatKey(stat)}</strong>: ${data[stat]||""}</td></tr>`;
       });
