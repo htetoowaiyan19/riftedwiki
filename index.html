@@ -246,12 +246,12 @@
         baseAtk: "ATK", basePwr: "PWR",
         basePhyDef: "Physical DEF", baseMagDef: "Magic DEF",
         baseHp: "HP", baseCharge: "Charge",
-        baseCritRate: "Crit Rate", baseCritDamage: "Crit Damage",
+        baseCritRate: "CRIT Rate", baseCritDamage: "CRIT DMG",
         riftedFaction: "Rifted Faction", riftedTech: "Rifted Technology",
         riftedDisc: "Rifted Disorder", faction: "Faction",
         baseFluxCapacity: "Flux Capacity", baseSurgeCapacity: "Surge Capacity",
         baseEchoMemroyCapacity: "Echo Memory Capacity", baseMaxEnergy: "Max Energy",
-        substat: "Substat", version: "Version"
+        substat: "Substat"
       };
       return map[key] || key;
     }
@@ -324,7 +324,6 @@
       specialStats.forEach(stat=>{
         rows += `<tr><td colspan="2"><strong>${formatKey(stat)}</strong>: ${data[stat]||""}</td></tr>`;
       });
-      rows += `<tr><td colspan="2"><strong>Version</strong>: ${data.version||""}</td></tr>`;
       coreStatsTable.innerHTML = rows;
 
       // Passive

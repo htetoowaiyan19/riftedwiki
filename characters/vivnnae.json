@@ -1,0 +1,62 @@
+{
+    "name": "Vivnnae",
+    "baseAtk": 0,
+    "basePwr": 190,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1900,
+    "baseCharge": 100,
+    "baseFluxCapacity": 0,
+    "baseSurgeCapacity": 0,
+    "baseEchoMemroyCapacity": 12,
+    "baseMaxEnergy": 100,
+    "baseCritRate": 5.0,
+    "baseCritDamage": 50.0,
+    "substat": "Energy Regen%: 3.0%",
+    "riftedFaction": "Rifted Disorder",
+    "riftedTech": "",
+    "riftedDisc": "Gale",
+    "faction": "Melee",
+
+    "passiveName": "Vibrant Shadows",
+    "passiveDesc": "Triggering Spread reactions accumulates 2 Echo Memory for Vivnnae.",
+    "riftedTalent": "Rifted Disorder",
+    "rTalentDesc": "Vivnnae's Normal and Charged Attacks accumulate 1 Echo Memory and 5 Energy. Dealing Disorder DMG accumulates 10 Energy.",
+
+    "normalAttackName": "Normal Attack - Sword Master Arc",
+    "normalAttackDesc": "Vivnnae deals 88 (+33% Physical ATK) as Physical DMG to the opponent.",
+
+    "chargedAttackName": "Charged Attack - Honored Knight",
+    "chargeCost": 20,
+    "chargedAttackDesc": "Vivnnae deals 122 (+58% Physical ATK) as Physical DMG to the opponent.",
+
+    "normalSkillName": "Normal Skill - Feather Hopes and Dreams",
+    "fluxCost": 0,
+    "memoryNodes": {"node1": "4EM", "node2": "6EM", "node3": "10EM"},
+    "normalSkillDesc": "Vivnnae casts a \"Feather of Hopes\" to the opponent, dealing 11 (+36% Magic PWR) as Magic DMG.\n[4EM] Vivnnae casts a \"Feather of Hopes\" to the opponent, dealing 63 (+87% Magic PWR) as Gale DMG, returning \"Flower of Dreams\" to her, healing herself by 104% of the DMG dealt.\n [6EM] Vivnnae casts a \"Feather of Hopes\" to the opponent, dealing 114 (+101% Magic PWR) as Gale DMG, returning \"Flower of Dreams\" to all team members, healing them by 104 (+242% of the DMG dealt) (+112% Magic PWR).\n[10EM] When Vivnnae has over 10 Echo Memory, she'll enters Meditating state. Meditating state: Vivnnae gains 40% All Disorder RES and consumes 3 Echo Memories each round, healing all team members except her by 88 (+143% Magic PWR). During this state, Vivnnae cannot casts any other skills. state ends when all Echo Memories are consumed.",
+
+    "riftedSkillName": "Rifted Skill - Lightest Decision",
+    "surgeCost": 0,
+    "energyCost": 100,
+    "riftedSkillDesc": "Vivnnae casts a Feather Field for 2 Cycles. Feather Field: Increases all team members Physical ATK by 64% of Vivnnae's Magic PWR, max 600, and heals all team members by 66 (+119% Magic PWR) each Cycle.",
+
+    "fragment1Name": "F1 - Flow of Wind",
+    "fragment1Desc": "Energy Efficiency is increased by 20%. When casting \"Lightest Decision\", Vivnnae gains 4 Echo Memories.",
+    "fragment2Name": "F2 - Guidelines of Gale",
+    "fragment2Desc": "Vivnnae's gains 40% Gale DMG Bonus. If Vivnnae is in the team, Spread Reaction DMG is increased by 20%.",
+    "fragment3Name": "F3 - Spreading Happiness",
+    "fragment3Desc": "\"Feather of Hopes and Dreams\" level is increased by 3.",
+    "fragment4Name": "F4 - Cyclone's Eye",
+    "fragment4Desc": "During Feather Field, all opponent's Gale RES is decreased by 40%.",
+    "fragment5Name": "F5 - Hard Decision",
+    "fragment5Desc": "\"Lightest Decision\" level is increased by 3.",
+    "fragment6Name": "F6 - Knight of Koniveruer",
+    "fragment6Desc": "During Feather Field, all team members All Disorder RES is increased by 20%.",
+
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
