@@ -9,7 +9,7 @@
     "baseFluxCapacity": 0,
     "baseSurgeCapacity": 0,
     "baseEchoMemroyCapacity": 12,
-    "baseMaxEnergy": 100,
+    "baseMaxEnergy": 200,
     "baseCritRate": 5.0,
     "baseCritDamage": 50.0,
     "substat": "Energy Regen%: 3.0%",
@@ -37,7 +37,7 @@
 
     "riftedSkillName": "Rifted Skill - Lightest Decision",
     "surgeCost": 0,
-    "energyCost": 100,
+    "energyCost": 200,
     "riftedSkillDesc": "Vivnnae casts a Feather Field for 2 Cycles. Feather Field: Increases all team members Physical ATK by 64% of Vivnnae's Magic PWR, max 600, and heals all team members by 66 (+119% Magic PWR) each Cycle.",
 
     "fragment1Name": "F1 - Flow of Wind",
