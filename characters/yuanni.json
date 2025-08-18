@@ -1,0 +1,62 @@
+{
+    "name": "Yuanni",
+    "baseAtk": 180,
+    "basePwr": 200,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1800,
+    "baseCharge": 100,
+    "baseFluxCapacity": 0,
+    "baseSurgeCapacity": 0,
+    "baseEchoMemroyCapacity": 20,
+    "baseMaxEnergy": 120,
+    "baseCritRate": 5.0,
+    "baseCritDamage": 50.0,
+    "substat": "Frost DMG Bonus%: 4.4%",
+    "riftedFaction": "Rifted Disorder",
+    "riftedTech": "",
+    "riftedDisc": "Frost",
+    "faction": "Power",
+
+    "passiveName": "Remanent of Stars and Moon",
+    "passiveDesc": "Yuanni manipulates \"Stars\" and \"Moon\", where \"Stars\" deals additional 20% Physical ATK and \"Moon\" deals additional 25% Magic PWR. If Yuanni has a Shield, \"Moon\"-aligned attacks are converted into Frost DMG.\nYuanni attacks ignore all opponent's Shields. If the opponent has a Shield, her \"Moon\"-aligned attacks will deal additional 8% opponent's Shield and absorbs the same amount as her own Shield, capped at 75% Yuanni's Max HP.\nIf Yuanni has a Shield, she will apply a Shield equals to 140% of her Frost DMG dealt.",
+    "riftedTalent": "Rifted Disorder",
+    "rTalentDesc": "Yuanni's Normal and Charged Attacks accumulate 2 Echo Memories and 5 Energy. Dealing Disorder DMG accumulates 1 Echo Memory and 10 Energy.",
+
+    "normalAttackName": "Normal Attack - Blessed Night",
+    "normalAttackDesc": "Yuanni's Normal Attacks deals two instance of DMG: Starbless and Moonbless. Starbless: Deals 20% Physical ATK as \"Stars\"-aligned Physical DMG. Moonbless: Deals 20 (+15% Magic PWR) as \"Moon\"-aligned Magic DMG.",
+
+    "chargedAttackName": "Charged Attack - Midnight Channeling",
+    "chargeCost": 30,
+    "chargedAttackDesc": "Yuanni channels her \"Stars\" and \"Moon\" energy together, dealing 14 (+8% Physical ATK) (+12% Magic PWR) as Magic DMG. If Yuanni has a Shield, the aforementioned effects are increased by 100%, and converted into Frost DMG.",
+
+    "normalSkillName": "Normal Skill - Guidance of Stars",
+    "fluxCost": 0,
+    "memoryNodes": {"node1": "5EM", "node2": "10EM", "node3": "15EM", "node4": "20EM"},
+    "normalSkillDesc": "Yuanni obtains a Shield equals to 1.6% Max HP.\n\n[5EM] Yuanni obtains a Shield equals to 3% Max HP and increases her Magic PWR by 6% for 1 Cycle.\n\n[10EM] Yuanni obtains a Shield equals to 8% Max HP and increases her Magic PWR by 12% for 2 Cycles.\n\n[15EM] Yuanni obtains a Shield equals to 16% Max HP and increases her Magic PWR by 12% for 2 Cycles. Yuanni will gains an extra action after casting this skill.\n\n[20EM] Yuanni obtains a Shield equals to 20% Max HP and increases her Magic PWR by 12% for 2 Cycles. Yuanni will gains an extra action after casting this skill. Yuanni's Shield cap is increased by 25%.",
+
+    "riftedSkillName": "Rifted Skill - Fulfilled Wishes",
+    "surgeCost": 0,
+    "energyCost": 120,
+    "riftedSkillDesc": "Yuanni wishes upon the Stars, absorbing all her Shields and dealing 97 (+197% Magic PWR) (+4% Absorbed Shields) as Frost DMG, while healing herself by 24% Absorbed Shield.",
+
+    "fragment1Name": "F1 - Starlit Blessing",
+    "fragment1Desc": "Yuanni converts 4% of her Shield into her HP each round.",
+    "fragment2Name": "F2 - Moonlit Blessing",
+    "fragment2Desc": "Yuanni's \"Moon\"-aligned attacks will deal additional 12% opponent's Shield and absorbs the same amount as her own Shield, capped at 125% Yuanni's Max HP.",
+    "fragment3Name": "F3 - Starry Nights",
+    "fragment3Desc": "\"Guidance of Stars\" level is increased by 3.",
+    "fragment4Name": "F4 - Shadows of Eclipse",
+    "fragment4Desc": "When dealing Physical DMG, CRIT Rate is increased by 20% and CRIT DMG is increased by 70% for the next instance of DMG.",
+    "fragment5Name": "F5 - When the Stars Shine",
+    "fragment5Desc": "\"Fulfilled Wishes\" level is increased by 3.",
+    "fragment6Name": "F6 - Vial of Frostmoon",
+    "fragment6Desc": "All \"Moon\"-aligned attacks are converted into Frost DMG. When dealing Frost DMG to an opponent, apply the opponent with 1 stack Frostmoon for 2 Cycles, max 4 stacks.\nFrostmoon: Increases Frost DMG taken by 12%.",
+
+    "log": {
+        "record1": {
+            "version": "1.1Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
