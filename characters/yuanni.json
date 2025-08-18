@@ -19,7 +19,7 @@
     "faction": "Power",
 
     "passiveName": "Remanent of Stars and Moon",
-    "passiveDesc": "Yuanni manipulates \"Stars\" and \"Moon\", where \"Stars\" deals additional 20% Physical ATK and \"Moon\" deals additional 25% Magic PWR. If Yuanni has a Shield, \"Moon\"-aligned attacks are converted into Frost DMG.\nYuanni attacks ignore all opponent's Shields. If the opponent has a Shield, her \"Moon\"-aligned attacks will deal additional 8% opponent's Shield and absorbs the same amount as her own Shield, capped at 75% Yuanni's Max HP.\nIf Yuanni has a Shield, she will apply a Shield equals to 140% of her Frost DMG dealt.",
+    "passiveDesc": "Yuanni manipulates \"Stars\" and \"Moon\", where \"Stars\" deals additional 20% Physical ATK and \"Moon\" deals additional 25% Magic PWR. If Yuanni has a Shield, \"Moon\"-aligned attacks are converted into Frost DMG.\n\nYuanni's attacks ignore all opponent's Shields. If the opponent has a Shield, her \"Moon\"-aligned attacks will deal additional 8% opponent's Shield and absorbs the same amount as her own Shield, capped at 75% Yuanni's Max HP.\n\nIf Yuanni has a Shield, she will apply a Shield equals to 140% of her Frost DMG dealt.",
     "riftedTalent": "Rifted Disorder",
     "rTalentDesc": "Yuanni's Normal and Charged Attacks accumulate 2 Echo Memories and 5 Energy. Dealing Disorder DMG accumulates 1 Echo Memory and 10 Energy.",
 
