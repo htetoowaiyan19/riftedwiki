@@ -9,5 +9,6 @@
   { "name": "Clyde", "file": "clyde.json", "version": ["1.4Alpha", "released"] },
   { "name": "Zinnki", "file": "zinnki.json", "version": ["1.0Beta", "unreleased"] },
   { "name": "Vivnnae", "file": "vivnnae.json", "version": ["1.0Beta", "unreleased"]},
-  { "name": "Yuanni", "file": "yuanni.json", "version": ["1.1Beta", "unreleased"]}
+  { "name": "Yuanni", "file": "yuanni.json", "version": ["1.1Beta", "unreleased"]},
+  { "name": "Pyrrion", "file": "pyrrion.json", "version": ["1.4Beta", "unreleased"]}
 ]

@@ -1,0 +1,62 @@
+{
+    "name": "Pyrrion",
+    "baseAtk": 220,
+    "basePwr": 0,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1800,
+    "baseCharge": 100,
+    "baseFluxCapacity": 0,
+    "baseSurgeCapacity": 0,
+    "baseEchoMemroyCapacity": 80,
+    "baseMaxEnergy": 0,
+    "baseCritRate": 5.0,
+    "baseCritDamage": 50.0,
+    "substat": "Crit DMG%: 14.4%",
+    "riftedFaction": "Rifted Disorder",
+    "riftedTech": "",
+    "riftedDisc": "Flame",
+    "faction": "Agile",
+
+    "passiveName": "A Name Forged in Flames",
+    "passiveDesc": "When dealing Flame DMG to the opponent, apply Ignition for 2 Cycles. When Pyrrion deals Flame DMG, deals additional 20% DMG to opponent affected by Ignition and resets the Ignition duration. When the opponent affected by Ignition takes four instances of Flame DMG, Ignition is transformed into Blazing Embers, increaseing the Flame DMG taken from Pyrrion by 40%.",
+    "riftedTalent": "Rifted Disorder",
+    "rTalentDesc": "Dealing Flame DMG to opponents accumulates 5 Echo Memory. Dealing Flame DMG to opponents affected by Ignition accumulates 10 Echo Memory. When Pyrrion's Echo Memory is greater than 40%, dealing Flame DMG to opponents with Blazing Embers consumes 10% Echo Memory and obtains 1 Wrath of Ignition. Additionally, When Pyrrion's Echo Memory is greater than 30%, each Echo Memory will increase Pyrrion's DMG by 1%.",
+
+    "normalAttackName": "Normal Attack - The Last Forge",
+    "normalAttackDesc": "Pyrrion deals 40% Physical ATK as Physical DMG to the opponent. If the opponent is affected by Ignition, the DMG is converted to Flame DMG.",
+
+    "chargedAttackName": "Charged Attack - Ember Cyclone",
+    "chargeCost": 20,
+    "chargedAttackDesc": "Pyrrion deals 60% Physical ATK as Physical DMG to the opponent. If the opponent is affected by Ignition, the DMG is converted to Flame DMG.",
+
+    "normalSkillName": "Normal Skill - Blazing Thrust",
+    "fluxCost": 0,
+    "memoryNodes": {"node1": "20EM"},
+    "normalSkillDesc": "[20EM] Pyrrion thrusts his spear towards the opponent, dealing 133 (+59% Physical ATK) as Flame DMG. If the oppoenent is affected by Burning Embers, stuns the opponent for 1 Cycle and obtains 1 Wrath of Ignition.",
+
+    "riftedSkillName": "Rifted Skill - Wrath of Ignition",
+    "surgeCost": 0,
+    "energyCost": 0,
+    "riftedSkillDesc": "When Pyrrion has more than 6 Wraths of Ignitions, he comsumes all Wraths of Ignition and striking the opponent with five Ignited Spears, four of which deal 31 (+24% Physical ATK) as FLame DMG. The Final Ignited Spear deals 48 (+35.8% Physical ATK) as Flame DMG. Each extra Wrath of Ignition increases the Final Ignited Spear DMG by 178.2%, max 534.6%.",
+
+    "fragment1Name": "F1 - Loyal Flame Knight",
+    "fragment1Desc": "Pyrrion gains 8% additional Echo Memory from Normal and Charged Attacks.",
+    "fragment2Name": "F2 - Burning Soul",
+    "fragment2Desc": "Pyrrion gains 20% Flame DMG Bonus. Every Flame members in the team, increases Pyrrion's Flame DMG Bonus by 5%, including himself.",
+    "fragment3Name": "F3 - Ignited Wrath",
+    "fragment3Desc": "\"Wrath of Ignition\" level is increased by 3.",
+    "fragment4Name": "F4 - Scorched Resolve",
+    "fragment4Desc": "Pyrrion's Echo Memory Capacity is increased by 20. When every opponent is affected by Ignition, Pyrrion gains 30% Crit Rate and 80% Crit DMG.",
+    "fragment5Name": "F5 - Lavaborn Inferno",
+    "fragment5Desc": "\"Blazing Thrust\" level is increased by 3.",
+    "fragment6Name": "F6 - Only Ashes Remain",
+    "fragment6Desc": "When using \"Wrath of Ignition\" at maximum stack, the Final Ignited Sphear will be converted into Inferno Manifestation, dealing additional DMG by 250% of all team member's Flame DMG Bonus.",
+
+    "log": {
+        "record1": {
+            "version": "1.3Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
