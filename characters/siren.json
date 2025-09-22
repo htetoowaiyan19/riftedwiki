@@ -1,0 +1,62 @@
+{
+    "name": "Siren",
+    "baseAtk": 0,
+    "basePwr": 220,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1700,
+    "baseCharge": 100,
+    "baseFluxCapacity": 0,
+    "baseSurgeCapacity": 0,
+    "baseEchoMemroyCapacity": 21,
+    "baseMaxEnergy": 80,
+    "baseCritRate": 5.0,
+    "baseCritDamage": 50.0,
+    "substat": "Crit Rate%: 8.4%",
+    "riftedFaction": "Rifted Disorder",
+    "riftedTech": "",
+    "riftedDisc": "Tide",
+    "faction": "Magical",
+
+    "passiveName": "Violet-Tainted Love",
+    "passiveDesc": "Siren's Attacks' Tide DMG is replaced Violet-Tainted Tide DMG. This DMG inherit all Tide DMG effects, buffs, and debuffs. Reactions triggered by Violet-Tainted Tide DMG can trigger Critical Hits based on Siren's Crit Rate and 92% of entire team Crit DMG.",
+    "riftedTalent": "Rifted Disorder",
+    "rTalentDesc": "Dealing Disorder DMG to opponents accumulates 1 Echo Memory and 5 energy. Triggering reactions generates additional 3 Echo Memory and 15 energy.",
+
+    "normalAttackName": "Normal Attack - Splashing Melody",
+    "normalAttackDesc": "Siren deals 14 (+24% Magic PWR) as Viloet-Tainted Tide DMG to the opponent.",
+
+    "chargedAttackName": "Charged Attack - Love-Tied Blast",
+    "chargeCost": 20,
+    "chargedAttackDesc": "Siren deals 44 (+54.2% Magic PWR) as Violet-Tainted Tide DMG to the opponent.",
+
+    "normalSkillName": "Normal Skill - Home of Plushies",
+    "fluxCost": 0,
+    "memoryNodes": {"node1": "7EM", "node2": "14EM", "node3": "21EM"},
+    "normalSkillDesc": "[20EM] Siren deploys a Love-Tied Plushi near the target opponent for 4 Cycles. Each cycle, the Plushi deals 88 (+34% Magic PWR) as AoE Violet-Tainted Tide DMG to the target and two nearby opponents.\n[14EM] Siren deploys a Violet-Tied Plushi near the target opponent for 6 Cycles. Each cycle, the Plushi deals 101 (+66% Magic PWR) as AoE Violet-Tainted Tide DMG to the target and two nearby opponents. This DMG is considered Reaction DMG.\n[21EM] Siren deploys a Violet-Feathered Plushi near the target opponent for 8 Cycles. Each cycle, the Plushi deals 121 (+81% Magic PWR) as AoE Violet-Tainted Tide DMG to the target and two nearby opponents and reducing their Reaction RES by 8%. This DMG is considered Reaction DMG.",
+
+    "riftedSkillName": "Rifted Skill - Full Bloom Violet Raid",
+    "surgeCost": 0,
+    "energyCost": 80,
+    "riftedSkillDesc": "Siren unleashes a Full Bloom Violet Raid, dealing 222 (+88% Magic PWR) as AoE Violet-Tainted Tide DMG to all opponents. The following additional effects will occour based on the deployed Plushi:\nLove-Tied Plushi: Increases all team members' Knowledge Unit by 40.\nViolet-Tied Plushi: Increases all team member's Reaction DMG Bonus by 20%.\nViolet-Feathered Plushi: Decreases all opponent's Reaction RES by 8%, Tide RES by 12%, and Volte RES by 12%.",
+
+    "fragment1Name": "F1 - Long-Lasting Cuties",
+    "fragment1Desc": "Siren's Plushies will stay on the field for 2 additional Cycles.",
+    "fragment2Name": "F2 - Tide of Affection",
+    "fragment2Desc": "All reactions triggered by Viloet-Tainted Tide DMG will deal additional DMG based on 500% of Siren's Knowledge Unit. Additionally, her Reaction DMG Bonus is increased by 40%.",
+    "fragment3Name": "F3 - Power Up Plushies",
+    "fragment3Desc": "\"Home of Plushies\" level is increased by 3.",
+    "fragment4Name": "F4 - It's all Mine",
+    "fragment4Desc": "Siren's Plushies AoE now deals DMG to all opponents on the field. Additionally, an extra instance of DMG is dealt while deploying Plushies, dealing 100% of Siren's Magic PWR multiplied by 400% of Siren's Knowledge Unit as AoE Violet-Tainted Tide DMG.",
+    "fragment5Name": "F5 - Rain of Plushies",
+    "fragment5Desc": "\"Full Bloom Violet Raid\" level is increased by 3.",
+    "fragment6Name": "F6 - Cuteness Overload",
+    "fragment6Desc": "Siren's Tide DMG is increased by 40%. Siren's Rifted Skill \"Full Bloom Violet Raid\" will consumes all deployed Plushies and additional effects will occour based on the consumed Plushies:\nLove-Tied Plushi: All team members' Knowledge Unit is increased by 120.\nViolet-Tied Plushi: Increases all team member's Reaction DMG Bonus by 40%.\nViolet-Feathered Plushi: Decreases all opponent's Reaction RES by 40%, Tide RES by 20%, and Volte RES by 20%. The lower-tiered effects will still apply when a higher-tiered Plushi is consumed.",
+
+    "log": {
+        "record1": {
+            "version": "1.5Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
