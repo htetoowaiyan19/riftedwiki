@@ -14,12 +14,12 @@
     "baseCritDamage": 50.0,
     "substat": "CRIT Rate: 2.2%",
     "riftedFaction": "Rifted Technology",
-    "riftedTech": "Fusion",
+    "riftedTech": "Fusion (Volte)",
     "riftedDisc": "",
     "faction": "Projectile",
 
     "passiveName": "Lethal Bullet",
-    "passiveDesc": "When Renova casts Normal or Rifted Skill, her Normal and Charged Attacks become enhanced gaining 144% DMG Bonus and are converted into Fusion DMG. All team members gains 1% CRIT Rate per 8% Renova's CRIT DMG.",
+    "passiveDesc": "When Renova casts Normal or Rifted Skill, her Normal and Charged Attacks become enhanced gaining 144% DMG Bonus and are converted into Volte-Fusioned DMG. All team members gains 1% CRIT Rate per 8% Renova's CRIT DMG.",
     "riftedTalent": "Rifted Technology",
     "rTalentDesc": "Renova's Normal and Charged Attacks generate 1 Flux. If they're enhanced, generate 1 extra Flux.",
 
@@ -38,7 +38,7 @@
     "riftedSkillName": "Rifted Skill - Sniper Mode",
     "surgeCost": 80,
     "energyCost": 0,
-    "riftedSkillDesc": "Renova charges her Rifle and fires Heavy Bullets to all opponents each dealing 211 (+43% Physical ATK) as Fusion DMG while increasing all team members' CRIT Rate by 10% and CRIT DMG by 20% for 3 Cycles.",
+    "riftedSkillDesc": "Renova charges her Rifle and fires Heavy Bullets to all opponents each dealing 211 (+43% Physical ATK) as Volte-Fusioned DMG while increasing all team members' CRIT Rate by 10% and CRIT DMG by 20% for 3 Cycles.",
 
     "fragment1Name": "F1 - \"A Gift Far From Home\"",
     "fragment1Desc": "Renova's Charged Attack \"Annihilation\" generates 1 extra Flux.",
@@ -51,7 +51,7 @@
     "fragment5Name": "F5 - Sequence of Happy Memories",
     "fragment5Desc": "\"Camouflage\" level is increased by 3.",
     "fragment6Name": "F6 - Precision Mechanism",
-    "fragment6Desc": "If Renova is in team, all party members gains 10% CRIT Rate. Every 5 Critical Hits triggered by any team member except Renova, Renova will fires an Enhanced Bullet at the target opponent dealing 222 (+68% Physical ATK) as Fusion Follow-Up DMG.",
+    "fragment6Desc": "If Renova is in team, all party members gains 10% CRIT Rate. Every 5 Critical Hits triggered by any team member except Renova, Renova will fires an Enhanced Bullet at the target opponent dealing 222 (+68% Physical ATK) as Volte-Fusioned Follow-Up DMG.",
 
     "log": {
         "record1": {
@@ -76,7 +76,7 @@
 
         "record5": {
             "version": "1.0Beta [Unknown]",
-            "description": "Renova (↑): As team battles are implemented, we want Renova as a DPS Supporter instead of pure burst DPS.\n\tFlux Capacity: 0 >> 5\n\t\"Camouflage\" Flux Cost: 0 >> 3\n\t\"Sniper Mode\" Surge Cost: 0 >> 80\n\n[Talent: Lethal Bullet] (~)\n\t[Removed] Removed CRIT Rate boost.\n\t[New Effect] Renova's Normal and Charged Attacks generate 1 Flux.\n\t[New Effect] All team members gains 1% CRIT Rate per 8% Renova's CRIT DMG.\n\tDMG Bonus: 200 (+30% Physical ATK) as True DMG >> 144% DMG Bonus and are converted into Fusion DMG.\n\n[Normal Skill: Camouflage] (↓)\n\t[New Effect] If Renova takes an action or takes DMG from an opponent, her Camouflage state will end early.\n\n[Revamped Rifted Skill: Sniper Mode]\nRenova charges her Rifle and fires Heavy Bullets to all opponents, each dealing 211 (+43% Physical ATK) as Fusion DMG while increasing all team members' CRIT Rate by 10% and CRIT DMG by 20% for 3 Cycles."
+            "description": "Renova (↑): As team battles are implemented, we want Renova as a DPS Supporter instead of pure burst DPS.\n\tFlux Capacity: 0 >> 5\n\t\"Camouflage\" Flux Cost: 0 >> 3\n\t\"Sniper Mode\" Surge Cost: 0 >> 80\n\n[Talent: Lethal Bullet] (~)\n\t[Removed] Removed CRIT Rate boost.\n\t[New Effect] Renova's Normal and Charged Attacks generate 1 Flux.\n\t[New Effect] All team members gains 1% CRIT Rate per 8% Renova's CRIT DMG.\n\tDMG Bonus: 200 (+30% Physical ATK) as True DMG >> 144% DMG Bonus and are converted into Volte-Fusioned DMG.\n\n[Normal Skill: Camouflage] (↓)\n\t[New Effect] If Renova takes an action or takes DMG from an opponent, her Camouflage state will end early.\n\n[Revamped Rifted Skill: Sniper Mode]\nRenova charges her Rifle and fires Heavy Bullets to all opponents, each dealing 211 (+43% Physical ATK) as Volte-Fusioned DMG while increasing all team members' CRIT Rate by 10% and CRIT DMG by 20% for 3 Cycles."
         }
     }
 }

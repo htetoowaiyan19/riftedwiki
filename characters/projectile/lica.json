@@ -1,0 +1,62 @@
+{
+    "name": "Lica",
+    "baseAtk": 180,
+    "basePwr": 0,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1600,
+    "baseCharge": 100,
+    "baseFluxCapacity": 2,
+    "baseSurgeCapacity": 100,
+    "baseEchoMemroyCapacity": 0,
+    "baseMaxEnergy": 0,
+    "baseCritRate": 5.0,
+    "baseCritDamage": 50.0,
+    "substat": "ATK: 4.8%",
+    "riftedFaction": "Rifted Technology",
+    "riftedTech": "Fusion (Flame)",
+    "riftedDisc": "",
+    "faction": "Projectile",
+
+    "passiveName": "Adventurer's Freedom",
+    "passiveDesc": "When Lica casts Normal Skill, his Rifted Skill DMG is increased by 20%.",
+    "riftedTalent": "Rifted Technology",
+    "rTalentDesc": "Lica's Normal and Charged Attacks generate 1 Flux.",
+
+    "normalAttackName": "Normal Attack - Crossfire",
+    "normalAttackDesc": "Lica deals 40% Physical ATK as Physical DMG to the opponent.",
+
+    "chargedAttackName": "Charged Attack - Bringing Justice",
+    "chargeCost": 20,
+    "chargedAttackDesc": "Lica deals 60% Physical ATK as Physical DMG to the opponent.",
+
+    "normalSkillName": "Normal Skill - Violated",
+    "fluxCost": 1,
+    "memoryNodes": {},
+    "normalSkillDesc": "Lica fires five Flame-Fusioned Arrows towards each opponent, each dealing 44 (+26% Physical ATK) as Flame-Fusioned DMG.",
+
+    "riftedSkillName": "Rifted Skill - Threats",
+    "surgeCost": 100,
+    "energyCost": 0,
+    "riftedSkillDesc": "Lica fires a bulk of arrows, raining down on a small AoE area for 2 Cycles, each Cycle deals two instances of DMG, dealing 13 (+8% Phyiscal ATK) as Flame-Fusioned DMG and apply a Threat Mark on the opponent, max 4 stacks. Each stack increases Threats DMG by 8%.",
+
+    "fragment1Name": "F1 - Encourage",
+    "fragment1Desc": "Lica gains 1 additional Flux capacity.",
+    "fragment2Name": "F2 - Special Commission",
+    "fragment2Desc": "When there are more than 2 Flame-Type characters in the team, Lica's Crit Rate is increased by 10%.",
+    "fragment3Name": "F3 - Overtime",
+    "fragment3Desc": "\"Violated\" level is increased by 3.",
+    "fragment4Name": "F4 - Precise Dedications",
+    "fragment4Desc": "Lica's Rifted Skill \"Threats\"'s duration is increased by 1 Cycle. If the opponent has 4 Threat Marks, the duration is further increased by an additional Cycle. This effect has a 6 Cycle Cooldown.",
+    "fragment5Name": "F5 - Truth Lies Beneath The Surface",
+    "fragment5Desc": "\"Threats\" level is increased by 3.",
+    "fragment6Name": "F6 - Consistant Training",
+    "fragment6Desc": "Crit Rate is increased by 10%, Crit DMG is increased by 20%. The maximum Threats Marks on an opponent is increased by 4. Additionally, when there are no instances of Flame-Type DMG affecting the opponent except Lica, Lica's Rifted Skill \"Threats\"'s DMG is increased by 400% Lica's Phsysical ATK.",
+
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
