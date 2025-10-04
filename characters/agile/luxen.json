@@ -1,0 +1,69 @@
+{
+    "name": "Nytherion Luxen",
+    "baseAtk": 220,
+    "basePwr": 0,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1800,
+    "baseCharge": 100,
+    "baseFluxCapacity": 3,
+    "baseSurgeCapacity": 80,
+    "baseEchoMemroyCapacity": 0,
+    "baseMaxEnergy": 0,
+    "baseCritRate": 5.0,
+    "baseCritDamage": 50.0,
+    "substat": "Crit DMG%: 14.4%",
+    "riftedFaction": "Rifted Technology",
+    "riftedTech": "Fusion (Volte)",
+    "riftedDisc": "",
+    "faction": "Agile",
+
+    "passiveName": "The Eighth Night",
+    "passiveDesc": "Luxen's Attacks' Volte DMG is replaced by Electric-Volte DMG. This DMG inherit all Volte DMG effects, buffs, and debuffs. Electrified Reactions triggered by Electric-Volte DMG will be converted into Supercharged Reactions.",
+    "riftedTalent": "Rifted Disorder",
+    "rTalentDesc": "Dealing Fusion-Volte DMG accumulates 8 Surges. Triggering Electrified or Supercharged Reactions generates 13 Surges.",
+
+    "talentBox": {
+        "talent1": {
+            "name": "Supercharged Reactions",
+            "desc": "The Supercharged reactions can trigger Critical Hits, and critical values are fixed at 15% Crit Rate and 100% Crit DMG. When Luxen is in the team, one of the following effects will apply based on the number of Tide-Type characters in the team:\n\tAt least 1 Tide-Type Character: Superchraged Reactions Crit Rate is increased by 15% and Crit DMG is increased by 20%.\n\tAt least 2 Tide-Type Characters: Luxen's Chraged ATK and Normal Skill DMG will be considered as Supercharged Reaction DMG.\nThe aforementioned effects will not stack. However, the effects can stack with other similar effects from other characters."
+        }
+    },
+
+    "normalAttackName": "Normal Attack - Insufficient Moonlight",
+    "normalAttackDesc": "Luxen deals 40% Physical ATK as Physical DMG to the opponent.",
+
+    "chargedAttackName": "Charged Attack - Rain under the Moonlit Sky",
+    "chargeCost": 20,
+    "chargedAttackDesc": "Luxen deals 60% Physical ATK as Physical DMG to the opponent. If Luxen has Flux, can consumes 1 Flux to strike the opponent with a Moonlit Spear, dealing 104 (+56% Physical ATK) as Fusion-Volte DMG.",
+
+    "normalSkillName": "Normal Skill - Consideration",
+    "fluxCost": 0,
+    "memoryNodes": {},
+    "normalSkillDesc": "Luxen enters Hunting state for 11 Cycles. Hunting state: Normal and Charged Attacks are converted into Fusion-Volte DMG and his Fusion DMG Bonus is increased by 55%, which will reduce by 16% each round during his Hunting state. This effect can also reduce his Fusion DMG if he stays in the Hunting state for longer period. Luxen can cast this skill to exit Hunting state at any time. After Luxen exits Hunting state, this skill will enters cooldown for 2 Cycles multiplied by the Cycles during his Hunting State.\nAfter using the Special attack of \"Rain under the Moonlit Sky\", Luxen can instantly cast \"Consideration\" to deal an additional instance of 224 (+88% Physical ATK) as Fusion-Volte DMG to the opponent. Only this DMG is considered Normal Skill DMG.",
+
+    "riftedSkillName": "Rifted Skill - The Nineth Night",
+    "surgeCost": 80,
+    "energyCost": 0,
+    "riftedSkillDesc": "Luxen calls upon the Blessing of the Nineth Night, emerging a Thunder Strike from the Ground, dealing 168 (+74% Physical ATK) as Supercharged Reaction DMG. For every Supercharged Reaction triggered during a single cycle, an extra Thunder Strike will be emerge, max 3 Thunder Strikes. Each Thunder Strike will generate 1 Flux.",
+
+    "fragment1Name": "F1 - Midnight Hunter",
+    "fragment1Desc": "Luxen's Energy Regen is increased by 20%. Luxen's Hunting state's Fusion DMG Bonus reduction per round is decreased to 8%.",
+    "fragment2Name": "F2 - Moon's Reflection",
+    "fragment2Desc": "While Luxen is in Hunting state, When Luxen deals DMG to an opponent, a Thunderbolt will strike the opponent, dealing 100 (+120% Physical ATK) as Follow-up Supercharged Reaction DMG.",
+    "fragment3Name": "F3 - Shadownight Hunter",
+    "fragment3Desc": "\"Consideration\" level is increased by 3.",
+    "fragment4Name": "F4 - \"I wish to keep a promise with you.\"",
+    "fragment4Desc": "His's Supercharged Reaction DMG is increased by 80%. Consuming Flux heals Luxen for 8% of his Max HP and increases his Hybird DEF by 40% for 2 Cycles.",
+    "fragment5Name": "F5 - Evernight Blessing",
+    "fragment5Desc": "\"The Nineth Night\" level is increased by 3.",
+    "fragment6Name": "F6 - \"I'll never lose to my enemy.\"",
+    "fragment6Desc": "Luxen's Flux Capacity is increased by 1. Triggering Supercharged Reactions during Hunting state gains 1 stack of Misfortune, max 8 stacks. While casting \"The Nineth Night\", Luxen will cleanse all Misfortune stacks to increase Thunder Strike DMG by 8% per stack consumed. If Luxen cleanse more than 6 stacks of Misfortune, 1 additional Flux can be generated through this way.",
+
+    "log": {
+        "record1": {
+            "version": "1.6Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
