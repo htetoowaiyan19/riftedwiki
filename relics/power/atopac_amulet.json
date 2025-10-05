@@ -1,0 +1,19 @@
+{
+    "relicName": "Atopac Amulet",
+    "mainStatType": "Physical ATK",
+    "mainStat": 44,
+    "subStatType": "Magic PWR",
+    "subStat": "8.2%",
+    "faction": "Power",
+    "relicAbility": "Silent Dreams",
+    "abilityDesc": "When the weilder deals Physical DMG, gains 1 stack of Dream Fragments, max 4 stacks. Each stack increases the weilder's Magic PWR by [$_1] for 2 Cycles. Gaining another stack will reset the duration.",
+    "forge": {
+        "value1": ["24%", "28%", "32%", "36%", "40%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

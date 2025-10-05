@@ -1,0 +1,21 @@
+{
+    "relicName": "Radiant Amulet",
+    "mainStatType": "Magic PWR",
+    "mainStat": 44,
+    "subStatType": "Energy Regen",
+    "subStat": "8.8%",
+    "faction": "Power",
+    "relicGroup": "Edge of Resurgence",
+    "relicAbility": "Edge of Resurgence",
+    "abilityDesc": "Rifted Skill deals additional DMG based on [$_1] of the weilder's Adaptive ATK. If used at full HP, increases Crit Rate by [$_2] for 2 Cycles.",
+    "forge": {
+        "value1": ["30%", "35%", "40%", "45%", "50%"],
+        "value2": ["8%", "10%", "12%", "14%", "16%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

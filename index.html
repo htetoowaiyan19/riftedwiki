@@ -149,6 +149,44 @@
       h1 { font-size: 1.6rem; }
     }
 
+    .forge-ui {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      margin-top: 6px;
+      justify-content: flex-start;
+    }
+
+    .forge-btn {
+      background: linear-gradient(135deg, #1a3c6e, #274c8e);
+      color: #e0efff;
+      border: 2px solid #3a5c88;
+      border-radius: 8px;
+      padding: 2px 14px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 0 6px rgba(100, 160, 255, 0.2);
+    }
+
+    .forge-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .forge-indicator {
+      background: #11284a;
+      color: #82c4ff;
+      border-radius: 8px;
+      padding: 2px 18px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: 2px solid #3a5c88;
+      box-shadow: 0 0 6px rgba(100, 160, 255, 0.1);
+    }
+
     /* Back button tap feedback (keeps your hover) */
     .btn-back:active { transform: scale(0.96); box-shadow: 0 0 6px rgba(150,200,255,0.6); }
 
@@ -174,12 +212,24 @@
 </head>
 <body>
   <div class="container" style="max-width: 1100px; margin: auto;">
+    <!-- Tab Bar -->
+    <ul class="nav nav-tabs mb-3" id="mainTabs">
+      <li class="nav-item">
+        <a class="nav-link active" id="tab-characters" href="#" onclick="showTab('characters')">Characters</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="tab-relics" href="#" onclick="showTab('relics')">Relics</a>
+      </li>
+    </ul>
+
+    <!-- Character Loader/List -->
     <div id="loader">
       <h2>Search Characters</h2>
       <input type="text" id="searchBar" class="form-control w-50" placeholder="Type to search..." onkeyup="filterList()" />
       <div class="char-list" id="characterList"></div>
     </div>
 
+    <!-- Character Details -->
     <div id="content" style="display:none">
       <button class="btn-back mb-3" onclick="backToList()">⬅ Back</button>
       <h1 id="characterName">Character Name</h1>
@@ -189,12 +239,45 @@
       <div class="box" id="fragmentBox"></div>
       <div class="box" id="logBox" style="display:none;"></div>
     </div>
-  </div>
 
+    <!-- Relic Loader/List -->
+    <div id="relicLoader" style="display:none">
+      <h2>Search Relics</h2>
+      <input type="text" id="relicSearchBar" class="form-control w-50" placeholder="Type to search..." onkeyup="filterRelicList()" />
+      <div class="char-list" id="relicList"></div>
+    </div>
+
+    <!-- Relic Details -->
+    <div id="relicContent" style="display:none">
+      <button class="btn-back mb-3" onclick="backToRelicList()">⬅ Back</button>
+      <h1 id="relicName">Relic Name</h1>
+      <table class="table stat-table" id="relicStats"></table>
+      <div class="box" id="relicAbilityBox"></div>
+      <div class="box" id="relicLogBox" style="display:none;"></div>
+    </div>
+  </div>
   <script>
     let characters = [];
+    let relics = [];
 
-    // Load index.json (list of characters)
+    // Tab switching
+    function showTab(tab) {
+      document.getElementById("tab-characters").classList.remove("active");
+      document.getElementById("tab-relics").classList.remove("active");
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("content").style.display = "none";
+      document.getElementById("relicLoader").style.display = "none";
+      document.getElementById("relicContent").style.display = "none";
+      if (tab === "characters") {
+        document.getElementById("tab-characters").classList.add("active");
+        document.getElementById("loader").style.display = "block";
+      } else {
+        document.getElementById("tab-relics").classList.add("active");
+        document.getElementById("relicLoader").style.display = "block";
+      }
+    }
+
+    // Load character index
     fetch("characters/index.json")
       .then(res => res.json())
       .then(data => {
@@ -206,6 +289,19 @@
           "<p class='text-danger'>Error loading character list.</p>";
       });
 
+    // Load relic index
+    fetch("relics/index.json")
+      .then(res => res.json())
+      .then(data => {
+        relics = data;
+        renderRelicList(data);
+      })
+      .catch(err => {
+        document.getElementById("relicList").innerHTML =
+          "<p class='text-danger'>Error loading relic list.</p>";
+      });
+
+    // Character List
     function renderCharacterList(data) {
       const list = document.getElementById("characterList");
       list.innerHTML = "";
@@ -241,6 +337,46 @@
         .catch(err => alert("Error loading file: " + err.message));
     }
 
+    // Relic List
+    function renderRelicList(data) {
+      const list = document.getElementById("relicList");
+      list.innerHTML = "";
+      data.forEach(relic => {
+        // Use version badge like characters
+        const versionBadge = relic.version
+          ? `<span>${relic.version[1] === "unreleased" ? "Upcoming" : relic.version[0]}</span>`
+          : "";
+        const item = document.createElement("div");
+        item.className = `char-item ${relic.version ? relic.version[1] : "released"}`;
+        item.innerHTML = `<span>${relic.relicName}</span>${versionBadge}`;
+        item.onclick = () => loadRelic(`relics/${relic.file}`);
+        list.appendChild(item);
+      });
+    }
+
+    function filterRelicList() {
+      const query = document.getElementById("relicSearchBar").value.toLowerCase();
+      const filtered = relics.filter(r => r.relicName.toLowerCase().includes(query));
+      renderRelicList(filtered);
+    }
+
+    function backToRelicList() {
+      document.getElementById("relicContent").style.display = "none";
+      document.getElementById("relicLoader").style.display = "block";
+    }
+
+    function loadRelic(path) {
+      fetch(path)
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("relicLoader").style.display = "none";
+          document.getElementById("relicContent").style.display = "block";
+          displayRelicData(data);
+        })
+        .catch(err => alert("Error loading relic file: " + err.message));
+    }
+
+    // Utility functions (existing)
     function formatKey(key) {
       const map = {
         baseAtk: "ATK", basePwr: "PWR",
@@ -295,6 +431,7 @@
       return n.toFixed(1) + "%";
     }
 
+    // Character Details (existing)
     function displayData(data) {
       document.getElementById("characterName").textContent = data.name;
 
@@ -319,7 +456,6 @@
           <td><strong>${formatKey(rightKey)}</strong>: ${rightVal ?? ""}</td>
         </tr>`;
       }
-
 
       specialStats.forEach(stat=>{
         rows += `<tr><td colspan="2"><strong>${formatKey(stat)}</strong>: ${data[stat]||""}</td></tr>`;
@@ -397,6 +533,113 @@
             <span class="description">${highlightKeywords(record.description||"")}</span>
           </div>`;
         });
+      }
+    }
+
+    // Relic Details
+    function displayRelicData(data) {
+      document.getElementById("relicName").textContent = data.relicName;
+
+      // Box 1: Stats Table
+      const relicStatsTable = document.getElementById("relicStats");
+      let rows = "";
+      const statRow = (label, value) =>
+      `<tr>
+        <td style="width:20%; text-align:left; padding-right:4px;"><strong>${label}</strong></td>
+        <td style="width:80%; text-align:left; padding-left:4px;">${value ?? ""}</td>
+      </tr>`;
+      rows += statRow(data.mainStatType ?? "", data.mainStat);
+      rows += statRow(data.subStatType ?? "", data.subStat);
+      rows += statRow("Faction", data.faction);
+      if (data.relicGroup) {
+      rows += statRow("Relic Group", data.relicGroup);
+      }
+      relicStatsTable.innerHTML = rows;
+
+      // Box 2: Ability with Forge UI
+      const abilityBox = document.getElementById("relicAbilityBox");
+      let forgeValue = 1;
+      let maxForge = 1;
+      let forgeData = null;
+
+      if (data.forge && typeof data.forge === "object") {
+        forgeData = data.forge;
+        maxForge = Math.max(...Object.values(forgeData).map(arr => Array.isArray(arr) ? arr.length : 1));
+      }
+
+      // Helper to replace [$_n] with correct forge value
+      function getForgeDesc(forgeLevel) {
+        let desc = data.abilityDesc || "";
+        if (forgeData) {
+          desc = desc.replace(/\[\$_(\d+)\]/g, (match, n) => {
+        const arr = forgeData["value" + n];
+        if (arr && arr[forgeLevel - 1]) return arr[forgeLevel - 1];
+        return match;
+          });
+        }
+        return desc;
+      }
+
+      // Initial render
+      abilityBox.innerHTML = `
+        <div style="display:flex;align-items:center;justify-content:space-between;">
+          <h2 style="margin-bottom:0;">${data.relicAbility ?? ""}</h2>
+          <div class="forge-ui forge-ui-small">
+        <button class="forge-btn forge-btn-small" id="forgeLeft" ${forgeValue === 1 ? "disabled" : ""}>&lt;</button>
+        <span class="forge-indicator forge-indicator-small" id="forgeIndicator">${forgeValue}</span>
+        <button class="forge-btn forge-btn-small" id="forgeRight" ${forgeValue === maxForge ? "disabled" : ""}>&gt;</button>
+          </div>
+        </div>
+        <p class="description" id="forgeDesc">${highlightKeywords(getForgeDesc(forgeValue))}</p>
+      `;
+
+      // Add event listeners for forge buttons
+      const forgeLeft = document.getElementById("forgeLeft");
+      const forgeRight = document.getElementById("forgeRight");
+      const forgeIndicator = document.getElementById("forgeIndicator");
+      const forgeDesc = document.getElementById("forgeDesc");
+
+      if (forgeLeft && forgeRight) {
+        forgeLeft.onclick = function() {
+          if (forgeValue > 1) {
+        forgeValue--;
+        forgeIndicator.textContent = forgeValue;
+        forgeDesc.innerHTML = highlightKeywords(getForgeDesc(forgeValue));
+        forgeLeft.disabled = forgeValue === 1;
+        forgeRight.disabled = forgeValue === maxForge;
+          }
+        };
+        forgeRight.onclick = function() {
+          if (forgeValue < maxForge) {
+        forgeValue++;
+        forgeIndicator.textContent = forgeValue;
+        forgeDesc.innerHTML = highlightKeywords(getForgeDesc(forgeValue));
+        forgeLeft.disabled = forgeValue === 1;
+        forgeRight.disabled = forgeValue === maxForge;
+          }
+        };
+      }
+
+      // Box 3: Log
+      const logBox = document.getElementById("relicLogBox");
+      if (data.log && typeof data.log === "object") {
+      const logRecords = Object.values(data.log).filter(
+        record => record.version || record.description
+      );
+      if (logRecords.length > 0) {
+        logBox.style.display = "block";
+        logBox.innerHTML = `<h2>Update Log</h2>`;
+        logRecords.forEach(record => {
+        logBox.innerHTML += `<div class="fragment-entry">
+          <strong>${record.version ?? ""}</strong><br>
+          <span class="description">${highlightKeywords(record.description ?? "")}</span>
+        </div>`;
+        });
+      } else {
+        logBox.style.display = "none";
+      }
+      } else {
+      logBox.style.display = "none";
       }
     }
   </script>

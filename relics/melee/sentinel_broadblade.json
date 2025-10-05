@@ -1,0 +1,20 @@
+{
+    "relicName": "Sentinel's Broadblade",
+    "mainStatType": "Physical ATK",
+    "mainStat": 44,
+    "subStatType": "Physical ATK",
+    "subStat": "8.2%",
+    "faction": "Melee",
+    "relicAbility": "Sentinel's Blessing",
+    "abilityDesc": "Increasese Normal Skill DMG by [$_1]. Casting Normal Skill gains 1 stack of Sentinel's Blessing. Each stack increases the weilder's Phyiscal ATK by [$_2] for 6 Cycles. Each stack duration is counted independently.",
+    "forge": {
+        "value1": ["48%", "56%", "64%", "72%", "80%"],
+        "value2": ["15%", "20%", "25%", "30%", "35%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

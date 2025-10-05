@@ -1,0 +1,20 @@
+{
+    "relicName": "Berserker's Axe",
+    "mainStatType": "Physical ATK",
+    "mainStat": 38,
+    "subStatType": "Crit DMG",
+    "subStat": "8.8%",
+    "faction": "Melee",
+    "relicAbility": "Berserker's Wrath",
+    "abilityDesc": "Crit Rate is increased by [$_1]. When the wielder's HP increases or decreases by healing or self-DMG, gains 1 Fury Point. Each Fury Point increases the wielder's Physical ATK by [$_2] for 2 Cycles, up to 4 stacks.",
+    "forge": {
+        "value1": ["8%", "12%", "16%", "20%", "24%"],
+        "value2": ["12%", "20%", "28%", "36%", "44%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

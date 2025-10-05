@@ -1,0 +1,12 @@
+[
+  { "relicName": "Radiant Spear", "file": "agile/radiant_spear.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Radiant Amulet", "file": "magical/radiant_amulet.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Radiant Blade", "file": "melee/radiant_blade.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Radiant Artifact", "file": "power/radiant_artifact.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Radiant Energizer", "file": "projectile/radiant_energizer.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Sentinel's Broadblade", "file": "melee/sentinel_broadblade.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Atopac Amulet", "file": "power/atopac_amulet.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Lantern of Admiring", "file": "magical/lantern_of_admiring.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Berserker's Axe", "file": "melee/berserker_axe.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Precision Mechanism", "file": "projectile/precision_mechanism.json", "version": ["1.0Beta", "unreleased"] }
+]

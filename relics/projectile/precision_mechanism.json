@@ -1,0 +1,21 @@
+{
+    "relicName": "Precision Mechanism",
+    "mainStatType": "Physical ATK",
+    "mainStat": 38,
+    "subStatType": "Crit Rate",
+    "subStat": "2.2%",
+    "faction": "Projectile",
+    "relicAbility": "Precise Calculations",
+    "abilityDesc": "Energy Regen is increased by [$_1]. If the wielder doesn't take any DMG during a single Cycle, all team members gains [$_2] Crit Rate and [$_3] Crit DMG for the next Cycle.",
+    "forge": {
+        "value1": ["20%", "28%", "34%", "42%", "50%"],
+        "value2": ["10%", "12%", "14%", "16%", "18%"],
+        "value3": ["20%", "24%", "28%", "32%", "36%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
