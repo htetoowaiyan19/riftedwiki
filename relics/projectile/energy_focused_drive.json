@@ -1,0 +1,20 @@
+{
+    "relicName": "Energy-Focused Drive",
+    "mainStatType": "Physical ATK",
+    "mainStat": 38,
+    "subStatType": "Crit DMG",
+    "subStat": "12.2%",
+    "faction": "Projectile",
+    "relicAbility": "Portable Storage Device",
+    "abilityDesc": "Each instance of DMG dealt to the opponent will be stored as 1 Bit, max [$_1] Bits. When the equipped character uses Normal Skill, each bit stored will be consumed dealing additional DMG equal to [$_2] of the stored DMG instance. Casting Rifted Skill will consumes all stored Bits and deals additional DMG equal to [$_2] of the combined stored DMG instance. If the stored Bits doesn't reaches max capacity, the additional DMG dealt by this effect is further increased by 20%. The DMG dealt by this effects will not be stored as Bits.",
+    "forge": {
+        "value1": ["8", "10", "12", "14", "16"],
+        "value2": ["24%", "28%", "32%", "36%", "40%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

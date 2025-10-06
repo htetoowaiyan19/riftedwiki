@@ -1,0 +1,21 @@
+{
+    "relicName": "Frostborn Tome",
+    "mainStatType": "Magic PWR",
+    "mainStat": 44,
+    "subStatType": "Magic PWR",
+    "subStat": "8.2%",
+    "faction": "Magical",
+    "relicAbility": "Frostborn",
+    "abilityDesc": "The following Frostborn effects can occour based on consumed Echo Memory on use of Normal Skill:\n\t6 EM: Increases Normal Skill DMG by [$_1].\n\t8 EM: Increases Follow-Up DMG by [$_2].\nAdditionally, triggering Shattered Effect increases the equipped character's Disorder DMG by [$_3] for 2 Cycles. ",
+    "forge": {
+        "value1": ["48%", "56%", "64%", "72%", "80%"],
+        "value2": ["120%", "140%", "160%", "180%", "200%"],
+        "value3": ["16%", "20%", "24%", "28%", "32%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

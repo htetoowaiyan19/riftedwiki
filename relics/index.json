@@ -8,5 +8,8 @@
   { "relicName": "Atopac Amulet", "file": "power/atopac_amulet.json", "version": ["1.0Beta", "unreleased"] },
   { "relicName": "Lantern of Admiring", "file": "magical/lantern_of_admiring.json", "version": ["1.0Beta", "unreleased"] },
   { "relicName": "Berserker's Axe", "file": "melee/berserker_axe.json", "version": ["1.0Beta", "unreleased"] },
-  { "relicName": "Precision Mechanism", "file": "projectile/precision_mechanism.json", "version": ["1.0Beta", "unreleased"] }
+  { "relicName": "Precision Mechanism", "file": "projectile/precision_mechanism.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Frostborn Tome", "file": "magical/frostborn_tome.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Echoing Crystals", "file": "power/echoing_crystals.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Energy-Focused Drive", "file": "projectile/energy_focused_drive.json", "version": ["1.0Beta", "unreleased"] }
 ]

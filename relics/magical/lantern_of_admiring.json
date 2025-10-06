@@ -6,7 +6,7 @@
     "subStat": "2.2%",
     "faction": "Magical",
     "relicAbility": "Secrets of Admiring",
-    "abilityDesc": "When the wielder uses Normal Skill, gains 1 stack of Admiring Light, max 4 stacks. Each stack increases the weilder's Rifted Skill DMG by [$_1]. All stacks will be consumed upon using Rifted Skill.",
+    "abilityDesc": "When the wielder uses Normal Skill, gains 1 stack of Admiring Light, max 4 stacks. Each stack increases the equipped character's Rifted Skill DMG by [$_1]. All stacks will be consumed upon using Rifted Skill.",
     "forge": {
         "value1": ["20%", "24%", "28%", "32%", "36%"]
     },

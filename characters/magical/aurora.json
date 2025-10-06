@@ -33,7 +33,7 @@
     "normalSkillName": "Normal Skill - Orb of Gentle Breeze",
     "fluxCost": 0,
     "memoryNodes": {"node1": "6EM", "node2": "8EM"},
-    "normalSkillDesc": "Aurora launches an Orb of Gentle Breeze, dealing 44 (+0% Magic PWR) as Magic DMG. Each Echo Memory will increases this skill's Magic PWR by 15%, max 75%.\n[6EM] Aurora launches an Orb of Gentle Breeze, dealing 114 (+82% Magic PWR) as Frost DMG. If Aurora has 8 Echo Memories [8EM], Mountains' Anchor will strike the opponent, dealing 177 (+188% Magic PWR) as Frost DMG. Mountains' Anchor can trigger Shattered effect if the opponent is Frozen.",
+    "normalSkillDesc": "Aurora launches an Orb of Gentle Breeze, dealing 44 (+0% Magic PWR) as Magic DMG. Each Echo Memory will increases this skill's Magic PWR by 15%, max 75%.\n[6EM] Aurora launches an Orb of Gentle Breeze, dealing 114 (+82% Magic PWR) as Frost DMG. If Aurora has 8 Echo Memories [8EM], Mountains' Anchor will strike the opponent, dealing 177 (+188% Magic PWR) as Frost DMG. Mountains' Anchor can trigger Shattered effect if the opponent is Frozen. This DMG is considered Follow-Up DMG.",
 
     "riftedSkillName": "Rifted Skill - Eternal Breeze",
     "surgeCost": 0,

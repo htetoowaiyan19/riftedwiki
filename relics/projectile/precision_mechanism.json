@@ -6,7 +6,7 @@
     "subStat": "2.2%",
     "faction": "Projectile",
     "relicAbility": "Precise Calculations",
-    "abilityDesc": "Energy Regen is increased by [$_1]. If the wielder doesn't take any DMG during a single Cycle, all team members gains [$_2] Crit Rate and [$_3] Crit DMG for the next Cycle.",
+    "abilityDesc": "Energy Regen is increased by [$_1]. If the equipped character doesn't take any DMG during a single Cycle, all team members gains [$_2] Crit Rate and [$_3] Crit DMG for the next 3 Cycles.",
     "forge": {
         "value1": ["20%", "28%", "34%", "42%", "50%"],
         "value2": ["10%", "12%", "14%", "16%", "18%"],

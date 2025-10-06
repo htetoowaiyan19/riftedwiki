@@ -1,0 +1,20 @@
+{
+    "relicName": "Echoing Crystals",
+    "mainStatType": "Physical ATK",
+    "mainStat": 38,
+    "subStatType": "HP",
+    "subStat": "12.2%",
+    "faction": "Power",
+    "relicAbility": "Lifesteal",
+    "abilityDesc": "Crit Rate is increased by [$_1]. When the equipped character's HP increases or decreases by healing or self-DMG, obtains Lifesteal effect for 2 Cycles. Lifesteal: When dealing DMG to opponents, recover [$_2] of that DMG as HP. This effect cannot be enhanced by Healing Bonus.",
+    "forge": {
+        "value1": ["12%", "16%", "20%", "24%", "28%"],
+        "value2": ["40%", "48%", "56%", "64%", "72%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
