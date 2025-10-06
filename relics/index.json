@@ -11,5 +11,11 @@
   { "relicName": "Precision Mechanism", "file": "projectile/precision_mechanism.json", "version": ["1.0Beta", "unreleased"] },
   { "relicName": "Frostborn Tome", "file": "magical/frostborn_tome.json", "version": ["1.0Beta", "unreleased"] },
   { "relicName": "Echoing Crystals", "file": "power/echoing_crystals.json", "version": ["1.0Beta", "unreleased"] },
-  { "relicName": "Energy-Focused Drive", "file": "projectile/energy_focused_drive.json", "version": ["1.0Beta", "unreleased"] }
+  { "relicName": "Energy-Focused Drive", "file": "projectile/energy_focused_drive.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Voided Fragments", "file": "agile/voided_fragments.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Skycloud Justice", "file": "melee/skycloud_justice.json", "version": ["1.0Beta", "unreleased"] },
+  { "relicName": "Moonshard Crystal", "file": "power/moonshard_crystal.json", "version": ["1.1Beta", "unreleased"] },
+  { "relicName": "Greatdragon Polearm", "file": "agile/greatdragon_polearm.json", "version": ["1.4Beta", "unreleased"] },
+  { "relicName": "Violet-Feathered Booklet", "file": "magical/violet_feathered_booklet.json", "version": ["1.5Beta", "unreleased"] },
+  { "relicName": "Call of The Nights", "file": "agile/call_of_the_nights.json", "version": ["1.6Beta", "unreleased"]}
 ]

@@ -1,0 +1,23 @@
+{
+    "relicName": "Violet-Feathered Booklet",
+    "mainStatType": "Magic PWR",
+    "mainStat": 44,
+    "subStatType": "Knowledge Unit",
+    "subStat": 17,
+    "faction": "Magical",
+    "relicAbility": "Colorful Pages",
+    "abilityDesc": "Red-Feathered Page: When team members trigger Electrified Reactions, increases Knowledge Unit by [$_1] for 2 Cycles. When team members trigger Triggering Supercharged Reactions increases Knowledge Unit by [$_2] for 4 Cycles.\nBlue-Feathered Page: When the equipped character's Normal Skill deals Tide or Volte DMG, increases Knowledge Unit by [$_3] for 2 Cycles.\nWhen both Red-Feathered Page and Blue-Feathered Page are in effect, all team members' Electrified DMG is increased by [$_4], and their Supercharged DMG is increased by [$_5]. This effect cannot stack.",
+    "forge": {
+        "value1": ["30", "37", "44", "51", "58"],
+        "value2": ["60", "75", "90", "105", "120"],
+        "value3": ["60", "75", "90", "105", "120"],
+        "value4": ["120%", "150%", "180%", "210%", "240%"],
+        "value5": ["40%", "50%", "60%", "70%", "80%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.5Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

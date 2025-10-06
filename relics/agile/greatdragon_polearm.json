@@ -1,0 +1,22 @@
+{
+    "relicName": "Greatdragon Polearm",
+    "mainStatType": "Physical ATK",
+    "mainStat": 44,
+    "subStatType": "Crit Rate",
+    "subStat": "2.2%",
+    "faction": "Agile",
+    "relicAbility": "Scorched Burns",
+    "abilityDesc": "When the equipped character inflicts 4 Flame DMG instances within 2 Cycles to the same opponent, apply Burn to that opponent. Opponents with Burn takes [$_1] increased Flame DMG and generates [$_2] Echo Memory. Maintainig Burn on the opponents will increase the aforementioned effects by [$_3], max [$_4]. Burn effect will be removed when the opponent no longer takes Flame DMG.",
+    "forge": {
+        "value1": ["24%", "40%", "56%", "72%", "88%"],
+        "value2": ["1", "2", "3", "4", "5"],
+        "value3": ["20%", "24%", "28%", "32%", "36%"],
+        "value4": ["100%", "120%", "140%", "160%", "180%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.4Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

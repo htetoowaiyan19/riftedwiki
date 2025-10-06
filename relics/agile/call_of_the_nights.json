@@ -1,0 +1,21 @@
+{
+    "relicName": "Call of The Nights",
+    "mainStatType": "Physical ATK",
+    "mainStat": 44,
+    "subStatType": "Crit Rate",
+    "subStat": "2.2%",
+    "faction": "Agile",
+    "relicAbility": "Midnight Tombs",
+    "abilityDesc": "For 1 Cycle after using a Rifted Skill, the equipped character's Supercharged DMG dealt to opponents is increased by [$_1]. Additionally, after triggering Supercharged reactions, the equipped charcter Crit DMG is increased by [$_2] for 2 Cycles. During this effect, the equipped character will also gains [$_3] Energy Efficiency.",
+    "forge": {
+        "value1": ["36%", "48%", "60%", "72%", "84%"],
+        "value2": ["28%", "35%", "42%", "49%", "56%"],
+        "value3": ["20%", "24%", "28%", "32%", "36%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.6Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

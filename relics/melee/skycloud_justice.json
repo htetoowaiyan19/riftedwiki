@@ -1,0 +1,21 @@
+{
+    "relicName": "Skycloud Justice",
+    "mainStatType": "Physical ATK",
+    "mainStat": 44,
+    "subStatType": "Healing Bonus",
+    "subStat": "12.2%",
+    "faction": "Melee",
+    "relicAbility": "Justice Resonance",
+    "abilityDesc": "Energy Efficiency is increased by [$_1]. Resonance: When the equipped character's Normal Skill is used with more than 6 Echo Memory, Magic PWR is increased by [$_2] for 2 Cycles. During the Resonance effect, when Spread Reactions are triggered by the equipped character, all team members Physical ATK is increased by [$_3] for the same Cycle.",
+    "forge": {
+        "value1": ["16%", "20%", "24%", "28%", "32%"],
+        "value2": ["24%", "32%", "40%", "48%", "56%"],
+        "value3": ["12%", "14%", "16%", "18%", "20%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

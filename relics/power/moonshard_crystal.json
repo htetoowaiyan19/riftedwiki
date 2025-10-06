@@ -1,0 +1,21 @@
+{
+    "relicName": "Moonshard Crystal",
+    "mainStatType": "Magic PWR",
+    "mainStat": 44,
+    "subStatType": "Crit Rate",
+    "subStat": "2.2%",
+    "faction": "Power",
+    "relicAbility": "Midnight Ambients",
+    "abilityDesc": "Normal Attack DMG is increased by [$_1]. If the equipped character deals Physical DMG, Magic PWR is increased by [$_2]. If the equipped character's shield increases or decreases, the aforementioned effects are increased by 100% and Crit DMG is increased by [$_3]. The shield changing effects will ignore the incoming DMG.",
+    "forge": {
+        "value1": ["24%", "28%", "32%", "36%", "40%"],
+        "value2": ["24%", "26%", "28%", "30%", "32%"],
+        "value3": ["20%", "30%", "40%", "50%", "60%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.1Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

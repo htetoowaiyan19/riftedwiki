@@ -1,0 +1,20 @@
+{
+    "relicName": "Voided Fragments",
+    "mainStatType": "Physical ATK",
+    "mainStat": 38,
+    "subStatType": "Physical ATK",
+    "subStat": "12.2%",
+    "faction": "Agile",
+    "relicAbility": "Convergence",
+    "abilityDesc": "When there are only 2 active characters in the team, Physical ATK is increased by [$_1] and Crit DMG is increased by [$_2]. When there are only 1 active character in the team, the aforementioned effects are increased by 50%",
+    "forge": {
+        "value1": ["24%", "36%", "48%", "60%", "72%"],
+        "value2": ["12%", "16%", "20%", "24%", "28%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
