@@ -1,0 +1,69 @@
+{
+    "name": "Faewyn",
+    "baseAtk": 0,
+    "basePwr": 180,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1600,
+    "baseCharge": 100,
+    "baseFluxCapacity": 0,
+    "baseSurgeCapacity": 0,
+    "baseEchoMemroyCapacity": 6,
+    "baseMaxEnergy": 80,
+    "baseCritRate": 5.0,
+    "baseCritDamage": 50.0,
+    "substat": "Knowledge Unit: 16",
+    "riftedFaction": "Rifted Disorder",
+    "riftedTech": "",
+    "riftedDisc": "Gale",
+    "faction": "Magical",
+
+    "passiveName": "Windborn Crystalflies",
+    "passiveDesc": "When Faewyn is in the team, triggering Spread reactions will mark the affected opponents with Crystalfly Mark containing the respective Disorder triggered by the same Spread reaction for 4 Cycles. When the opponent is affected by Flame, Frost, Tide, or Volte Crystalfly Mark, they will take 10% increased DMG from the corresponding Disorder DMGs. When the opponenent is affected by Pure Crystalfly mark, they will take 20% increased Gale DMG.",
+    "riftedTalent": "Rifted Disorder",
+    "rTalentDesc": "Faewyn's Normal and Charged Attacks accumulate 1 Echo Memory and 5 Energy. Dealing Disorder DMG accumulates 10 Energy.",
+
+    "talentBox": {
+        "talent1": {
+            "name": "Loyal Clients",
+            "desc": "When Faewyn is the only Glae-Type character in the team, all team members except Faewyn gains 12% Disorder DMG Bonus."
+        }
+    },
+
+    "normalAttackName": "Normal Attack - Reborned Gale",
+    "normalAttackDesc": "Faewyn deals 40% Magic PWR as Magic DMG to the opponent.",
+
+    "chargedAttackName": "Charged Attack - Reborned Storms",
+    "chargeCost": 20,
+    "chargedAttackDesc": "Faewyn deals 60% Magic PWR as Magic DMG to the opponent.",
+
+    "normalSkillName": "Normal Skill - Butterfly Blessings",
+    "fluxCost": 0,
+    "memoryNodes": {"node1": "2EM", "node2": "4EM", "node3": "6EM"},
+    "normalSkillDesc": "[2EM] Faewyn casts The First Blessing of Butterflies, dealing 68 (+55% Magic Power) as AoE Gale DMG.\n[4EM] Faewyn casts The Second Blessing of Butterflies, dealing 133 (+74% Magic Power) as AoE Gale DMG. If the opponents are affected by Crystalfly Mark, the Blessing will absorbs the Crystalfly Marks to unleash an additional instance of 189 (+76% Magic PWR) (+166% Knowledge Unit) as AoE Gale DMG.\n[6EM] Faewyn casts The Final Blessing of Butterflies, dealing 201 (+98% Magic Power) AoE Gale DMG. If enemies are affected by Flame, Frost, Tide, or Volte Crystalfly Marks, the Blessing absorbs those Marks to unleash an additional instance of 224 (+88% Magic Power) (+223% Knowledge Unit) AoE Disorder DMG. This extra damage corresponds to the type of Crystalfly Mark most prevalent among affected opponents, and all opponents within the AoE are then afflicted with the matching Disordered Crystalfly Mark. If Gale Crystalfly Mark is the most prevalent among affected opponents, All team member's Knowledge Unit is increased by 120.",
+
+    "riftedSkillName": "Rifted Skill - Colorful Storm Simulation",
+    "surgeCost": 0,
+    "energyCost": 80,
+    "riftedSkillDesc": "Faewyn absorbs all Crystalfly Marks to form a Storm Sample Set and unleashes a Colorful Storm Simulation for 4 Cycles that reduces opponents’ Disorder RES by 24% based on the dominant Sample. If Gale is the dominant Sample, all team members' gains 40% Gale DMG Bonus. Additionally, if the Talent \"Loyal Clients\" is active, increases Disorder DMG Bonus for all team members by 0.02% for each point of Knowledge Unit she has.",
+
+    "fragment1Name": "F1 - Instant Infusion",
+    "fragment1Desc": "Casting Normal Skill higher than 4 Echo Memory will regenerates 2 Echo Memory. Additionally, during \"Colorful Storm Simulation\", the aforementioned effect will generates an extra Echo Memory.",
+    "fragment2Name": "F2 - Integration",
+    "fragment2Desc": "When absorbing Crystalfly Marks from the opponent during \"Butterfly Blessing\" or \"Colorful Sotrm Simulation\", all team members gains the following additional effect based on the type of absorbed Crystalfly Mark for 4 Cycles:\n\tFlame: Adaptive ATK is increased by 0.06% for every point of Knowledge Unit Faewyn has.\n\tFrost: Crit DMG is increased by 0.0675% for every point of Knowledge Unit Faewyn has.\n\tTide: HP is increased by 0.8% for every point of Knowledge Unit Faewyn has.\n\tVolte: Knowldege Unit is increased by 20% of Faewyn's Knowledge Unit.\n\tGale: All Gale-Type characters in the party gains an extra action.",
+    "fragment3Name": "F3 - Advanced Simulation",
+    "fragment3Desc": "\"Colorful Storm Simulation\" level is increased by 3.",
+    "fragment4Name": "F4 - Crystal Injection Module",
+    "fragment4Desc": "Opponents affected by Crystalfly Marks takes 500% Faewyn Knowledge Unit as corresponding Disorder DMG each Cycle.",
+    "fragment5Name": "F5 - Crystalfly Blessing",
+    "fragment5Desc": "\"Butterfly Blessing\" level is increased by 3.",
+    "fragment6Name": "F6 - Approaching Stormeye",
+    "fragment6Desc": "During \"Colorful Storm Simulation\", Faewyn Normal and Charged Attack become infused with the Disorder corresponding to the \"Colorful Storm Simulation\". Additionally, Faewyn gains 40% corresponding Disorder DMG Bonus and each point of Knowledge Unit increases Faewyn's Normal and Charged Attacks DMG by 0.2%.",
+
+    "log": {
+        "record1": {
+            "version": "1.7Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

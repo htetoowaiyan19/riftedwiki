@@ -1,0 +1,20 @@
+{
+    "relicName": "Tales of The Seven Worlds",
+    "mainStatType": "Magic PWR",
+    "mainStat": 38,
+    "subStatType": "Knowledge Unit",
+    "subStat": "22",
+    "faction": "Magical",
+    "relicAbility": "Connection Between Worlds",
+    "abilityDesc": "When the wielder triggers Spread reactions, Knowledge Unit is increased by [$_1] for 2 Cycles. If the wielder's Disorder Type is different from other members' Disorder Types in the team, the aforementioned effect is increased by 50%. Additionally, when the wielder casts Rifted Skill, their Normal Skill DMG is increased by [$_2] for 4 Cycles.",
+    "forge": {
+        "value1": ["60", "75", "90", "105", "120"],
+        "value2": ["48%", "56%", "64%", "72%", "80%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.7Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
