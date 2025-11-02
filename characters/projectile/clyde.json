@@ -19,29 +19,46 @@
     "faction": "Projectile",
 
     "passiveName": "Quantum Drive",
-    "passiveDesc": "Aetherwell Energy can be accumulated up to 200% of Clyde's Max HP. When Clyde has Aetherwell Energy, he will transform into Overclocked state. During the Overclocked state, Clyde's Normal and Charged Attacks will be converted into Quantum DMG and deal additional DMG based on 8% of his Aetherwell Energy. During Overclocked state, if Aetherwell Energy is less than 100% of Clyde's Max HP, his Normal Attack Eclipser will fire 1 extra shot, increasing his Aetherwell Energy by 80% of the DMG dealt. When Graviton Mark Protocol is casted during this state, Clyde uses Voidpiercer and launches a Chrono Shard, dealing 68 (+11% Aetherwell Energy) as Physical DMG. If Aetherwell Energy is greater than 100% of Clyde's Max HP, Chrono Shard will deal 211 + (21% Aetherwell Energy) as Quantum DMG, consuming all Aetherwell Energy, healing himself by 40% of his consumed Aetherwell Energy and exiting the Overclocked state. Clyde ignores all healing effects during the Overclocked state.",
+    "passiveDesc": "Clyde can fully utilize Hyperion Energy. When Clyde has Hyperion Energy, he will transform into Overclocked state. During the Overclocked state. Clyde's Normal and Charged Attacks will be converted into Quantum DMG and deal additional DMG based on 8% of his Hyperion Energy. During Overclocked state, if Hyperion Energy is less than 100% of Clyde's Max HP, his Normal Attack \"Eclipser\" will gains Eclipsed Kingdom effect. When Normal Skill \"Graviton Mark Protocol\" is casted during this state, it will gains Voidpiercer effect.",
     "riftedTalent": "Rifted Technology",
     "rTalentDesc": "Clyde's Normal and Charged Attacks generate 1 Flux.",
 
+    "talentBox": {
+        "talent1": {
+            "name": "■■■■■■■■'s Decendent",
+            "desc": "Being the decendent of ■■■■■■■■, Clyde gains 40% Quantum DMG Bonus."
+        },
+        
+        "talent2": {
+            "name": "Hyperion Energy",
+            "desc": "Hyperion Energy can be accumulated up to 200% of the Character's Max HP. Hyperion Energy can impact the affected character in various way."
+        },
+
+        "talent3": {
+            "name": "Hyperion Energy: Rejection",
+            "desc": "When a character is affected by Hyperion Energy, they are immune to healing from allies or external effects and can only heal themselves. If another source attempts to heal them, the healing is nullified, and the Hyperion Energy is reduced by an amount equal to the HP that would have been healed. Additionally, if the affected character cannot utilize Hyperion Energy, their Crit Rate is reduced by 24% and Disorder DMG is reduced by 40%."
+        }
+    },
+
     "normalAttackName": "Normal Attack - Eclipser",
-    "normalAttackDesc": "Clyde deals 40% Physical ATK as Physical DMG to the opponent.",
+    "normalAttackDesc": "Clyde deals 40% Physical ATK as Physical DMG to the opponent.\nEclipsed Kingdom: Eclipser will fire 1 extra shot, increasing his Hyperion Energy by 80% of the DMG dealt.",
 
     "chargedAttackName": "Charged Attack - Graviton Absorption",
     "chargeCost": 20,
-    "chargedAttackDesc": "Clyde deals 60% Physical ATK as Physical DMG to the opponent and absorbs all Graviton Marks from the opponents. If the Graviton Mark is in Temporal Latch, it absorbs 12 (+38% Opponent's Current HP) as Aetherwell Energy, if the Graviton Mark is in Entropy Core, it absorbs 218 (+8% Opponent's Max HP) multiplied by the duration of Graviton Mark as Aetherwell Energy.",
+    "chargedAttackDesc": "Clyde deals 60% Physical ATK as Physical DMG to the opponent and absorbs all Graviton Marks from the opponents. If the Graviton Mark is in Temporal Latch, it absorbs 12 (+38% Opponent's Current HP) as Hyperion Energy, if the Graviton Mark is in Entropy Core, it absorbs 218 (+8% Opponent's Max HP) multiplied by the duration of Graviton Mark as Hyperion Energy.",
 
     "normalSkillName": "Normal Skill - Graviton Mark Protocol",
     "fluxCost": 3,
     "memoryNodes": {},
-    "normalSkillDesc": "Clyde strikes nearby opponents using Eclipser, dealing 112 (+48% Physical ATK) as Quantum DMG and applying Graviton Mark: Temporal Latch to opponents hit for 8 Cycles. Temporal Latch: Gradually deals 12 (+18% Physical ATK) as Physical DMG each Cycle. Entropy Core: After an opponent is affected by Temporal Latch for 2 Cycles, it will transform into Entropy Code dealing 98 (+51% Physical ATK) as Quantum DMG each Cycle. This effect carries over the duration from Temporal Latch.",
+    "normalSkillDesc": "Clyde strikes nearby opponents using Eclipser, dealing 112 (+48% Physical ATK) as Quantum DMG and applying Graviton Mark: Temporal Latch to opponents hit for 8 Cycles. Temporal Latch: Gradually deals 12 (+18% Physical ATK) as Physical DMG each Cycle. Entropy Core: After an opponent is affected by Temporal Latch for 2 Cycles, it will transform into Entropy Core dealing 98 (+51% Physical ATK) as Quantum DMG each Cycle. This effect carries over the duration from Temporal Latch.\nVoidpiercer: Clyde uses Voidpiercer and launches a Chrono Shard, dealing 68 (+11% Hyperion Energy) as Physical DMG. If Hyperion Energy is greater than 100% of Clyde's Max HP, Chrono Shard will deal 211 + (21% Hyperion Energy) as Quantum DMG, consuming all Hyperion Energy, healing himself by 40% of his consumed Hyperion Energy and exiting the Overclocked state. This skill can be cased independently without the use of Flux during the Overclocked State.",
 
     "riftedSkillName": "Rifted Skill - Collapse Singularity",
     "surgeCost": 80,
     "energyCost": 0,
-    "riftedSkillDesc": "Clyde absorbs all Graviton Mark from the opponent and unleashes a Rfit Collapse using Voidpiercer, dealing 214 (+112% Physical ATK) (+26% Aetherwell Energy) as Quantum DMG, consuming his Aetherwell Energy and exiting from Overclocked state, and healing himself by 60% of consumed Aetherwell Energy.",
+    "riftedSkillDesc": "Clyde absorbs all Graviton Mark from the opponent and unleashes a Rfit Collapse using Voidpiercer, dealing 214 (+112% Physical ATK) (+26% Hyperion Energy) as Quantum DMG, consuming his Hyperion Energy and exiting from Overclocked state, and healing himself by 60% of consumed Hyperion Energy.",
 
     "fragment1Name": "F1 - Corruption",
-    "fragment1Desc": "Clyde will gain 40% extra Aetherwell Energy while absorbing Graviton Marks.",
+    "fragment1Desc": "Clyde will gain 40% extra Hyperion Energy while absorbing Graviton Marks.",
     "fragment2Name": "F2 - Confusion Matrix",
     "fragment2Desc": "\"Graviton Mark Protocol\" will directly apply Graviton Mark: Entropy Core to opponents.",
     "fragment3Name": "F3 - Beyond The Universe",
@@ -51,7 +68,7 @@
     "fragment5Name": "F5 - Collapsing Black Hole",
     "fragment5Desc": "\"Collapse Singularity\" level is increased by 3.",
     "fragment6Name": "F6 - Conqueor of Universes",
-    "fragment6Desc": "Quantum DMG Bonus is increased by 20%. The DMG of Collapse Singularity is increased by Clyde's ATK multiplied by 700% of Clyde's current Aetherwell Energy percentage. For 3 Cycles after Clyde uses Graviton Mark Protocol, Clyde gains 10% CRIT Rate and 80% CRIT DMG. This effect can triggered once every 8 Cycles.",
+    "fragment6Desc": "Quantum DMG Bonus is increased by 20%. The DMG of Collapse Singularity is increased by Clyde's ATK multiplied by 700% of Clyde's current Hyperion Energy percentage. For 3 Cycles after Clyde uses Graviton Mark Protocol, Clyde gains 10% CRIT Rate and 80% CRIT DMG. This effect can triggered once every 8 Cycles.",
 
     "log": {
         "record1": {
@@ -61,7 +78,7 @@
 
         "record2": {
             "version": "1.0Beta [Unknown]",
-            "description": "Clyde (↓): Clyde has an insane DMG output making other characters fall back behind the meta.\n\tFlux Capacity: 0 >> 5\n\t\"Graviton Mark Protocol\" Flux Cost: 0 >> 3\n\t\"Collapse Singularity\" Surge Cost: 0 >> 60\n\n[Talent: Quantum Drive] (↓)\n\tNormal ATK DMG Bonus: 16% Aetherwell Energy >> 8% Aetherwell Energy\n\tVoidpiercer DMG (Normal): 100 (+20% Aetherwell Energy) >> 68 (+11% Aetherwell Energy)\n\tVoidpiercer DMG (Enhanced): 150 (+40% Aetherwell Energy) as Physical DMG >> 211 + (21% Aetherwell Energy) as Quantum DMG\n\tAetherwell Energy Interval: 50% Clyde's Max HP >> 100% Clyde's Max HP\n\t[New Effect] During the Overclocked state, if Aetherwell Energy is less than 100% of Clyde's Max HP, his Normal and Charged Attacks are converted into Quantum DMG.\n\t[New Effect] Aetherwell Energy gained from Normal Attacks can now be gained from CRIT Hits.\n\t[New Effect] Clyde's Normal and Charged Attacks generate 1 Flux.\n\n[Charged Attack: Graviton Absorption] (~)\n\tTemporal Latch Absorption Value: 5 (+40% Opponent's Current HP) >> 12 (+38% Opponent's Current HP)\n\tEntropy Code Absorption Value: 200 (+20% Opponent's Max HP) >> 218 (+8% Opponent's Max HP) multiplied by the duration of Graviton Mark\n\n[Normal Skill: Graviton Mark Protocol] (~)\n\tEclipser DMG: 120 (+40% Physical ATK) as Physical DMG >> 112 (+48% Physical ATK) as Quantum DMG\n\tTemporal Latch DMG: 5 (+20% Physical ATK) >> 12 (+18% Physical ATK)\n\tEntropy Core DMG: 30 (+60% Physical ATK) as Physical ATK >> 98 (+51% Physical ATK) as Quantum DMG\n\n[Rifted Skill: Collapse Singularity] (↓)\n\tCollapse Singularity DMG: 200 (+40% Aetherwell Energy) (+100% Physical ATK) as Physical DMG >> 214 (+112% Physical ATK) (+26% Aetherwell Energy) as Quantum DMG"
+            "description": "Clyde (↓): Clyde has an insane DMG output making other characters fall back behind the meta.\n\tFlux Capacity: 0 >> 5\n\t\"Graviton Mark Protocol\" Flux Cost: 0 >> 3\n\t\"Collapse Singularity\" Surge Cost: 0 >> 60\n\n[Talent: Quantum Drive] (↓)\n\tNormal ATK DMG Bonus: 16% Hyperion Energy >> 8% Hyperion Energy\n\tVoidpiercer DMG (Normal): 100 (+20% Hyperion Energy) >> 68 (+11% Hyperion Energy)\n\tVoidpiercer DMG (Enhanced): 150 (+40% Hyperion Energy) as Physical DMG >> 211 + (21% Hyperion Energy) as Quantum DMG\n\tHyperion Energy Interval: 50% Clyde's Max HP >> 100% Clyde's Max HP\n\t[New Effect] During the Overclocked state, if Hyperion Energy is less than 100% of Clyde's Max HP, his Normal and Charged Attacks are converted into Quantum DMG.\n\t[New Effect] Hyperion Energy gained from Normal Attacks can now be gained from CRIT Hits.\n\t[New Effect] Clyde's Normal and Charged Attacks generate 1 Flux.\n\n[Charged Attack: Graviton Absorption] (~)\n\tTemporal Latch Absorption Value: 5 (+40% Opponent's Current HP) >> 12 (+38% Opponent's Current HP)\n\tEntropy Code Absorption Value: 200 (+20% Opponent's Max HP) >> 218 (+8% Opponent's Max HP) multiplied by the duration of Graviton Mark\n\n[Normal Skill: Graviton Mark Protocol] (~)\n\tEclipser DMG: 120 (+40% Physical ATK) as Physical DMG >> 112 (+48% Physical ATK) as Quantum DMG\n\tTemporal Latch DMG: 5 (+20% Physical ATK) >> 12 (+18% Physical ATK)\n\tEntropy Core DMG: 30 (+60% Physical ATK) as Physical ATK >> 98 (+51% Physical ATK) as Quantum DMG\n\n[Rifted Skill: Collapse Singularity] (↓)\n\tCollapse Singularity DMG: 200 (+40% Hyperion Energy) (+100% Physical ATK) as Physical DMG >> 214 (+112% Physical ATK) (+26% Hyperion Energy) as Quantum DMG"
         }
     }
 }
