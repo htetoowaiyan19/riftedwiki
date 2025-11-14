@@ -7,7 +7,7 @@
     "baseHp": 1800,
     "baseCharge": 100,
     "baseFluxCapacity": 5,
-    "baseSurgeCapacity": 60,
+    "baseSurgeCapacity": 80,
     "baseEchoMemroyCapacity": 0,
     "baseMaxEnergy": 0,
     "baseCritRate": 5.0,
@@ -42,43 +42,33 @@
     "chargeCost": 30,
     "chargedAttackDesc": "Eylos casts upon the Stormeye creating a small whirlpool that deals 14 (+33% Physical ATK) as AoE Gale-Fusioned DMG to all opponents.",
 
-    "normalSkillName": "Normal Skill - [Reserved String]",
+    "normalSkillName": "Normal Skill - Black Pearl Singularity",
     "fluxCost": 1,
     "memoryNodes": {},
-    "normalSkillDesc": "Eylos consumes all Enhanced Fuses and launches a small Black Pearl Singularity towards the opponent dealing 14 (+52% Physical ATK) as Physical DMG. Additional Enhanced Fuses enhance this DMG by 200%. Additionlly, depending on the number of consumed Enhanced Fuses, Eylos will apply 2/4/8/16/32 stacks of Strong Winds to the affected opponents.",
+    "normalSkillDesc": "Eylos consumes all Enhanced Fuses and launches a small Black Pearl Singularity towards the opponent dealing 14 (+52% Physical ATK) as Physical DMG. Additional Enhanced Fuses enhance this DMG by 200%. Additionlly, depending on the number of consumed Enhanced Fuses, Eylos will apply 2/4/8/14/26 stacks of Strong Winds to the affected opponents.",
 
-    "riftedSkillName": "Rifted Skill - [Reserved String]",
-    "surgeCost": 60,
+    "riftedSkillName": "Rifted Skill - Condensed Pearl Preservation",
+    "surgeCost": 80,
     "energyCost": 0,
-    "riftedSkillDesc": "Vyrka consumes an entier HP bar and erupts with a devastating strike, dealing 144 (+27% Physical ATK) (+46% Consumed HP Bar) as True DMG.",
+    "riftedSkillDesc": "Eylos unleashes a Condensed Pearl, dealing 54 (+49% Physical ATK) (+184% Knowledge Unit) as Fusioned-Gale DMG. If opponents are affected by Strong Winds, Eylos absorbs all stacks. The highest number of stacks taken from a single opponent determines both the number of follow-up attacks and their intensity.\nFor every twelve stacks absorbed, Eylos immediately gains another action and can cast Condensed Pearl Preservation again to releases the Condensed Pearl Emission once, and he may choose a new target for each release. The strength of each emission increases based on how many stacks lie within its current twelve-stack range: reaching four stacks fires one Dark Wind Blade, reaching eight stacks upgrades it to two Blades, and reaching twelve stacks unleashes three Blades. Each Dark Wind Blade deals 114 (+33% Physical ATK) (+221% Knowledge Unit) as Fusioned-Gale DMG.",
 
-    "fragment1Name": "F1 - [Reserved String]",
-    "fragment1Desc": "When Vyrka has only 1 HP bar left, her Physical, Magical and Reaction RES are increased by 36%.",
-    "fragment2Name": "F2 - [Reserved String]",
-    "fragment2Desc": "Vyrka's Normal Attacks increases her Max HP by 16% for 2 Cycles, max 32%.",
-    "fragment3Name": "F3 - [Reserved String]",
-    "fragment3Desc": "\"Sanguine Cleave\" level is increased by 3.",
-    "fragment4Name": "F4 - [Reserved String]",
-    "fragment4Desc": "If Vyrka's HP increases or decreases, her CRIT Rate is increased by 12%. The HP effects will ignore the incoming DMG.",
-    "fragment5Name": "F5 - [Reserved String]",
-    "fragment5Desc": "\"Crimson Cataclysm\" level is increased by 3.",
-    "fragment6Name": "F6 - [Reserved String]",
-    "fragment6Desc": "Max HP is increased by 20%. Fury Shards can be stacked up to 5 times. When casting her Special Active Skill, the excess amount of Fury Shards will be absorbed into a Shield equals to 200% Vyrka's Physical ATK. The absorbed Fury Shards will explode, each dealing 40% Vyrka's Physical ATK multiplied by 2% Current HP as Destruction DMG.",
+    "fragment1Name": "F1 - Abstract of Creation",
+    "fragment1Desc": "Eylos DEF is increased by 20%. Additionally, Eylos takes 40% less Gale DMG from the opponents affected by Strong Winds.",
+    "fragment2Name": "F2 - Last Survivor of Dakashan",
+    "fragment2Desc": "For every 1 point of Knowledge Unit Eylos has, he gains 0.635% Gale DMG Bonus, up to 800 Knowledge Unit.",
+    "fragment3Name": "F3 - Black Energy",
+    "fragment3Desc": "\"Condensed Pearl Preservation\" level is increased by 3.",
+    "fragment4Name": "F4 - Pearlescence Overriding",
+    "fragment4Desc": "During the Condensed Pearl Preservation, Eylos gains 30% CRIT Rate and 70% CRIT DMG.",
+    "fragment5Name": "F5 - Gravity Decomposition",
+    "fragment5Desc": "\"Black Pearl Singularity\" level is increased by 3.",
+    "fragment6Name": "F6 - Mighty Execution",
+    "fragment6Desc": "Eylos gains 200 Knowledge Unit. During Condensed Pearl Preservaition, if Eylos releases maximum Black Windblade per Condensed Pearl Emission, Condensed Pearl Execution will strike the affected opponent dealing (+20% DMG Dealt from Condensed Pearl Emission) (+2200% Knowledge Unit) as Follow-Up Fusioned-Gale DMG.",
 
     "log": {
         "record1": {
-            "version": "1.3Alpha [2025-04-30]",
-            "description": "Release"
-        },
-
-        "record2": {
-            "version": "1.4Alpha [2025-05-18]",
-            "description": "Vyrka (↑): Implementation of Charged Attack and Stat changes.\n[New Attack] Charged Attack (Energy:20): Bleeding Fangs - Vyrka deals 60% Physical ATK as Physical DMG to the opponent.\n\tPhysical ATK: 0 >> 200\n\tPhysical DEF: 0 >> 30\n\tMagic DEF: 0 >> 30"
-        },
-
-        "record3": {
-            "version": "1.0Beta [Unknown]",
-            "description": "Vyrka (↑): We want Vyrka to perform better in battlefields and utilize her special HP mechnic more often.\n\tFlux Capacity: 0 >> 5\n\t\"Sanguine Cleave\" Flux Cost: 0 >> 3\n\t\"Crimson Cataclysm\" Surge Cost: 0 >> 60\n\n[Ta;emt: Bloodforged Heart] (↑)\n[New Effect] Vyrka's Normal and Charged Attacks generate 1 Flux.\n\tDMG Bonus after losing HP bar: 30% >> 36%\n\n[Normal Skill: Sanguine Cleave] (↑)\n\tHP consumed: 30% >> 16%\n\tSanguine Cleave's DMG: 200 (+40% Physical ATK) (+6% Current HP) as Physical DMG >> 198 (+33% Physical ATK) (+18% Current HP) as Destruction DMG\n\n[Rifted Skill: Crimson Cataclysm] (~)\n\tCrimson Cataclysm DMG: 150 (+40% Physical ATK) (+30% Consumed HP Bar) >> 144 (+27% Physical ATK) (+46% Consumed HP Bar)"
+            "version": "1.8Beta [Unknown]",
+            "description": "Unreleased"
         }
     }
 }

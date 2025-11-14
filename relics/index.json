@@ -18,5 +18,6 @@
   { "relicName": "Greatdragon Polearm", "file": "agile/greatdragon_polearm.json", "version": ["1.4Beta", "unreleased"], "faction": "Agile" },
   { "relicName": "Violet-Feathered Booklet", "file": "magical/violet_feathered_booklet.json", "version": ["1.5Beta", "unreleased"], "faction": "Magical" },
   { "relicName": "Call of The Nights", "file": "agile/call_of_the_nights.json", "version": ["1.6Beta", "unreleased"], "faction": "Agile" },
-  { "relicName": "Tales of The Seven Worlds", "file": "magical/tales_of_the_seven_worlds.json", "version": ["1.7Beta", "unreleased"], "faction": "Magical"}
+  { "relicName": "Tales of The Seven Worlds", "file": "magical/tales_of_the_seven_worlds.json", "version": ["1.7Beta", "unreleased"], "faction": "Magical"},
+  { "relicName": "Dakashan Black Pearl", "file": "power/dakashan_black_pearl.json", "version": ["1.8Beta", "unreleased"], "faction": "Power"}
 ]

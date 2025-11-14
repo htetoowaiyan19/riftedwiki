@@ -14,5 +14,6 @@
   { "name": "Pyrrion", "file": "agile/pyrrion.json", "version": ["1.4Beta", "unreleased"]},
   { "name": "Siren", "file": "magical/siren.json", "version": ["1.5Beta", "unreleased"] },
   { "name": "Luxen", "file": "agile/luxen.json", "version": ["1.6Beta", "unreleased"] },
-  { "name": "Faewyn", "file": "magical/faewyn.json", "version": ["1.7Beta", "unreleased"]}
+  { "name": "Faewyn", "file": "magical/faewyn.json", "version": ["1.7Beta", "unreleased"]},
+  { "name": "Eylos", "file": "power/eylos.json", "version": ["1.8Beta", "unreleased"]}
 ]

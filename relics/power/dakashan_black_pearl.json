@@ -1,0 +1,21 @@
+{
+    "relicName": "Dakashan Black Pearl",
+    "mainStatType": "Physical ATK",
+    "mainStat": 38,
+    "subStatType": "CRIT Rate",
+    "subStat": "4.8%",
+    "faction": "Power",
+    "relicAbility": "Black Pearl Annihilation",
+    "abilityDesc": "Dealing Normal Skill DMG inflicts the affected opponents with [$_1] stacks of Strong Winds. When opponents are affected by Strong Winds the equipped character gains Pearlescence effect. Pearlescence: Knowledge Unit is increased by [$_2] for 4 Cycles. When nearby team member except the equipped character inflict Strong Winds to the opponents, gains the Iridescence effect. Iridescence: Knowledge Unit is increased by [$_2] for 3 Cycles. When both Pearlescence and Iridescence effects are active at the same time, the equipped character's CRIT DMG is increased by [$_3]%.",
+    "forge": {
+        "value1": ["2", "3", "4", "5", "6"],
+        "value2": ["60", "75", "90", "105", "120"],
+        "value3": ["20", "40", "60", "80", "100"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
