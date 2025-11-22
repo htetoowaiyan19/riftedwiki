@@ -1,0 +1,461 @@
+body {
+      background-color: #0b1e3d;
+      color: #dfeaff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2, h5 {
+      color: #9bc9ff;
+    }
+
+    body, h1, h2, h3, h4, h5, h6, p, span, button, input, table, td, th {
+      font-family: "Trebuchet MS", Arial, sans-serif !important;
+    }
+
+    .btn-back {
+      background: linear-gradient(135deg, #1a3c6e, #274c8e);
+      color: #e0efff;
+      font-weight: bold;
+      border: 2px solid #3a5c88;
+      border-radius: 10px;
+      padding: 8px 18px;
+      transition: all 0.2s ease;
+      box-shadow: 0 0 8px rgba(100, 160, 255, 0.3);
+    }
+
+    .btn-back:hover {
+      background: linear-gradient(135deg, #274c8e, #3560b0);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 0 12px rgba(150,200,255,0.5);
+    }
+
+    /* === Stat Table Improvements === */
+    .stat-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .stat-table td {
+      padding: 12px 16px;
+      border: none !important;
+      background-color: #11284a;
+      color: #e8f1ff;
+      vertical-align: middle;
+    }
+
+    .stat-table tr:nth-child(even) td {
+      background-color: #0e1f3c;
+    }
+
+    .stat-table td strong {
+      color: #82c4ff;
+      font-weight: 600;
+    }
+
+    .box {
+      background-color: #132b50;
+      border: 2px solid #3a5c88;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(100, 160, 255, 0.2);
+    }
+
+    .highlight-number { color: #33c5ff; font-weight: bold; }
+    .fragment-entry { border-top: 1px solid #3a5c88; padding-top: 10px; margin-top: 10px; }
+    .description { white-space: pre-wrap; }
+
+    /* === Character List Grid === */
+    .char-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .char-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-weight: bold;
+      min-width: 200px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    }
+
+    .char-item span:first-child {
+      font-size: 1.1rem;
+    }
+
+    .char-item span:last-child {
+      font-size: 0.85rem;
+      padding: 4px 8px;
+      border-radius: 8px;
+      background: rgba(0,0,0,0.25);
+    }
+
+    .char-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 12px rgba(150,200,255,0.4);
+    }
+
+    .released {
+      background: linear-gradient(145deg, #004d40, #00695c);
+      color: #e0fff5;
+    }
+
+    .unreleased {
+      background: linear-gradient(145deg, #4e0a15, #6d1b26);
+      color: #ffe0e0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 15px;
+    }
+
+    /* Force the same font everywhere and stop mobile auto-scaling */
+    :root { --app-font: "Inter", Arial, sans-serif; }
+      * { font-family: var(--app-font) !important; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    
+    /* Mobile friendliness */
+    .container { max-width: 1100px; margin: auto; padding: 0 15px; }
+    #searchBar { max-width: 520px; width: 100%; }
+    @media (max-width: 576px) {
+      body { padding: 12px; }
+      .char-list { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+      .char-item { padding: 12px 14px; }
+      h1 { font-size: 1.6rem; }
+    }
+
+    .forge-ui {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      margin-top: 6px;
+      justify-content: flex-start;
+    }
+
+    .forge-btn {
+      background: linear-gradient(135deg, #1a3c6e, #274c8e);
+      color: #e0efff;
+      border: 2px solid #3a5c88;
+      border-radius: 8px;
+      padding: 2px 14px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 0 6px rgba(100, 160, 255, 0.2);
+    }
+
+    .forge-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .forge-indicator {
+      background: #11284a;
+      color: #82c4ff;
+      border-radius: 8px;
+      padding: 2px 18px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border: 2px solid #3a5c88;
+      box-shadow: 0 0 6px rgba(100, 160, 255, 0.1);
+    }
+
+    /* Back button tap feedback (keeps your hover) */
+    .btn-back:active { transform: scale(0.96); box-shadow: 0 0 6px rgba(150,200,255,0.6); }
+
+    .forge-ui-small { gap: 6px; align-items: center; }
+    .forge-btn-small { padding: 1px 8px; font-size: 0.95rem; border-radius: 6px; }
+    .forge-indicator-small { padding: 1px 8px; font-size: 0.95rem; border-radius: 6px; }
+
+    #relicLoader .d-flex { position: relative; z-index: 50; }
+    #relicTypeFilter, #relicSearchBar { position: relative; z-index: 60; pointer-events: auto; }
+
+    /* === Description highlights (unchanged from you) === */
+    .description .Physical-ATK { color: yellow; font-weight: bold; }
+    .description .Magic-PWR { color: magenta; font-weight: bold; }
+    .description .Physical-DEF { color: orange; font-weight: bold; }
+    .description .Magic-DEF { color: #66ccff; font-weight: bold; }
+    .description .Physical-DMG { color: yellow; font-weight: bold; }
+    .description .Magic-DMG { color: magenta; font-weight: bold; }
+    .description .Quantum-DMG { color: #c792ea; font-weight: bold; }
+    .description .Fusion-DMG { color: #ff6b81; font-weight: bold; }
+    .description .Destruction-DMG { color: white; font-weight: bold; }
+    .description .Artificial-DMG { color: #66faff; font-weight: bold; }
+    .description .Sharp-DMG { color: darkred; font-weight: bold; }
+    .description .Flame-DMG { color: red; font-weight: bold; }
+    .description .Frost-DMG { color: #66ccff; font-weight: bold; }
+    .description .Volte-DMG { color: #ffee66; font-weight: bold; }
+    .description .Tide-DMG { color: #3366cc; font-weight: bold; }
+    .description .Gale-DMG { color: #66fadd; font-weight: bold; }
+    .description .Special-Active-Skill {color: #9bc9ff; font-weight: bold; }
+
+/* === Trial Chamber Level Buttons === */
+#currentSessionTitle {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+}
+
+#trialBuffsDisplay {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  min-height: 50px;
+  transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+  margin-bottom: 16px; /* gap between buff display and main layout */
+}
+
+.level-btn {
+  background: linear-gradient(135deg, #1a3c6e, #274c8e);
+  border: 2px solid #3a5c88;
+  border-radius: 12px;
+  padding: 10px 14px;
+  color: #e0efff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 0 6px rgba(100, 160, 255, 0.2);
+  text-align: center;
+  user-select: none;
+}
+
+.level-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px rgba(150,200,255,0.4);
+}
+
+.level-btn:active {
+  transform: scale(0.96);
+  box-shadow: 0 0 6px rgba(150,200,255,0.6);
+}
+
+.level-btn.active {
+  background: linear-gradient(135deg, #3560b0, #4b7bd1);
+  border-color: #82c4ff;
+}
+
+/* Optional type coloring */
+.level-btn.basic {
+  border-left: 5px solid #4fa3ff;
+}
+
+.level-btn.advanced {
+  border-left: 5px solid #ff9f43;
+}
+
+.trial-chamber {
+  margin-bottom: 24px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+}
+
+.level-badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.05);
+}
+
+.sector-card {
+  margin-top: 12px;
+  padding: 12px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 8px;
+}
+
+.opponent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 8px;
+  transition: all 0.3s ease;
+}
+
+.opponent-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  transition: all 0.3s ease; /* smooth expansion */
+}
+
+/* Allow card to span more columns on hover */
+.opponent-card:hover {
+  grid-column: span 2; /* expand width 2x */
+  z-index: 10; /* overlap neighbors */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Card summary */
+/* Summary (name + level) */
+.opponent-card .summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* prevent wrapping */
+  gap: 6px;
+  overflow: hidden;
+}
+
+/* Opponent Name */
+.opponent-card .opponent-name {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* stay on one line */
+  max-width: calc(100% - 50px); /* leave space for level badge */
+}
+
+/* Level Badge */
+.opponent-card .opponent-level {
+  background: rgba(255,255,255,0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  flex-shrink: 0; /* never shrink */
+  white-space: nowrap;
+}
+
+/* Level Buff Box - matches web theme */
+.level-buff-box {
+  background: rgba(19, 43, 80, 0.7); /* semi-transparent deep blue */
+  border: 2px solid #3a5c88;         /* same as .box border */
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #82c4ff;                     /* matches highlight color */
+  box-shadow: 0 2px 8px rgba(100, 160, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+/* Card styling */
+.opponent-card {
+  align-self: start;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative; /* for hover z-index */
+  transition: box-shadow 0.2s ease, z-index 0.2s ease;
+}
+
+/* Hover effect - only shadow & z-index, no scale */
+.opponent-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  z-index: 10;
+}
+
+/* Hidden details by default */
+.opponent-card .details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.35s ease, margin-top 0.35s ease;
+  margin-top: 0;
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+/* Show details on hover */
+.opponent-card:hover .details {
+  max-height: 300px; /* adjust for content */
+  opacity: 1;
+  margin-top: 6px;
+  pointer-events: auto;
+}
+
+/* Description styling */
+.opponent-desc {
+  margin-top: 6px;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.7);
+  border-left: 2px solid rgba(255,255,255,0.2);
+  padding-left: 6px;
+  word-break: break-word; /* wrap long text */
+}
+
+/* Rewards grid */
+.reward-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.reward-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reward-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+.reward-name {
+  font-weight: 600;
+  word-break: break-word;
+  flex: 1;
+}
+
+.reward-qty {
+  background: rgba(255,255,255,0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+/* Chamber Buff */
+.chamber-buff {
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  background: rgba(0,255,150,0.1);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Challenges */
+.challenge-list {
+  margin-top: 8px;
+  font-size: 0.85rem;
+}

@@ -1,0 +1,1209 @@
+{
+  "session": 1,
+  "trialbuffName": "Trial Chambers: Entangled",
+  "trialbuffs": "Dealing Quantum DMG releases a Shockwave that deals 500% Physical ATK as AoE Physical DMG to the target opponent. This effect can occour once every cycle.",
+
+  "levels": {
+    "l1": {
+      "levelType": "basic",
+      "levelbuff": "Sector 1 - All characters' Physical DMG Bonus is increased by 20%.",
+      "chamber1": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Corruptor",
+              "baseHp": 122,
+              "baseAtk": 33,
+              "baseDef": 16,
+              "level": 42,
+              "hpMultiplier": 1.3,
+              "hpModifier": 0,
+              "qty": 2
+            },
+            "opponent2": {
+              "name": "Shielded Corruptor",
+              "baseHp": 158,
+              "baseAtk": 28,
+              "baseDef": 24,
+              "level": 42,
+              "hpMultiplier": 1.3,
+              "hpModifier": 0,
+              "qty": 3
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Shielded Corruptor",
+              "baseHp": 158,
+              "baseAtk": 28,
+              "baseDef": 24,
+              "level": 42,
+              "hpMultiplier": 1.3,
+              "hpModifier": 0,
+              "qty": 3
+            },
+            "opponent2": {
+              "name": "Physical Voyage Corruptor",
+              "baseHp": 113,
+              "baseAtk": 42,
+              "baseDef": 18,
+              "level": 42,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "wave3": {
+            "opponent1": {
+              "name": "Golemite",
+              "baseHp": 516,
+              "baseAtk": 51,
+              "baseDef": 44,
+              "level": 42,
+              "hpMultiplier": 1.38,
+              "hpModifier": 0,
+              "qty": 1
+            },
+            "opponent2": {
+              "name": "Physical Voyage Corruptor",
+              "baseHp": 113,
+              "baseAtk": 42,
+              "baseDef": 18,
+              "level": 42,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber2": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Golemite",
+              "baseHp": 516,
+              "baseAtk": 51,
+              "baseDef": 44,
+              "level": 46,
+              "hpMultiplier": 1.38,
+              "hpModifier": 0,
+              "qty": 2
+            },
+            "opponent2": {
+              "name": "Destruction Voyage Corruptor",
+              "baseHp": 113,
+              "baseAtk": 58,
+              "baseDef": 18,
+              "level": 46,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Golemite",
+              "baseHp": 516,
+              "baseAtk": 51,
+              "baseDef": 44,
+              "level": 46,
+              "hpMultiplier": 1.38,
+              "hpModifier": 0,
+              "qty": 2
+            },
+            "opponent2": {
+              "name": "Destruction Voyage Corruptor",
+              "baseHp": 113,
+              "baseAtk": 58,
+              "baseDef": 18,
+              "level": 46,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber3": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Volte-Energized Zyphar",
+              "baseHp": 412,
+              "baseAtk": 51,
+              "baseDef": 36,
+              "level": 50,
+              "hpMultiplier": 1.42,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Periodically generates a Volte Shield equals to 60% Max HP. While the Shield is active, all Zyphar attacks are enhanced."
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Volte-Energized Zyphar",
+              "baseHp": 412,
+              "baseAtk": 51,
+              "baseDef": 36,
+              "level": 50,
+              "hpMultiplier": 1.42,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Periodically generates a Volte Shield equals to 60% Max HP. While the Shield is active, all Zyphar attacks are enhanced."
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 100 }
+          }
+        }
+      }
+    },
+
+    "l2": {
+      "levelType": "basic",
+      "levelbuff": "Sector 1 - All characters' Volte DMG Bonus is increased by 20%.",
+      "chamber1": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Large Tide Distortion",
+              "baseHp": 411,
+              "baseAtk": 41,
+              "baseDef": 34,
+              "level": 52,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 3
+            },
+            "opponent2": {
+              "name": "Tide Distortion",
+              "baseHp": 213,
+              "baseAtk": 31.1,
+              "baseDef": 21,
+              "level": 52,
+              "hpMultiplier": 1.38,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Large Tide Distortion",
+              "baseHp": 411,
+              "baseAtk": 41,
+              "baseDef": 34,
+              "level": 56,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 1
+            },
+            "opponent2": {
+              "name": "Tide Distortion",
+              "baseHp": 213,
+              "baseAtk": 31.1,
+              "baseDef": 21,
+              "level": 52,
+              "hpMultiplier": 1.38,
+              "hpModifier": 0,
+              "qty": 2
+            },
+            "opponent33": {
+              "name": "Frost Voyage Corruptor",
+              "baseHp": 113,
+              "baseAtk": 42,
+              "baseDef": 18,
+              "level": 52,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber2": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Tide-Energized Zyphar",
+              "baseHp": 412,
+              "baseAtk": 51,
+              "baseDef": 36,
+              "level": 56,
+              "hpMultiplier": 1.42,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "Periodically generates a Tide Shield equals to 60% Max HP. While the Shield is active, all Zyphar attacks are enhanced."
+            },
+            "opponent2": {
+              "name": "Frost-Energized Zyphar",
+              "baseHp": 412,
+              "baseAtk": 51,
+              "baseDef": 36,
+              "level": 56,
+              "hpMultiplier": 1.42,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Periodically generates a Frost Shield equals to 60% Max HP. While the Shield is active, all Zyphar attacks are enhanced."
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber3": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Frost-Energized Zyphrus",
+              "baseHp": 671,
+              "baseAtk": 78.3,
+              "baseDef": 55.4,
+              "level": 60,
+              "hpMultiplier": 1.48,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Periodically generates a Frost Shield equals to 100% Max HP. While the Shield is active, all Zyphrus attacks are enhanced."
+            },
+            "opponent2": {
+              "name": "Tide Distortion",
+              "baseHp": 213,
+              "baseAtk": 31.1,
+              "baseDef": 21,
+              "level": 60,
+              "hpMultiplier": 1.38,
+              "hpModifier": 0,
+              "qty": 4
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 100 }
+          }
+        }
+      }
+    },
+
+    "l3": {
+      "levelType": "basic",
+      "levelbuff": "Sector 1 - All characters' Normal Attack DMG is increased by 48%.",
+      "chamber1": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Flame-Fusioned Golem",
+              "baseHp": 782,
+              "baseAtk": 79,
+              "baseDef": 81.4,
+              "level": 62,
+              "hpMultiplier": 1.42,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Golem's Flame RES increased by 40%. Can summons 2 Flame-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
+            },
+            "opponent2": {
+              "name": "Golemite",
+              "baseHp": 516,
+              "baseAtk": 51,
+              "baseDef": 44,
+              "level": 62,
+              "hpMultiplier": 1.38,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber2": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Physial Voyage Corruptor",
+              "baseHp": 122,
+              "baseAtk": 33,
+              "baseDef": 16,
+              "level": 64,
+              "hpMultiplier": 1.3,
+              "hpModifier": 0,
+              "qty": 2
+            },
+            "opponent2": {
+              "name": "Shielded Corruptor",
+              "baseHp": 158,
+              "baseAtk": 28,
+              "baseDef": 24,
+              "level": 64,
+              "hpMultiplier": 1.3,
+              "hpModifier": 0,
+              "qty": 3
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Warrior Corruptor",
+              "baseHp": 214,
+              "baseAtk": 34,
+              "baseDef": 29.441,
+              "level": 64,
+              "hpMultiplier": 1.38,
+              "hpModifier": 0,
+              "qty": 3
+            },
+            "opponent2": {
+              "name": "Volte Voyage Corruptor",
+              "baseHp": 113,
+              "baseAtk": 42,
+              "baseDef": 18,
+              "level": 64,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "wave3": {
+            "opponent1": {
+              "name": "Flame-Energized Zyphar",
+              "baseHp": 412,
+              "baseAtk": 51,
+              "baseDef": 36,
+              "level": 64,
+              "hpMultiplier": 1.42,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Periodically generates a Flame Shield equals to 60% Max HP. While the Shield is active, all Zyphar attacks are enhanced."
+            },
+            "opponent3": {
+              "name": "Volte Voyage Corruptor",
+              "baseHp": 113,
+              "baseAtk": 42,
+              "baseDef": 18,
+              "level": 64,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 4
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber3": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Extreme Flame Distortion",
+              "baseHp": 1241,
+              "baseAtk": 100.112,
+              "baseDef": 64.92,
+              "level": 66,
+              "hpMultiplier": 1.581,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Immue to Flame DMG. On the active stage, perfroms heavy attacks that can deal massive AoE damages to the team. Can be shut down by using Tide or Frost."
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 100 }
+          }
+        }
+      }
+    },
+
+    "l4": {
+      "levelType": "basic",
+      "levelbuff": "Sector 1 - Technology characters' Normal Attack DMG is increased by 48%. Disorder characters' Normal Skill DMG is increased by 48%.",
+      "chamber1": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Shuttleguard General - Destruction",
+              "baseHp": 566.47,
+              "baseAtk": 54.23,
+              "baseDef": 92.51,
+              "level": 66,
+              "hpMultiplier": 1.471,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Shuttleguard General - Destruction can buffs nearby Shuttleguards' DMG."
+            },
+            "opponent2": {
+              "name": "Shuttleguards",
+              "baseHp": 261.118,
+              "baseAtk": 43.31,
+              "baseDef": 49.912,
+              "level": 66,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 4
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Shuttleguard General - Strength",
+              "baseHp": 566.47,
+              "baseAtk": 54.23,
+              "baseDef": 92.51,
+              "level": 66,
+              "hpMultiplier": 1.471,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Shuttleguard General - Strength can buffs nearby Shuttleguards by increasing their ATK and DEF."
+            },
+            "opponent2": {
+              "name": "Shuttleguards",
+              "baseHp": 261.118,
+              "baseAtk": 43.31,
+              "baseDef": 49.912,
+              "level": 66,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber2": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Shuttleguard General - Strength",
+              "baseHp": 566.47,
+              "baseAtk": 54.23,
+              "baseDef": 92.51,
+              "level": 68,
+              "hpMultiplier": 1.471,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Shuttleguard General - Strength can buffs nearby Shuttleguards by increasing their ATK and DEF."
+            },
+            "opponent2": {
+              "name": "Shuttleguard Brawler",
+              "baseHp": 334.152,
+              "baseAtk": 48.9881,
+              "baseDef": 63.344,
+              "level": 68,
+              "hpMultiplier": 1.413,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
+            },
+            "opponent3": {
+              "name": "Shuttleguards",
+              "baseHp": 261.118,
+              "baseAtk": 43.31,
+              "baseDef": 49.912,
+              "level": 68,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Voidranger - Multiversal Raiders",
+              "baseHp": 408.812,
+              "baseAtk": 48.981,
+              "baseDef": 42.139,
+              "level": 68,
+              "hpMultiplier": 1.423,
+              "hpModifier": 0,
+              "qty": 3,
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%."
+            },
+            "opponent2": {
+              "name": "Shuttleguard Sniper",
+              "baseHp": 144.914,
+              "baseAtk": 64.618,
+              "baseDef": 41.118,
+              "level": 68,
+              "hpMultiplier": 1.5103,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "Shuttleguard Sniper can locks onto a single target to deal massive DMG."
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber3": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Shuttleguard Brawler",
+              "baseHp": 334.152,
+              "baseAtk": 48.9881,
+              "baseDef": 63.344,
+              "level": 70,
+              "hpMultiplier": 1.413,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
+            },
+            "opponent2": {
+              "name": "Shuttleguard Sniper",
+              "baseHp": 144.914,
+              "baseAtk": 64.618,
+              "baseDef": 41.118,
+              "level": 70,
+              "hpMultiplier": 1.5103,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "Shuttleguard Sniper can locks onto a single target to deal massive DMG."
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Shuttleguard General - Destruction",
+              "baseHp": 566.47,
+              "baseAtk": 54.23,
+              "baseDef": 92.51,
+              "level": 70,
+              "hpMultiplier": 1.471,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Shuttleguard General - Destruction can buffs nearby Shuttleguards' DMG."
+            },
+            "opponent2": {
+              "name": "Shuttleguards",
+              "baseHp": 261.118,
+              "baseAtk": 43.31,
+              "baseDef": 49.912,
+              "level": 70,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "wave3": {
+            "opponent1": {
+              "name": "Frost-Fusioned Golem",
+              "baseHp": 782,
+              "baseAtk": 79,
+              "baseDef": 81.4,
+              "level": 70,
+              "hpMultiplier": 1.42,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Golem's Frost RES increased by 40%. Can summons 2 Frost-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
+            }
+          },
+          "wave4": {
+            "opponent1": {
+              "name": "Voidranger - Exclusion",
+              "baseHp": 408.812,
+              "baseAtk": 48.131,
+              "baseDef": 33.162,
+              "level": 70,
+              "hpMultiplier": 1.289,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%. Voidranger - Exclusion can summon Voidranger minions that explodes upon death."
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 100 }
+          }
+        }
+      }
+    },
+
+    "l5": {
+      "levelType": "basic",
+      "levelbuff": "Sector 1 - Triggering reactions increases Knowledge Unit by 200 for 2 Cycles.",
+      "chamber1": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Flame-Fusioned Golem",
+              "baseHp": 782,
+              "baseAtk": 79,
+              "baseDef": 81.4,
+              "level": 72,
+              "hpMultiplier": 1.42,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Golem's Flame RES increased by 40%. Can summons 2 Flame-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
+            },
+            "opponent2": {
+              "name": "Tide-Fusioned Golem",
+              "baseHp": 782,
+              "baseAtk": 79,
+              "baseDef": 81.4,
+              "level": 72,
+              "hpMultiplier": 1.42,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Golem's Tide RES increased by 40%. Can summons 2 Tide-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber2": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Large Tide Distortion",
+              "baseHp": 411,
+              "baseAtk": 41,
+              "baseDef": 34,
+              "level": 74,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 1
+            },
+            "opponent2": {
+              "name": "Large Flame Distortion",
+              "baseHp": 411,
+              "baseAtk": 41,
+              "baseDef": 34,
+              "level": 74,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 1
+            },
+            "opponent3": {
+              "name": "Large Frost Distortion",
+              "baseHp": 411,
+              "baseAtk": 41,
+              "baseDef": 34,
+              "level": 74,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 1
+            },
+            "opponent4": {
+              "name": "Large Volte Distortion",
+              "baseHp": 411,
+              "baseAtk": 41,
+              "baseDef": 34,
+              "level": 74,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 1
+            },
+            "opponent5": {
+              "name": "Shuttleguard General - Strength",
+              "baseHp": 566.47,
+              "baseAtk": 54.23,
+              "baseDef": 92.51,
+              "level": 74,
+              "hpMultiplier": 1.471,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Shuttleguard General - Strength can buffs nearby Shuttleguards by increasing their ATK and DEF."
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber3": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Extreme Tide Distortion",
+              "baseHp": 1241,
+              "baseAtk": 100.112,
+              "baseDef": 64.92,
+              "level": 77,
+              "hpMultiplier": 1.581,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Immue to Tide DMG. On the active stage, perfroms heavy attacks that can deal massive AoE damages to the team. Can be shut down by using Flame or Frost."
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Extreme Volte Distortion",
+              "baseHp": 1241,
+              "baseAtk": 100.112,
+              "baseDef": 64.92,
+              "level": 77,
+              "hpMultiplier": 1.581,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Immue to Volte DMG. On the active stage, perfroms heavy attacks that can deal massive AoE damages to the team. Can be shut down by using Flame."
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 100 }
+          }
+        }
+      }
+    },
+
+    "l6": {
+      "levelType": "basic",
+      "levelbuff": "Sector 1 - Dealing DMG decreases opponent's DEF by 30%. Additionally, using Rifted Skill increases all team members' CRIT DMG by 40% for 4 Cycles.",
+      "chamber1": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Frost-Fusioned Golem",
+              "baseHp": 782,
+              "baseAtk": 79,
+              "baseDef": 81.4,
+              "level": 77,
+              "hpMultiplier": 1.42,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Golem's Flame RES increased by 40%. Can summons 2 Flame-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
+            },
+            "opponent2": {
+              "name": "Shuttleguards",
+              "baseHp": 261.118,
+              "baseAtk": 43.31,
+              "baseDef": 49.912,
+              "level": 77,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 4
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Voidranger - Exclusion",
+              "baseHp": 408.812,
+              "baseAtk": 48.131,
+              "baseDef": 33.162,
+              "level": 77,
+              "hpMultiplier": 1.289,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%. Voidranger - Exclusion can summon Voidranger minions that explodes upon death."
+            },
+            "opponent2": {
+              "name": "Voidranger - Multiversal Raiders",
+              "baseHp": 408.812,
+              "baseAtk": 48.981,
+              "baseDef": 42.139,
+              "level": 77,
+              "hpMultiplier": 1.423,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%."
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber2": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Large Tide Distortion",
+              "baseHp": 411,
+              "baseAtk": 41,
+              "baseDef": 34,
+              "level": 78,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 1
+            },
+            "opponent2": {
+              "name": "Shuttleguard Sniper",
+              "baseHp": 144.914,
+              "baseAtk": 64.618,
+              "baseDef": 41.118,
+              "level": 78,
+              "hpMultiplier": 1.5103,
+              "hpModifier": 0,
+              "qty": 4,
+              "description": "Shuttleguard Sniper can locks onto a single target to deal massive DMG."
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Disordered Witch - Tide",
+              "baseHp": 543.228,
+              "baseAtk": 55.813,
+              "baseDef": 88.712,
+              "level": 78,
+              "hpMultiplier": 1.461,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Disordered Witches can gives nearby opponent Disordered Shelds corresponding to their Disorder. Shielded opponents deals extra DMG. The shields can be removed by defeating the Disordered Witches."
+            },
+            "opponent2": {
+              "name": "Shuttleguard Brawler",
+              "baseHp": 334.152,
+              "baseAtk": 48.9881,
+              "baseDef": 63.344,
+              "level": 78,
+              "hpMultiplier": 1.413,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber3": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Shuttleguard - Administrator",
+              "baseHp": 1364.489,
+              "baseAtk": 101.008,
+              "baseDef": 66.718,
+              "level": 80,
+              "hpMultiplier": 1.522,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Can summon up to 4 Shuttleguards periodically. Shuttleguard - Administrator can lock onto a selected character and direct his fellow Shuttleguards to attack the selected character. Additionally, Shuttleguard - Administrator will generates a Shield equals to 50% his Max HP when there are Shuttleguards nearby. Critical hits deals 100% increased DMG to the Shield. Once the shields is destoryed, he will lose 2 actions and nearby Shuttleguards' HP is reduced by 50% their Max HP."
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Shuttleguard General - Destruction",
+              "baseHp": 566.47,
+              "baseAtk": 54.23,
+              "baseDef": 92.51,
+              "level": 80,
+              "hpMultiplier": 1.471,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Shuttleguard General - Destruction can buffs nearby Shuttleguards' DMG."
+            },
+            "opponent2": {
+              "name": "Shuttleguards",
+              "baseHp": 261.118,
+              "baseAtk": 43.31,
+              "baseDef": 49.912,
+              "level": 80,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 100 }
+          }
+        }
+      }
+    },
+
+    "l7": {
+      "levelType": "advanced",
+      "levelbuff": "Sector 1 - Technology characters gains 75% Normal Attack DMG Bonus.\nSector 2 - Disordered characters gains 75% Reaction DMG Bonus.",
+      "chamber1": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Frost-Fusioned Golem",
+              "baseHp": 782,
+              "baseAtk": 79,
+              "baseDef": 81.4,
+              "level": 77,
+              "hpMultiplier": 1.42,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Golem's Flame RES increased by 40%. Can summons 2 Flame-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
+            },
+            "opponent2": {
+              "name": "Shuttleguards",
+              "baseHp": 261.118,
+              "baseAtk": 43.31,
+              "baseDef": 49.912,
+              "level": 77,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 4
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Voidranger - Exclusion",
+              "baseHp": 408.812,
+              "baseAtk": 48.131,
+              "baseDef": 33.162,
+              "level": 77,
+              "hpMultiplier": 1.289,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%. Voidranger - Exclusion can summon Voidranger minions that explodes upon death."
+            },
+            "opponent2": {
+              "name": "Voidranger - Multiversal Raiders",
+              "baseHp": 408.812,
+              "baseAtk": 48.981,
+              "baseDef": 42.139,
+              "level": 77,
+              "hpMultiplier": 1.423,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%."
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber2": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Large Tide Distortion",
+              "baseHp": 411,
+              "baseAtk": 41,
+              "baseDef": 34,
+              "level": 78,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 1
+            },
+            "opponent2": {
+              "name": "Shuttleguard Sniper",
+              "baseHp": 144.914,
+              "baseAtk": 64.618,
+              "baseDef": 41.118,
+              "level": 78,
+              "hpMultiplier": 1.5103,
+              "hpModifier": 0,
+              "qty": 4,
+              "description": "Shuttleguard Sniper can locks onto a single target to deal massive DMG."
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Disordered Witch - Tide",
+              "baseHp": 543.228,
+              "baseAtk": 55.813,
+              "baseDef": 88.712,
+              "level": 78,
+              "hpMultiplier": 1.461,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Disordered Witches can gives nearby opponent Disordered Shelds corresponding to their Disorder. Shielded opponents deals extra DMG. The shields can be removed by defeating the Disordered Witches."
+            },
+            "opponent2": {
+              "name": "Shuttleguard Brawler",
+              "baseHp": 334.152,
+              "baseAtk": 48.9881,
+              "baseDef": 63.344,
+              "level": 78,
+              "hpMultiplier": 1.413,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          }
+        }
+      },
+
+      "chamber3": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Shuttleguard - Administrator",
+              "baseHp": 1364.489,
+              "baseAtk": 101.008,
+              "baseDef": 66.718,
+              "level": 80,
+              "hpMultiplier": 1.522,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Can summon up to 4 Shuttleguards periodically. Shuttleguard - Administrator can lock onto a selected character and direct his fellow Shuttleguards to attack the selected character. Additionally, Shuttleguard - Administrator will generates a Shield equals to 50% his Max HP when there are Shuttleguards nearby. Critical hits deals 100% increased DMG to the Shield. Once the shields is destoryed, he will lose 2 actions and nearby Shuttleguards' HP is reduced by 50% their Max HP."
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Shuttleguard General - Destruction",
+              "baseHp": 566.47,
+              "baseAtk": 54.23,
+              "baseDef": 92.51,
+              "level": 80,
+              "hpMultiplier": 1.471,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Shuttleguard General - Destruction can buffs nearby Shuttleguards' DMG."
+            },
+            "opponent2": {
+              "name": "Shuttleguards",
+              "baseHp": 261.118,
+              "baseAtk": 43.31,
+              "baseDef": 49.912,
+              "level": 80,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "challenge": {
+            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+            "star3": "Defeat all opponents with more than 18 Cycles remaining."
+          },
+          "rewards": {
+            "reward1": { "name": "Universal Fragments", "qty": 100 }
+          }
+        }
+      }
+    }
+  }
+}
