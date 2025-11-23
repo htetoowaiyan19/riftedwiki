@@ -123,7 +123,8 @@ function renderSession(data) {
     const levelType = levelData.levelType || (i <= 10 ? "basic" : "advanced");
 
     const btn = document.createElement("div");
-    btn.className = `level-btn ${levelType} ${i === 1 ? "active" : ""}`;
+    const isSeasonal = i >= 11 && i <= 15;
+    btn.className = `level-btn ${isSeasonal ? "seasonal" : ""} ${i === 1 ? "active" : ""}`;
     btn.dataset.levelKey = key;
     btn.dataset.levelNum = i;
     btn.innerHTML = `
@@ -261,42 +262,40 @@ function renderLevel(levelKey, levelData = {}, levelNum = 1) {
         sectorCard.appendChild(waveContainer);
       });
 
-      // Challenges
-      if (sectorData.challenge) {
-        const challengeDiv = document.createElement("div");
-        challengeDiv.className = "challenge-list";
-        challengeDiv.innerHTML = `<h6>Objectives</h6>`;
-        Object.values(sectorData.challenge).forEach(ch => {
-          const div = document.createElement("div");
-          div.textContent = `★ ${ch}`;
-          challengeDiv.appendChild(div);
-        });
-        sectorCard.appendChild(challengeDiv);
-      }
-
-      // Rewards
-      if (sectorData.rewards) {
-        const rewardGrid = document.createElement("div");
-        rewardGrid.className = "reward-grid";
-        Object.values(sectorData.rewards).forEach(rv => {
-          const rCard = document.createElement("div");
-          rCard.className = "reward-card";
-          rCard.innerHTML = `
-            <span class="reward-name">${rv.name}</span>
-            <span class="reward-qty">${rv.qty ?? 1}</span>
-          `;
-          rewardGrid.appendChild(rCard);
-        });
-        sectorCard.appendChild(rewardGrid);
-      }
-
       chamberDiv.appendChild(sectorCard);
+    }
+
+    // --- Challenges & Rewards (move here from sector) ---
+    if (chamberData.challenge) {
+      const challengeDiv = document.createElement("div");
+      challengeDiv.className = "challenge-list";
+      challengeDiv.innerHTML = `<h6>Objectives</h6>`;
+      Object.values(chamberData.challenge).forEach(ch => {
+        const div = document.createElement("div");
+        div.textContent = `★ ${ch}`;
+        challengeDiv.appendChild(div);
+      });
+      chamberDiv.appendChild(challengeDiv);
+    }
+
+    if (chamberData.rewards) {
+      const rewardGrid = document.createElement("div");
+      rewardGrid.className = "reward-grid";
+      Object.values(chamberData.rewards).forEach(rv => {
+        const rCard = document.createElement("div");
+        rCard.className = "reward-card";
+        rCard.innerHTML = `
+          <span class="reward-name">${rv.name}</span>
+          <span class="reward-qty">${rv.qty ?? 1}</span>
+        `;
+        rewardGrid.appendChild(rCard);
+      });
+      chamberDiv.appendChild(rewardGrid);
     }
 
     container.appendChild(chamberDiv);
   }
 }
-
 
 // Helper: call when user clicks "Back to sessions"
 function backToTrialsLoader() {

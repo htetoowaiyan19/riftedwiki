@@ -16,7 +16,7 @@
               "baseHp": 122,
               "baseAtk": 33,
               "baseDef": 16,
-              "level": 42,
+              "level": 32,
               "hpMultiplier": 1.3,
               "hpModifier": 0,
               "qty": 2
@@ -26,7 +26,7 @@
               "baseHp": 158,
               "baseAtk": 28,
               "baseDef": 24,
-              "level": 42,
+              "level": 32,
               "hpMultiplier": 1.3,
               "hpModifier": 0,
               "qty": 3
@@ -38,7 +38,7 @@
               "baseHp": 158,
               "baseAtk": 28,
               "baseDef": 24,
-              "level": 42,
+              "level": 32,
               "hpMultiplier": 1.3,
               "hpModifier": 0,
               "qty": 3
@@ -48,7 +48,7 @@
               "baseHp": 113,
               "baseAtk": 42,
               "baseDef": 18,
-              "level": 42,
+              "level": 32,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 2
@@ -60,7 +60,7 @@
               "baseHp": 516,
               "baseAtk": 51,
               "baseDef": 44,
-              "level": 42,
+              "level": 32,
               "hpMultiplier": 1.38,
               "hpModifier": 0,
               "qty": 1
@@ -70,20 +70,20 @@
               "baseHp": 113,
               "baseAtk": 42,
               "baseDef": 18,
-              "level": 42,
+              "level": 32,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 2
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -96,7 +96,7 @@
               "baseHp": 516,
               "baseAtk": 51,
               "baseDef": 44,
-              "level": 46,
+              "level": 34,
               "hpMultiplier": 1.38,
               "hpModifier": 0,
               "qty": 2
@@ -106,7 +106,7 @@
               "baseHp": 113,
               "baseAtk": 58,
               "baseDef": 18,
-              "level": 46,
+              "level": 34,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 2
@@ -118,7 +118,7 @@
               "baseHp": 516,
               "baseAtk": 51,
               "baseDef": 44,
-              "level": 46,
+              "level": 34,
               "hpMultiplier": 1.38,
               "hpModifier": 0,
               "qty": 2
@@ -128,20 +128,20 @@
               "baseHp": 113,
               "baseAtk": 58,
               "baseDef": 18,
-              "level": 46,
+              "level": 34,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 2
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -154,7 +154,7 @@
               "baseHp": 412,
               "baseAtk": 51,
               "baseDef": 36,
-              "level": 50,
+              "level": 36,
               "hpMultiplier": 1.42,
               "hpModifier": 0,
               "qty": 1,
@@ -167,21 +167,21 @@
               "baseHp": 412,
               "baseAtk": 51,
               "baseDef": 36,
-              "level": 50,
+              "level": 36,
               "hpMultiplier": 1.42,
               "hpModifier": 0,
               "qty": 1,
               "description": "Periodically generates a Volte Shield equals to 60% Max HP. While the Shield is active, all Zyphar attacks are enhanced."
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 100 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 100 }
         }
       }
     },
@@ -198,7 +198,7 @@
               "baseHp": 411,
               "baseAtk": 41,
               "baseDef": 34,
-              "level": 52,
+              "level": 36,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 3
@@ -208,7 +208,7 @@
               "baseHp": 213,
               "baseAtk": 31.1,
               "baseDef": 21,
-              "level": 52,
+              "level": 36,
               "hpMultiplier": 1.38,
               "hpModifier": 0,
               "qty": 2
@@ -220,7 +220,7 @@
               "baseHp": 411,
               "baseAtk": 41,
               "baseDef": 34,
-              "level": 52,
+              "level": 36,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 1
@@ -230,7 +230,7 @@
               "baseHp": 213,
               "baseAtk": 31.1,
               "baseDef": 21,
-              "level": 52,
+              "level": 36,
               "hpMultiplier": 1.38,
               "hpModifier": 0,
               "qty": 2
@@ -240,20 +240,20 @@
               "baseHp": 113,
               "baseAtk": 42,
               "baseDef": 18,
-              "level": 52,
+              "level": 36,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 2
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -266,7 +266,7 @@
               "baseHp": 412,
               "baseAtk": 51,
               "baseDef": 36,
-              "level": 56,
+              "level": 38,
               "hpMultiplier": 1.42,
               "hpModifier": 0,
               "qty": 2,
@@ -277,21 +277,21 @@
               "baseHp": 412,
               "baseAtk": 51,
               "baseDef": 36,
-              "level": 56,
+              "level": 38,
               "hpMultiplier": 1.42,
               "hpModifier": 0,
               "qty": 1,
               "description": "Periodically generates a Frost Shield equals to 60% Max HP. While the Shield is active, all Zyphar attacks are enhanced."
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -304,7 +304,7 @@
               "baseHp": 671,
               "baseAtk": 78.3,
               "baseDef": 55.4,
-              "level": 60,
+              "level": 40,
               "hpMultiplier": 1.48,
               "hpModifier": 0,
               "qty": 1,
@@ -315,20 +315,20 @@
               "baseHp": 213,
               "baseAtk": 31.1,
               "baseDef": 21,
-              "level": 60,
+              "level": 40,
               "hpMultiplier": 1.38,
               "hpModifier": 0,
               "qty": 4
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 100 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 100 }
         }
       }
     },
@@ -345,7 +345,7 @@
               "baseHp": 782,
               "baseAtk": 79,
               "baseDef": 81.4,
-              "level": 62,
+              "level": 42,
               "hpMultiplier": 1.42,
               "hpModifier": 0,
               "qty": 1,
@@ -356,20 +356,20 @@
               "baseHp": 516,
               "baseAtk": 51,
               "baseDef": 44,
-              "level": 62,
+              "level": 42,
               "hpMultiplier": 1.38,
               "hpModifier": 0,
               "qty": 2
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -382,7 +382,7 @@
               "baseHp": 122,
               "baseAtk": 33,
               "baseDef": 16,
-              "level": 64,
+              "level": 44,
               "hpMultiplier": 1.3,
               "hpModifier": 0,
               "qty": 2
@@ -392,7 +392,7 @@
               "baseHp": 158,
               "baseAtk": 28,
               "baseDef": 24,
-              "level": 64,
+              "level": 44,
               "hpMultiplier": 1.3,
               "hpModifier": 0,
               "qty": 3
@@ -404,7 +404,7 @@
               "baseHp": 214,
               "baseAtk": 34,
               "baseDef": 29.441,
-              "level": 64,
+              "level": 44,
               "hpMultiplier": 1.38,
               "hpModifier": 0,
               "qty": 3
@@ -414,7 +414,7 @@
               "baseHp": 113,
               "baseAtk": 42,
               "baseDef": 18,
-              "level": 64,
+              "level": 44,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 2
@@ -426,7 +426,7 @@
               "baseHp": 412,
               "baseAtk": 51,
               "baseDef": 36,
-              "level": 64,
+              "level": 44,
               "hpMultiplier": 1.42,
               "hpModifier": 0,
               "qty": 1,
@@ -437,20 +437,20 @@
               "baseHp": 113,
               "baseAtk": 42,
               "baseDef": 18,
-              "level": 64,
+              "level": 44,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 4
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -463,21 +463,21 @@
               "baseHp": 1241,
               "baseAtk": 100.112,
               "baseDef": 64.92,
-              "level": 66,
+              "level": 46,
               "hpMultiplier": 1.581,
               "hpModifier": 0,
               "qty": 1,
               "description": "Immue to Flame DMG. On the active stage, perfroms heavy attacks that can deal massive AoE damages to the team. Can be shut down by using Tide or Frost."
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 100 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 100 }
         }
       }
     },
@@ -494,7 +494,7 @@
               "baseHp": 566.47,
               "baseAtk": 54.23,
               "baseDef": 92.51,
-              "level": 66,
+              "level": 46,
               "hpMultiplier": 1.471,
               "hpModifier": 0,
               "qty": 1,
@@ -505,7 +505,7 @@
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
-              "level": 66,
+              "level": 46,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 4
@@ -517,7 +517,7 @@
               "baseHp": 566.47,
               "baseAtk": 54.23,
               "baseDef": 92.51,
-              "level": 66,
+              "level": 46,
               "hpMultiplier": 1.471,
               "hpModifier": 0,
               "qty": 1,
@@ -528,20 +528,20 @@
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
-              "level": 66,
+              "level": 46,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 2
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -554,7 +554,7 @@
               "baseHp": 566.47,
               "baseAtk": 54.23,
               "baseDef": 92.51,
-              "level": 68,
+              "level": 48,
               "hpMultiplier": 1.471,
               "hpModifier": 0,
               "qty": 1,
@@ -565,7 +565,7 @@
               "baseHp": 334.152,
               "baseAtk": 48.9881,
               "baseDef": 63.344,
-              "level": 68,
+              "level": 48,
               "hpMultiplier": 1.413,
               "hpModifier": 0,
               "qty": 2,
@@ -576,7 +576,7 @@
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
-              "level": 68,
+              "level": 48,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 2
@@ -588,7 +588,7 @@
               "baseHp": 408.812,
               "baseAtk": 48.981,
               "baseDef": 42.139,
-              "level": 68,
+              "level": 48,
               "hpMultiplier": 1.423,
               "hpModifier": 0,
               "qty": 3,
@@ -599,21 +599,21 @@
               "baseHp": 144.914,
               "baseAtk": 64.618,
               "baseDef": 41.118,
-              "level": 68,
+              "level": 48,
               "hpMultiplier": 1.5103,
               "hpModifier": 0,
               "qty": 2,
               "description": "Shuttleguard Sniper can locks onto a single target to deal massive DMG."
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -626,7 +626,7 @@
               "baseHp": 334.152,
               "baseAtk": 48.9881,
               "baseDef": 63.344,
-              "level": 70,
+              "level": 50,
               "hpMultiplier": 1.413,
               "hpModifier": 0,
               "qty": 1,
@@ -637,7 +637,7 @@
               "baseHp": 144.914,
               "baseAtk": 64.618,
               "baseDef": 41.118,
-              "level": 70,
+              "level": 50,
               "hpMultiplier": 1.5103,
               "hpModifier": 0,
               "qty": 2,
@@ -650,7 +650,7 @@
               "baseHp": 566.47,
               "baseAtk": 54.23,
               "baseDef": 92.51,
-              "level": 70,
+              "level": 50,
               "hpMultiplier": 1.471,
               "hpModifier": 0,
               "qty": 1,
@@ -661,7 +661,7 @@
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
-              "level": 70,
+              "level": 50,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 2
@@ -673,7 +673,7 @@
               "baseHp": 782,
               "baseAtk": 79,
               "baseDef": 81.4,
-              "level": 70,
+              "level": 50,
               "hpMultiplier": 1.42,
               "hpModifier": 0,
               "qty": 1,
@@ -686,21 +686,21 @@
               "baseHp": 408.812,
               "baseAtk": 48.131,
               "baseDef": 33.162,
-              "level": 70,
+              "level": 50,
               "hpMultiplier": 1.289,
               "hpModifier": 0,
               "qty": 1,
               "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%. Voidranger - Exclusion can summon Voidranger minions that explodes upon death."
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 100 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 100 }
         }
       }
     },
@@ -717,7 +717,7 @@
               "baseHp": 782,
               "baseAtk": 79,
               "baseDef": 81.4,
-              "level": 72,
+              "level": 52,
               "hpMultiplier": 1.42,
               "hpModifier": 0,
               "qty": 1,
@@ -728,21 +728,21 @@
               "baseHp": 782,
               "baseAtk": 79,
               "baseDef": 81.4,
-              "level": 72,
+              "level": 52,
               "hpMultiplier": 1.42,
               "hpModifier": 0,
               "qty": 1,
               "description": "Golem's Tide RES increased by 40%. Can summons 2 Tide-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -755,7 +755,7 @@
               "baseHp": 411,
               "baseAtk": 41,
               "baseDef": 34,
-              "level": 74,
+              "level": 54,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 1
@@ -765,7 +765,7 @@
               "baseHp": 411,
               "baseAtk": 41,
               "baseDef": 34,
-              "level": 74,
+              "level": 54,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 1
@@ -775,7 +775,7 @@
               "baseHp": 411,
               "baseAtk": 41,
               "baseDef": 34,
-              "level": 74,
+              "level": 54,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 1
@@ -785,7 +785,7 @@
               "baseHp": 411,
               "baseAtk": 41,
               "baseDef": 34,
-              "level": 74,
+              "level": 54,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 1
@@ -795,21 +795,21 @@
               "baseHp": 566.47,
               "baseAtk": 54.23,
               "baseDef": 92.51,
-              "level": 74,
+              "level": 54,
               "hpMultiplier": 1.471,
               "hpModifier": 0,
               "qty": 1,
               "description": "Shuttleguard General - Strength can buffs nearby Shuttleguards by increasing their ATK and DEF."
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -822,7 +822,7 @@
               "baseHp": 1241,
               "baseAtk": 100.112,
               "baseDef": 64.92,
-              "level": 77,
+              "level": 56,
               "hpMultiplier": 1.581,
               "hpModifier": 0,
               "qty": 1,
@@ -835,21 +835,21 @@
               "baseHp": 1241,
               "baseAtk": 100.112,
               "baseDef": 64.92,
-              "level": 77,
+              "level": 56,
               "hpMultiplier": 1.581,
               "hpModifier": 0,
               "qty": 1,
-              "description": "Immue to Volte DMG. On the active stage, perfroms heavy attacks that can deal massive AoE damages to the team. Can be shut down by using Flame."
+              "description": "Immue to Volte DMG. On the active stage, perfroms heavy attacks that can deal massive AoE damages to the team. Can be shut down by using Flame or Frost."
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 100 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 100 }
         }
       }
     },
@@ -866,7 +866,7 @@
               "baseHp": 782,
               "baseAtk": 79,
               "baseDef": 81.4,
-              "level": 77,
+              "level": 56,
               "hpMultiplier": 1.42,
               "hpModifier": 0,
               "qty": 1,
@@ -877,7 +877,7 @@
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
-              "level": 77,
+              "level": 56,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 4
@@ -889,7 +889,7 @@
               "baseHp": 408.812,
               "baseAtk": 48.131,
               "baseDef": 33.162,
-              "level": 77,
+              "level": 56,
               "hpMultiplier": 1.289,
               "hpModifier": 0,
               "qty": 1,
@@ -900,21 +900,21 @@
               "baseHp": 408.812,
               "baseAtk": 48.981,
               "baseDef": 42.139,
-              "level": 77,
+              "level": 56,
               "hpMultiplier": 1.423,
               "hpModifier": 0,
               "qty": 2,
               "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%."
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -927,7 +927,7 @@
               "baseHp": 411,
               "baseAtk": 41,
               "baseDef": 34,
-              "level": 78,
+              "level": 58,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 1
@@ -937,7 +937,7 @@
               "baseHp": 144.914,
               "baseAtk": 64.618,
               "baseDef": 41.118,
-              "level": 78,
+              "level": 58,
               "hpMultiplier": 1.5103,
               "hpModifier": 0,
               "qty": 4,
@@ -950,7 +950,7 @@
               "baseHp": 543.228,
               "baseAtk": 55.813,
               "baseDef": 88.712,
-              "level": 78,
+              "level": 58,
               "hpMultiplier": 1.461,
               "hpModifier": 0,
               "qty": 1,
@@ -961,21 +961,21 @@
               "baseHp": 334.152,
               "baseAtk": 48.9881,
               "baseDef": 63.344,
-              "level": 78,
+              "level": 58,
               "hpMultiplier": 1.413,
               "hpModifier": 0,
               "qty": 2,
               "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -988,7 +988,7 @@
               "baseHp": 1364.489,
               "baseAtk": 101.008,
               "baseDef": 66.718,
-              "level": 80,
+              "level": 60,
               "hpMultiplier": 1.522,
               "hpModifier": 0,
               "qty": 1,
@@ -1001,7 +1001,7 @@
               "baseHp": 566.47,
               "baseAtk": 54.23,
               "baseDef": 92.51,
-              "level": 80,
+              "level": 60,
               "hpMultiplier": 1.471,
               "hpModifier": 0,
               "qty": 1,
@@ -1012,20 +1012,20 @@
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
-              "level": 80,
+              "level": 60,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 2
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 100 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 100 }
         }
       }
     },
@@ -1038,34 +1038,11 @@
         "sector1": {
           "wave1": {
             "opponent1": {
-              "name": "Frost-Fusioned Golem",
-              "baseHp": 782,
-              "baseAtk": 79,
-              "baseDef": 81.4,
-              "level": 77,
-              "hpMultiplier": 1.42,
-              "hpModifier": 0,
-              "qty": 1,
-              "description": "Golem's Flame RES increased by 40%. Can summons 2 Flame-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
-            },
-            "opponent2": {
-              "name": "Shuttleguards",
-              "baseHp": 261.118,
-              "baseAtk": 43.31,
-              "baseDef": 49.912,
-              "level": 77,
-              "hpMultiplier": 1.4,
-              "hpModifier": 0,
-              "qty": 4
-            }
-          },
-          "wave2": {
-            "opponent1": {
               "name": "Voidranger - Exclusion",
               "baseHp": 408.812,
               "baseAtk": 48.131,
               "baseDef": 33.162,
-              "level": 77,
+              "level": 62,
               "hpMultiplier": 1.289,
               "hpModifier": 0,
               "qty": 1,
@@ -1076,21 +1053,92 @@
               "baseHp": 408.812,
               "baseAtk": 48.981,
               "baseDef": 42.139,
-              "level": 77,
+              "level": 62,
               "hpMultiplier": 1.423,
               "hpModifier": 0,
               "qty": 2,
               "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%."
             }
           },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
+          "wave2": {
+            "opponent1": {
+              "name": "Voidranger - Defender",
+              "baseHp": 571.081,
+              "baseAtk": 44.61,
+              "baseDef": 56.224,
+              "level": 62,
+              "hpMultiplier": 1.389,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%. Voidranger - Defender has a very high DEF and can boosts the DEF of nearby Voidrangers."
+            },
+            "opponent2": {
+              "name": "Voidranger - Multiversal Raiders",
+              "baseHp": 408.812,
+              "baseAtk": 48.981,
+              "baseDef": 42.139,
+              "level": 62,
+              "hpMultiplier": 1.423,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%."
+            }
           }
+        },
+        "sector2": {
+          "wave1": {
+            "opponent1": {
+              "name": "Volte-Fusioned Golem",
+              "baseHp": 782,
+              "baseAtk": 79,
+              "baseDef": 81.4,
+              "level": 62,
+              "hpMultiplier": 1.42,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Golem's Flame RES increased by 40%. Can summons 2 Flame-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
+            },
+            "opponent2": {
+              "name": "Tide Distortion",
+              "baseHp": 213,
+              "baseAtk": 31.1,
+              "baseDef": 21,
+              "level": 62,
+              "hpMultiplier": 1.38,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Large Tide Distortion",
+              "baseHp": 411,
+              "baseAtk": 41,
+              "baseDef": 34,
+              "level": 62,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            },
+            "opponent2": {
+              "name": "Volte Voyage Corruptor",
+              "baseHp": 113,
+              "baseAtk": 42,
+              "baseDef": 18,
+              "level": 62,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -1099,59 +1147,61 @@
         "sector1": {
           "wave1": {
             "opponent1": {
-              "name": "Large Tide Distortion",
-              "baseHp": 411,
-              "baseAtk": 41,
-              "baseDef": 34,
-              "level": 78,
-              "hpMultiplier": 1.4,
+              "name": "Shuttleguard - Administrator",
+              "baseHp": 1364.489,
+              "baseAtk": 101.008,
+              "baseDef": 66.718,
+              "level": 64,
+              "hpMultiplier": 1.522,
               "hpModifier": 0,
-              "qty": 1
+              "qty": 1,
+              "description": "Can summon up to 4 Shuttleguards periodically. Shuttleguard - Administrator can lock onto a selected character and direct his fellow Shuttleguards to attack the selected character. Additionally, Shuttleguard - Administrator will generates a Shield equals to 50% his Max HP when there are Shuttleguards nearby. Critical hits deals 100% increased DMG to the Shield. Once the shields is destoryed, he will lose 2 actions and nearby Shuttleguards' HP is reduced by 50% their Max HP."
             },
             "opponent2": {
               "name": "Shuttleguard Sniper",
               "baseHp": 144.914,
               "baseAtk": 64.618,
               "baseDef": 41.118,
-              "level": 78,
+              "level": 64,
               "hpMultiplier": 1.5103,
               "hpModifier": 0,
-              "qty": 4,
+              "qty": 2,
               "description": "Shuttleguard Sniper can locks onto a single target to deal massive DMG."
             }
-          },
-          "wave2": {
+          }
+        },
+        "sector2": {
+          "wave1": {
             "opponent1": {
-              "name": "Disordered Witch - Tide",
-              "baseHp": 543.228,
-              "baseAtk": 55.813,
-              "baseDef": 88.712,
-              "level": 78,
-              "hpMultiplier": 1.461,
+              "name": "Extreme Volte Distortion",
+              "baseHp": 1241,
+              "baseAtk": 100.112,
+              "baseDef": 64.92,
+              "level": 64,
+              "hpMultiplier": 1.581,
               "hpModifier": 0,
               "qty": 1,
-              "description": "Disordered Witches can gives nearby opponent Disordered Shelds corresponding to their Disorder. Shielded opponents deals extra DMG. The shields can be removed by defeating the Disordered Witches."
+              "description": "Immue to Volte DMG. On the active stage, perfroms heavy attacks that can deal massive AoE damages to the team. Can be shut down by using Flame or Frost."
             },
             "opponent2": {
-              "name": "Shuttleguard Brawler",
-              "baseHp": 334.152,
-              "baseAtk": 48.9881,
-              "baseDef": 63.344,
-              "level": 78,
-              "hpMultiplier": 1.413,
+              "name": "Tide Distortion",
+              "baseHp": 213,
+              "baseAtk": 31.1,
+              "baseDef": 21,
+              "level": 64,
+              "hpMultiplier": 1.38,
               "hpModifier": 0,
-              "qty": 2,
-              "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
+              "qty": 4
             }
-          },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 50 }
           }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
         }
       },
 
@@ -1160,48 +1210,390 @@
         "sector1": {
           "wave1": {
             "opponent1": {
-              "name": "Shuttleguard - Administrator",
-              "baseHp": 1364.489,
-              "baseAtk": 101.008,
-              "baseDef": 66.718,
-              "level": 80,
-              "hpMultiplier": 1.522,
-              "hpModifier": 0,
-              "qty": 1,
-              "description": "Can summon up to 4 Shuttleguards periodically. Shuttleguard - Administrator can lock onto a selected character and direct his fellow Shuttleguards to attack the selected character. Additionally, Shuttleguard - Administrator will generates a Shield equals to 50% his Max HP when there are Shuttleguards nearby. Critical hits deals 100% increased DMG to the Shield. Once the shields is destoryed, he will lose 2 actions and nearby Shuttleguards' HP is reduced by 50% their Max HP."
-            }
-          },
-          "wave2": {
-            "opponent1": {
               "name": "Shuttleguard General - Destruction",
               "baseHp": 566.47,
               "baseAtk": 54.23,
               "baseDef": 92.51,
-              "level": 80,
+              "level": 66,
               "hpMultiplier": 1.471,
               "hpModifier": 0,
               "qty": 1,
               "description": "Shuttleguard General - Destruction can buffs nearby Shuttleguards' DMG."
             },
             "opponent2": {
+              "name": "Shuttleguard Brawler",
+              "baseHp": 334.152,
+              "baseAtk": 48.9881,
+              "baseDef": 63.344,
+              "level": 66,
+              "hpMultiplier": 1.413,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
+            },
+            "opponent3": {
               "name": "Shuttleguards",
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
-              "level": 80,
+              "level": 66,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 2
             }
           },
-          "challenge": {
-            "star1": "Defeat all opponents with more than 6 Cycles remaining.",
-            "star2": "Defeat all opponents with more than 12 Cycles remaining.",
-            "star3": "Defeat all opponents with more than 18 Cycles remaining."
-          },
-          "rewards": {
-            "reward1": { "name": "Universal Fragments", "qty": 100 }
+          "wave2": {
+            "opponent1": {
+              "name": "Shuttleguard General - Strength",
+              "baseHp": 566.47,
+              "baseAtk": 54.23,
+              "baseDef": 92.51,
+              "level": 66,
+              "hpMultiplier": 1.471,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Shuttleguard General - Strength can buffs nearby Shuttleguards by increasing their ATK and DEF."
+            },
+            "opponent2": {
+              "name": "Shuttleguard Brawler",
+              "baseHp": 334.152,
+              "baseAtk": 48.9881,
+              "baseDef": 63.344,
+              "level": 66,
+              "hpMultiplier": 1.413,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
+            },
+            "opponent3": {
+              "name": "Shuttleguards",
+              "baseHp": 261.118,
+              "baseAtk": 43.31,
+              "baseDef": 49.912,
+              "level": 66,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
           }
+        },
+        "sector2": {
+          "wave1": {
+            "opponent1": {
+              "name": "Tide-Energized Zyphrus",
+              "baseHp": 671,
+              "baseAtk": 78.3,
+              "baseDef": 55.4,
+              "level": 66,
+              "hpMultiplier": 1.48,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Periodically generates a Tide Shield equals to 100% Max HP. While the Shield is active, all Zyphrus attacks are enhanced."
+            },
+            "opponent2": {
+              "name": "Volte-Energized Zyphrus",
+              "baseHp": 671,
+              "baseAtk": 78.3,
+              "baseDef": 55.4,
+              "level": 66,
+              "hpMultiplier": 1.48,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Periodically generates a Volte Shield equals to 100% Max HP. While the Shield is active, all Zyphrus attacks are enhanced."
+            }
+          }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 100 }
+        }
+      }
+    },
+
+    "l8": {
+      "levelType": "advanced",
+      "levelbuff": "Sector 1 - All character's DMG against Shielded opponents is increased by 125%.\nSector 2 - All characters gains 40% Gale DMG Bonus.",
+      "chamber1": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Voidranger - Exclusion",
+              "baseHp": 408.812,
+              "baseAtk": 48.131,
+              "baseDef": 33.162,
+              "level": 62,
+              "hpMultiplier": 1.289,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%. Voidranger - Exclusion can summon Voidranger minions that explodes upon death."
+            },
+            "opponent2": {
+              "name": "Voidranger - Multiversal Raiders",
+              "baseHp": 408.812,
+              "baseAtk": 48.981,
+              "baseDef": 42.139,
+              "level": 62,
+              "hpMultiplier": 1.423,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%."
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Voidranger - Defender",
+              "baseHp": 571.081,
+              "baseAtk": 44.61,
+              "baseDef": 56.224,
+              "level": 62,
+              "hpMultiplier": 1.389,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%. Voidranger - Defender has a very high DEF and can boosts the DEF of nearby Voidrangers."
+            },
+            "opponent2": {
+              "name": "Voidranger - Multiversal Raiders",
+              "baseHp": 408.812,
+              "baseAtk": 48.981,
+              "baseDef": 42.139,
+              "level": 62,
+              "hpMultiplier": 1.423,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%."
+            }
+          }
+        },
+        "sector2": {
+          "wave1": {
+            "opponent1": {
+              "name": "Volte-Fusioned Golem",
+              "baseHp": 782,
+              "baseAtk": 79,
+              "baseDef": 81.4,
+              "level": 62,
+              "hpMultiplier": 1.42,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Golem's Flame RES increased by 40%. Can summons 2 Flame-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
+            },
+            "opponent2": {
+              "name": "Tide Distortion",
+              "baseHp": 213,
+              "baseAtk": 31.1,
+              "baseDef": 21,
+              "level": 62,
+              "hpMultiplier": 1.38,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Large Tide Distortion",
+              "baseHp": 411,
+              "baseAtk": 41,
+              "baseDef": 34,
+              "level": 62,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            },
+            "opponent2": {
+              "name": "Volte Voyage Corruptor",
+              "baseHp": 113,
+              "baseAtk": 42,
+              "baseDef": 18,
+              "level": 62,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
+        }
+      },
+
+      "chamber2": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Shuttleguard - Administrator",
+              "baseHp": 1364.489,
+              "baseAtk": 101.008,
+              "baseDef": 66.718,
+              "level": 64,
+              "hpMultiplier": 1.522,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Can summon up to 4 Shuttleguards periodically. Shuttleguard - Administrator can lock onto a selected character and direct his fellow Shuttleguards to attack the selected character. Additionally, Shuttleguard - Administrator will generates a Shield equals to 50% his Max HP when there are Shuttleguards nearby. Critical hits deals 100% increased DMG to the Shield. Once the shields is destoryed, he will lose 2 actions and nearby Shuttleguards' HP is reduced by 50% their Max HP."
+            },
+            "opponent2": {
+              "name": "Shuttleguard Sniper",
+              "baseHp": 144.914,
+              "baseAtk": 64.618,
+              "baseDef": 41.118,
+              "level": 64,
+              "hpMultiplier": 1.5103,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "Shuttleguard Sniper can locks onto a single target to deal massive DMG."
+            }
+          }
+        },
+        "sector2": {
+          "wave1": {
+            "opponent1": {
+              "name": "Extreme Volte Distortion",
+              "baseHp": 1241,
+              "baseAtk": 100.112,
+              "baseDef": 64.92,
+              "level": 64,
+              "hpMultiplier": 1.581,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Immue to Volte DMG. On the active stage, perfroms heavy attacks that can deal massive AoE damages to the team. Can be shut down by using Flame or Frost."
+            },
+            "opponent2": {
+              "name": "Tide Distortion",
+              "baseHp": 213,
+              "baseAtk": 31.1,
+              "baseDef": 21,
+              "level": 64,
+              "hpMultiplier": 1.38,
+              "hpModifier": 0,
+              "qty": 4
+            }
+          }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 50 }
+        }
+      },
+
+      "chamber3": {
+        "cycles": 30,
+        "sector1": {
+          "wave1": {
+            "opponent1": {
+              "name": "Shuttleguard General - Destruction",
+              "baseHp": 566.47,
+              "baseAtk": 54.23,
+              "baseDef": 92.51,
+              "level": 66,
+              "hpMultiplier": 1.471,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Shuttleguard General - Destruction can buffs nearby Shuttleguards' DMG."
+            },
+            "opponent2": {
+              "name": "Shuttleguard Brawler",
+              "baseHp": 334.152,
+              "baseAtk": 48.9881,
+              "baseDef": 63.344,
+              "level": 66,
+              "hpMultiplier": 1.413,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
+            },
+            "opponent3": {
+              "name": "Shuttleguards",
+              "baseHp": 261.118,
+              "baseAtk": 43.31,
+              "baseDef": 49.912,
+              "level": 66,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Shuttleguard General - Strength",
+              "baseHp": 566.47,
+              "baseAtk": 54.23,
+              "baseDef": 92.51,
+              "level": 66,
+              "hpMultiplier": 1.471,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Shuttleguard General - Strength can buffs nearby Shuttleguards by increasing their ATK and DEF."
+            },
+            "opponent2": {
+              "name": "Shuttleguard Brawler",
+              "baseHp": 334.152,
+              "baseAtk": 48.9881,
+              "baseDef": 63.344,
+              "level": 66,
+              "hpMultiplier": 1.413,
+              "hpModifier": 0,
+              "qty": 2,
+              "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
+            },
+            "opponent3": {
+              "name": "Shuttleguards",
+              "baseHp": 261.118,
+              "baseAtk": 43.31,
+              "baseDef": 49.912,
+              "level": 66,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          }
+        },
+        "sector2": {
+          "wave1": {
+            "opponent1": {
+              "name": "Tide-Energized Zyphrus",
+              "baseHp": 671,
+              "baseAtk": 78.3,
+              "baseDef": 55.4,
+              "level": 66,
+              "hpMultiplier": 1.48,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Periodically generates a Tide Shield equals to 100% Max HP. While the Shield is active, all Zyphrus attacks are enhanced."
+            },
+            "opponent2": {
+              "name": "Volte-Energized Zyphrus",
+              "baseHp": 671,
+              "baseAtk": 78.3,
+              "baseDef": 55.4,
+              "level": 66,
+              "hpMultiplier": 1.48,
+              "hpModifier": 0,
+              "qty": 1,
+              "description": "Periodically generates a Volte Shield equals to 100% Max HP. While the Shield is active, all Zyphrus attacks are enhanced."
+            }
+          }
+        },
+        "challenge": {
+          "star1": "Defeat all opponents with more than 6 Cycles remaining.",
+          "star2": "Defeat all opponents with more than 12 Cycles remaining.",
+          "star3": "Defeat all opponents with more than 18 Cycles remaining."
+        },
+        "rewards": {
+          "reward1": { "name": "Universal Fragments", "qty": 100 }
         }
       }
     }
