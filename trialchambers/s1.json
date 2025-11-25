@@ -1491,7 +1491,7 @@
               "baseHp": 543.228,
               "baseAtk": 55.813,
               "baseDef": 88.712,
-              "level": 58,
+              "level": 68,
               "hpMultiplier": 1.461,
               "hpModifier": 0,
               "qty": 1,
@@ -1502,7 +1502,7 @@
               "baseHp": 543.228,
               "baseAtk": 55.813,
               "baseDef": 88.712,
-              "level": 58,
+              "level": 68,
               "hpMultiplier": 1.461,
               "hpModifier": 0,
               "qty": 1,
@@ -1525,96 +1525,76 @@
         "sector1": {
           "wave1": {
             "opponent1": {
-              "name": "Shuttleguard General - Destruction",
-              "baseHp": 566.47,
-              "baseAtk": 54.23,
-              "baseDef": 92.51,
-              "level": 66,
-              "hpMultiplier": 1.471,
+              "name": "Voidranger - Oprative",
+              "baseHp": 663.839,
+              "baseAtk": 83.741,
+              "baseDef": 79.248,
+              "level": 70,
+              "hpMultiplier": 1.446,
               "hpModifier": 0,
               "qty": 1,
-              "description": "Shuttleguard General - Destruction can buffs nearby Shuttleguards' DMG."
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%. When Voidranger - Operative's HP drops to 50%, gains a Defensive Shield equals to 50% of it's Max HP. While Voidranger - Operative is Shielded, increases the ATK of nearby Voidrangers and grants them Defensive Shield equals to 10% of it's Max HP. When the Defensive Shield is destroyed, Voidranger - Operative is stunned for 2 Cycles."
             },
             "opponent2": {
-              "name": "Shuttleguard Brawler",
-              "baseHp": 334.152,
-              "baseAtk": 48.9881,
-              "baseDef": 63.344,
-              "level": 66,
-              "hpMultiplier": 1.413,
+              "name": "Voidranger - Multiversal Raiders",
+              "baseHp": 408.812,
+              "baseAtk": 48.981,
+              "baseDef": 42.139,
+              "level": 70,
+              "hpMultiplier": 1.423,
               "hpModifier": 0,
               "qty": 2,
-              "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
-            },
-            "opponent3": {
-              "name": "Shuttleguards",
-              "baseHp": 261.118,
-              "baseAtk": 43.31,
-              "baseDef": 49.912,
-              "level": 66,
-              "hpMultiplier": 1.4,
-              "hpModifier": 0,
-              "qty": 2
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%."
             }
           },
           "wave2": {
             "opponent1": {
-              "name": "Shuttleguard General - Strength",
-              "baseHp": 566.47,
-              "baseAtk": 54.23,
-              "baseDef": 92.51,
-              "level": 66,
-              "hpMultiplier": 1.471,
+              "name": "Voidranger - Oprative",
+              "baseHp": 663.839,
+              "baseAtk": 83.741,
+              "baseDef": 79.248,
+              "level": 70,
+              "hpMultiplier": 1.446,
               "hpModifier": 0,
               "qty": 1,
-              "description": "Shuttleguard General - Strength can buffs nearby Shuttleguards by increasing their ATK and DEF."
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%. When Voidranger - Operative's HP drops to 50%, gains a Defensive Shield equals to 50% of it's Max HP. While Voidranger - Operative is Shielded, increases the ATK of nearby Voidrangers and grants them Defensive Shield equals to 10% of it's Max HP. When the Defensive Shield is destroyed, Voidranger - Operative is stunned for 2 Cycles."
             },
             "opponent2": {
-              "name": "Shuttleguard Brawler",
-              "baseHp": 334.152,
-              "baseAtk": 48.9881,
-              "baseDef": 63.344,
-              "level": 66,
-              "hpMultiplier": 1.413,
+              "name": "Voidranger - Multiversal Raiders",
+              "baseHp": 408.812,
+              "baseAtk": 48.981,
+              "baseDef": 42.139,
+              "level": 70,
+              "hpMultiplier": 1.423,
               "hpModifier": 0,
               "qty": 2,
-              "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
-            },
-            "opponent3": {
-              "name": "Shuttleguard",
-              "baseHp": 261.118,
-              "baseAtk": 43.31,
-              "baseDef": 49.912,
-              "level": 66,
-              "hpMultiplier": 1.4,
-              "hpModifier": 0,
-              "qty": 2
+              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%."
             }
           }
         },
         "sector2": {
           "wave1": {
             "opponent1": {
-              "name": "Tide-Energized Zyphrus",
-              "baseHp": 671,
-              "baseAtk": 78.3,
-              "baseDef": 55.4,
-              "level": 66,
-              "hpMultiplier": 1.48,
+              "name": "Flame-Fusioned Golem",
+              "baseHp": 782,
+              "baseAtk": 79,
+              "baseDef": 81.4,
+              "level": 70,
+              "hpMultiplier": 1.42,
               "hpModifier": 0,
               "qty": 1,
-              "description": "Periodically generates a Tide Shield equals to 100% Max HP. While the Shield is active, all Zyphrus attacks are enhanced."
+              "description": "Golem's Flame RES increased by 40%. Can summons 2 Flame-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
             },
             "opponent2": {
-              "name": "Volte-Energized Zyphrus",
-              "baseHp": 671,
-              "baseAtk": 78.3,
-              "baseDef": 55.4,
-              "level": 66,
-              "hpMultiplier": 1.48,
+              "name": "Volte-Fusioned Golem",
+              "baseHp": 782,
+              "baseAtk": 79,
+              "baseDef": 81.4,
+              "level": 70,
+              "hpMultiplier": 1.42,
               "hpModifier": 0,
               "qty": 1,
-              "description": "Periodically generates a Volte Shield equals to 100% Max HP. While the Shield is active, all Zyphrus attacks are enhanced."
+              "description": "Golem's Volte RES increased by 40%. Can summons 2 Volte-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
             }
           }
         },

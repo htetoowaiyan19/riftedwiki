@@ -15,6 +15,7 @@
   { "relicName": "Voided Fragments", "file": "agile/voided_fragments.json", "version": ["1.0Beta", "unreleased"], "faction": "Agile" },
   { "relicName": "Skycloud Justice", "file": "melee/skycloud_justice.json", "version": ["1.0Beta", "unreleased"], "faction": "Melee" },
   { "relicName": "Moonshard Crystal", "file": "power/moonshard_crystal.json", "version": ["1.1Beta", "unreleased"], "faction": "Power" },
+  { "relicName": "Above and Beyond", "file": "magical/above_and_beyond.json", "version": ["1.2Beta", "unreleased"], "faction": "magical"},
   { "relicName": "Greatdragon Polearm", "file": "agile/greatdragon_polearm.json", "version": ["1.4Beta", "unreleased"], "faction": "Agile" },
   { "relicName": "Violet-Feathered Booklet", "file": "magical/violet_feathered_booklet.json", "version": ["1.5Beta", "unreleased"], "faction": "Magical" },
   { "relicName": "Call of The Nights", "file": "agile/call_of_the_nights.json", "version": ["1.6Beta", "unreleased"], "faction": "Agile" },

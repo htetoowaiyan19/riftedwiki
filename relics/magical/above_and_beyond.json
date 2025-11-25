@@ -1,0 +1,21 @@
+{
+    "relicName": "Above and Beyond",
+    "mainStatType": "Magic PWR",
+    "mainStat": 46,
+    "subStatType": "Energy Regen",
+    "subStat": "4.8%",
+    "faction": "Magical",
+    "relicAbility": "Shooting Stars",
+    "abilityDesc": "If the wielder deals Follow-Up DMG, gains Above the Stars effect. Above the Stars: Increases Follow-Up Attack DMG by [$_1] for 3 Cycles. If the wielder has a Shield, gains Beyond the Stars effect. Beyond the Stars: Increases Magic PWR by [$_2] for 4 Cycles. If both Above the Stars and Beyond the Stars are active, the wielder's Adaptive ATK is increased by [$_3].",
+    "forge": {
+        "value1": ["16%", "24%", "32%", "40%", "48%"],
+        "value2": ["12%", "16%", "20%", "24%", "28%"],
+        "value3": ["12%", "16%", "20%", "24%", "28%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

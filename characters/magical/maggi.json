@@ -1,0 +1,62 @@
+{
+    "name": "Maggi",
+    "baseAtk": 0,
+    "basePwr": 220,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1600,
+    "baseCharge": 100,
+    "baseFluxCapacity": 0,
+    "baseSurgeCapacity": 0,
+    "baseEchoMemroyCapacity": 6,
+    "baseMaxEnergy": 120,
+    "baseCritRate": 5.0,
+    "baseCritDamage": 50.0,
+    "substat": "PWR%: 4.4%",
+    "riftedFaction": "Rifted Disorder",
+    "riftedTech": "",
+    "riftedDisc": "Tide",
+    "faction": "Magical",
+
+    "passiveName": "City of Toys",
+    "passiveDesc": "When Maggi's HP drops below 10% of her Max HP or nearby team members' HP drops below 5% of their Max HP, triggers City of Toys. City of Toys: If Maggi triggers City of Toys, she gains a Tide Star-Shield equals to 10% her Max HP and heals herself by 40% of her Magic PWR. If other team members trigger City of Toys, Maggi grants them a Tide Toy-Shield equals to 40% of her Magic PWR and heals them by 120% of her Magic PWR.",
+    "riftedTalent": "Rifted Disorder",
+    "rTalentDesc": "Maggi's Normal and Charged Attacks accumulate 2 Echo Memories and 5 Energy. Dealing Disorder DMG accumulates 1 Echo Memory and 10 Energy.",
+
+    "normalAttackName": "Normal Attack - Raining Colors",
+    "normalAttackDesc": "Maggi launches her Star Toy to the target opponent dealing 14 (+34% Magic PWR) as Magic DMG.",
+
+    "chargedAttackName": "Charged Attack - Bubble Blast",
+    "chargeCost": 30,
+    "chargedAttackDesc": "Maggi uses her Toy Gun to blow a bubble towards the opponent dealing 22 (+44% Magic PWR) as AoE Tide DMG.",
+
+    "normalSkillName": "Normal Skill - Under My Protection",
+    "fluxCost": 0,
+    "memoryNodes": {"node1": "2EM", "node2": "4EM", "node3": "6EM"},
+    "normalSkillDesc": "[2EM] Maggi grants a Tide Shield equals to 113 (+46.124% Magic PWR) to the selected team member.\n[4EM] Maggi grants a Tide Toy-Shield equals to 164 (+78.81% Magic PWR) to the selected team member. While the Toy-Shield is active, if an opponent deals DMG to the character with the Toy-Shield, Maggi will uses her Toy Gun to launch a Tide Beam towards the same opponent deaeling 106 + (38.98% Magic PWR) as Follow-Up Tide DMG.\n[6EM] Maggi grants a Tide Toy-Shield equals to 203 (+101.922% Magic PWR) to the selected team member and grants herself a Tide Star-Shield equals to 113 (+114.93% Magic PWR). While the Toy-Shield is active, if an opponent deals DMG to the character with the Toy-Shield, Maggi will uses her Toy Gun to launch a Tide Beam towards the same opponent deaeling 114 + (46.71% Magic PWR) as Follow-Up Tide DMG. While the Star-Shield is active, Maggi's Magic PWR is increased by 36%.",
+
+    "riftedSkillName": "Rifted Skill - All-Waters Submerged",
+    "surgeCost": 0,
+    "energyCost": 120,
+    "riftedSkillDesc": "Maggi blesses all team members with All-Waters Blessing, increasing their Magic PWR by 56% her Magic PWR for 4 Cycles. Additionally, if team members has a Toy-Shield, converts the Toy-Shield into Blessed-Toy-Shield. While the Blessed-Toy-Shield is active, heals the character under the Blessed-Toy-Shield by 98 (+136.26% Magic PWR). After 4 Cycles, if the Blessed-Toy-Shield is still active, it will be converted back to Toy-Shield.",
+
+    "fragment1Name": "F1 - Refined Toys",
+    "fragment1Desc": "While casting \"All-Waters Submerged\", if team members has a Toy-Shield, increases the Shield Strength by 36%.",
+    "fragment2Name": "F2 - Maggi Must Manage",
+    "fragment2Desc": "While the Toy-Shield is active, increases their Tide RES by 20%. Additionally, if Maggi's Tide Beam hits an opponent, decreases the opponent's Reaction RES by 12%, max 3 stacks.",
+    "fragment3Name": "F3 - \"I'll carry you through the darkness!\"",
+    "fragment3Desc": "\"Under My Protection\" level is increased by 3.",
+    "fragment4Name": "F4 - Tinkering Toyland",
+    "fragment4Desc": "Characters under Toy-Shield have their CRIT Rate increased by 16% and CRIT DMG increased by 40%.",
+    "fragment5Name": "F5 - Flooded by Blessings",
+    "fragment5Desc": "\"All-Waters Submerged\" level is increased by 3.",
+    "fragment6Name": "F6 - Vial of Frostmoon",
+    "fragment6Desc": "Maggi gains 0.015% Follow-Up Attack DMG Bonus for every 1 Magic PWR she has. Additionally, Maggi's Tide Beam triggered by an opponent attacking the team member with the Blessed-Toy-Shield, will launches 3 Piercing Tide Beam at the opponent's location, each dealing 224% Magic PWR as Follow-Up Tide DMG.",
+
+    "log": {
+        "record1": {
+            "version": "1.2Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
