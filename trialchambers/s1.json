@@ -467,7 +467,7 @@
               "hpMultiplier": 1.581,
               "hpModifier": 0,
               "qty": 1,
-              "description": "Immue to Flame DMG. On the active stage, perfroms heavy attacks that can deal massive AoE damages to the team. Can be shut down by using Tide or Frost."
+              "description": "Immue to Flame DMG. On the active stage, perfroms heavy attacks that can deal massive AoE damages to the team. Can be shut down by using Tide, Frost or Volte."
             }
           }
         },
@@ -501,7 +501,7 @@
               "description": "Shuttleguard General - Destruction can buffs nearby Shuttleguards' DMG."
             },
             "opponent2": {
-              "name": "Shuttleguards",
+              "name": "Shuttleguard",
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
@@ -524,7 +524,7 @@
               "description": "Shuttleguard General - Strength can buffs nearby Shuttleguards by increasing their ATK and DEF."
             },
             "opponent2": {
-              "name": "Shuttleguards",
+              "name": "Shuttleguard",
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
@@ -572,7 +572,7 @@
               "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
             },
             "opponent3": {
-              "name": "Shuttleguards",
+              "name": "Shuttleguard",
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
@@ -657,7 +657,7 @@
               "description": "Shuttleguard General - Destruction can buffs nearby Shuttleguards' DMG."
             },
             "opponent2": {
-              "name": "Shuttleguards",
+              "name": "Shuttleguard",
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
@@ -873,7 +873,7 @@
               "description": "Golem's Flame RES increased by 40%. Can summons 2 Flame-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
             },
             "opponent2": {
-              "name": "Shuttleguards",
+              "name": "Shuttleguard",
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
@@ -954,7 +954,7 @@
               "hpMultiplier": 1.461,
               "hpModifier": 0,
               "qty": 1,
-              "description": "Disordered Witches can gives nearby opponent Disordered Shelds corresponding to their Disorder. Shielded opponents deals extra DMG. The shields can be removed by defeating the Disordered Witches."
+              "description": "Disordered Witches has a Shield equal to 50% of their Max HP, corresponding to their Disorder. While them or the opponents they grants Shields are shielded, they can deal extra DMG to the characters. Additionally, they can grants nearby opponents Shields if they don't have one.  The witches' action are delayed if their shield is broken."
             },
             "opponent2": {
               "name": "Shuttleguard Brawler",
@@ -1008,7 +1008,7 @@
               "description": "Shuttleguard General - Destruction can buffs nearby Shuttleguards' DMG."
             },
             "opponent2": {
-              "name": "Shuttleguards",
+              "name": "Shuttleguard",
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
@@ -1232,7 +1232,7 @@
               "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
             },
             "opponent3": {
-              "name": "Shuttleguards",
+              "name": "Shuttleguard",
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
@@ -1266,7 +1266,7 @@
               "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
             },
             "opponent3": {
-              "name": "Shuttleguards",
+              "name": "Shuttleguard",
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
@@ -1316,100 +1316,87 @@
 
     "l8": {
       "levelType": "advanced",
-      "levelbuff": "Sector 1 - All character's DMG against Shielded opponents is increased by 125%.\nSector 2 - All characters gains 40% Gale DMG Bonus.",
+      "levelbuff": "Sector 1 - All character's DMG against Shielded opponents is increased by 125%. Non-shielded opponents' DEF is reduced by 30%.\nSector 2 - All characters gains 40% Gale DMG Bonus.",
       "chamber1": {
         "cycles": 30,
         "sector1": {
           "wave1": {
             "opponent1": {
-              "name": "Voidranger - Exclusion",
-              "baseHp": 408.812,
-              "baseAtk": 48.131,
-              "baseDef": 33.162,
-              "level": 62,
-              "hpMultiplier": 1.289,
+              "name": "Shuttleguard Guardian",
+              "baseHp": 566.47,
+              "baseAtk": 54.23,
+              "baseDef": 92.51,
+              "level": 66,
+              "hpMultiplier": 1.471,
               "hpModifier": 0,
               "qty": 1,
-              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%. Voidranger - Exclusion can summon Voidranger minions that explodes upon death."
+              "description": "Shuttleguard Guardian can provide nearby Shuttleguards with Shields, while increasing their DEF."
             },
             "opponent2": {
-              "name": "Voidranger - Multiversal Raiders",
-              "baseHp": 408.812,
-              "baseAtk": 48.981,
-              "baseDef": 42.139,
-              "level": 62,
-              "hpMultiplier": 1.423,
+              "name": "Shielded Shuttleguard",
+              "baseHp": 261.118,
+              "baseAtk": 43.31,
+              "baseDef": 50.881,
+              "level": 66,
+              "hpMultiplier": 1.4,
               "hpModifier": 0,
-              "qty": 2,
-              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%."
+              "qty": 4,
+              "description": "Shielded Shuttleguards has a Shield equals to 40% of their Max HP at the start of the battle."
             }
           },
           "wave2": {
             "opponent1": {
-              "name": "Voidranger - Defender",
-              "baseHp": 571.081,
-              "baseAtk": 44.61,
-              "baseDef": 56.224,
-              "level": 62,
-              "hpMultiplier": 1.389,
+              "name": "Disordered Witch - Frost",
+              "baseHp": 543.228,
+              "baseAtk": 55.813,
+              "baseDef": 88.712,
+              "level": 66,
+              "hpMultiplier": 1.461,
               "hpModifier": 0,
               "qty": 1,
-              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%. Voidranger - Defender has a very high DEF and can boosts the DEF of nearby Voidrangers."
+              "description": "Disordered Witches has a Shield equal to 50% of their Max HP, corresponding to their Disorder. While them or the opponents they grants Shields are shielded, they can deal extra DMG to the characters. Additionally, they can grants nearby opponents Shields if they don't have one.  The witches' action are delayed if their shield is broken."
             },
             "opponent2": {
-              "name": "Voidranger - Multiversal Raiders",
-              "baseHp": 408.812,
-              "baseAtk": 48.981,
-              "baseDef": 42.139,
-              "level": 62,
-              "hpMultiplier": 1.423,
+              "name": "Shuttleguard",
+              "baseHp": 261.118,
+              "baseAtk": 43.31,
+              "baseDef": 49.912,
+              "level": 66,
+              "hpMultiplier": 1.4,
               "hpModifier": 0,
-              "qty": 2,
-              "description": "When Voidrangers' HP drops below 50%, increases their ATK and DEF by 50%."
+              "qty": 4
             }
           }
         },
         "sector2": {
           "wave1": {
             "opponent1": {
-              "name": "Volte-Fusioned Golem",
-              "baseHp": 782,
-              "baseAtk": 79,
-              "baseDef": 81.4,
-              "level": 62,
-              "hpMultiplier": 1.42,
+              "name": "Extreme Flame Distortion",
+              "baseHp": 1241,
+              "baseAtk": 100.112,
+              "baseDef": 64.92,
+              "level": 66,
+              "hpMultiplier": 1.581,
               "hpModifier": 0,
               "qty": 1,
-              "description": "Golem's Flame RES increased by 40%. Can summons 2 Flame-Fusioned Stonemites, defeating the Stonemites reduces the Golem's All RES by 40%."
+              "description": "Immue to Flame DMG. On the active stage, perfroms heavy attacks that can deal massive AoE damages to the team. Can be shut down by using Tide, Frost or Volte."
             },
             "opponent2": {
-              "name": "Tide Distortion",
-              "baseHp": 213,
-              "baseAtk": 31.1,
-              "baseDef": 21,
-              "level": 62,
-              "hpMultiplier": 1.38,
-              "hpModifier": 0,
-              "qty": 2
-            }
-          },
-          "wave2": {
-            "opponent1": {
-              "name": "Large Tide Distortion",
+              "name": "Large Volte Distortion",
               "baseHp": 411,
               "baseAtk": 41,
               "baseDef": 34,
-              "level": 62,
+              "level": 66,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 2
             },
-            "opponent2": {
-              "name": "Volte Voyage Corruptor",
-              "baseHp": 113,
-              "baseAtk": 42,
-              "baseDef": 18,
-              "level": 62,
+            "opponent3": {
+              "name": "Large Frost Distortion",
+              "baseHp": 411,
+              "baseAtk": 41,
+              "baseDef": 34,
+              "level": 66,
               "hpMultiplier": 1.4,
               "hpModifier": 0,
               "qty": 2
@@ -1431,51 +1418,95 @@
         "sector1": {
           "wave1": {
             "opponent1": {
-              "name": "Shuttleguard - Administrator",
-              "baseHp": 1364.489,
-              "baseAtk": 101.008,
-              "baseDef": 66.718,
-              "level": 64,
-              "hpMultiplier": 1.522,
+              "name": "Shielded Corruptor",
+              "baseHp": 158,
+              "baseAtk": 28,
+              "baseDef": 24,
+              "level": 68,
+              "hpMultiplier": 1.3,
               "hpModifier": 0,
-              "qty": 1,
-              "description": "Can summon up to 4 Shuttleguards periodically. Shuttleguard - Administrator can lock onto a selected character and direct his fellow Shuttleguards to attack the selected character. Additionally, Shuttleguard - Administrator will generates a Shield equals to 50% his Max HP when there are Shuttleguards nearby. Critical hits deals 100% increased DMG to the Shield. Once the shields is destoryed, he will lose 2 actions and nearby Shuttleguards' HP is reduced by 50% their Max HP."
+              "qty": 3
             },
             "opponent2": {
-              "name": "Shuttleguard Sniper",
-              "baseHp": 144.914,
-              "baseAtk": 64.618,
-              "baseDef": 41.118,
-              "level": 64,
-              "hpMultiplier": 1.5103,
+              "name": "Physical Voyage Corruptor",
+              "baseHp": 113,
+              "baseAtk": 42,
+              "baseDef": 18,
+              "level": 68,
+              "hpMultiplier": 1.4,
               "hpModifier": 0,
-              "qty": 2,
-              "description": "Shuttleguard Sniper can locks onto a single target to deal massive DMG."
+              "qty": 2
+            }
+          },
+          "wave2": {
+            "opponent1": {
+              "name": "Shielded Corruptor",
+              "baseHp": 158,
+              "baseAtk": 28,
+              "baseDef": 24,
+              "level": 68,
+              "hpMultiplier": 1.3,
+              "hpModifier": 0,
+              "qty": 3
+            },
+            "opponent2": {
+              "name": "Corruptor",
+              "baseHp": 122,
+              "baseAtk": 33,
+              "baseDef": 16,
+              "level": 68,
+              "hpMultiplier": 1.3,
+              "hpModifier": 0,
+              "qty": 2
+            }
+          },
+          "wave3": {
+            "opponent1": {
+              "name": "Corruptor Guard",
+              "baseHp": 416.344,
+              "baseAtk": 48.109,
+              "baseDef": 87.713,
+              "level": 68,
+              "hpMultiplier": 1.441,
+              "hpModifier": 0,
+              "qty": 3,
+              "description": "Corruptor Guard can stand in front of other opponents and can act as a Shield."
+            },
+            "opponent2": {
+              "name": "Frost Voyage Corruptor",
+              "baseHp": 113,
+              "baseAtk": 42,
+              "baseDef": 18,
+              "level": 68,
+              "hpMultiplier": 1.4,
+              "hpModifier": 0,
+              "qty": 2
             }
           }
         },
         "sector2": {
           "wave1": {
             "opponent1": {
-              "name": "Extreme Volte Distortion",
-              "baseHp": 1241,
-              "baseAtk": 100.112,
-              "baseDef": 64.92,
-              "level": 64,
-              "hpMultiplier": 1.581,
+              "name": "Disordered Witch - Flame",
+              "baseHp": 543.228,
+              "baseAtk": 55.813,
+              "baseDef": 88.712,
+              "level": 58,
+              "hpMultiplier": 1.461,
               "hpModifier": 0,
               "qty": 1,
-              "description": "Immue to Volte DMG. On the active stage, perfroms heavy attacks that can deal massive AoE damages to the team. Can be shut down by using Flame or Frost."
+              "description": "Disordered Witches has a Shield equal to 50% of their Max HP, corresponding to their Disorder. While them or the opponents they grants Shields are shielded, they can deal extra DMG to the characters. Additionally, they can grants nearby opponents Shields if they don't have one.  The witches' action are delayed if their shield is broken."
             },
             "opponent2": {
-              "name": "Tide Distortion",
-              "baseHp": 213,
-              "baseAtk": 31.1,
-              "baseDef": 21,
-              "level": 64,
-              "hpMultiplier": 1.38,
+              "name": "Disordered Witch - Volte",
+              "baseHp": 543.228,
+              "baseAtk": 55.813,
+              "baseDef": 88.712,
+              "level": 58,
+              "hpMultiplier": 1.461,
               "hpModifier": 0,
-              "qty": 4
+              "qty": 1,
+              "description": "Disordered Witches has a Shield equal to 50% of their Max HP, corresponding to their Disorder. While them or the opponents they grants Shields are shielded, they can deal extra DMG to the characters. Additionally, they can grants nearby opponents Shields if they don't have one.  The witches' action are delayed if their shield is broken."
             }
           }
         },
@@ -1550,7 +1581,7 @@
               "description": "Shuttleguard Brawler can consume ther own HP to enhance their DMG."
             },
             "opponent3": {
-              "name": "Shuttleguards",
+              "name": "Shuttleguard",
               "baseHp": 261.118,
               "baseAtk": 43.31,
               "baseDef": 49.912,
