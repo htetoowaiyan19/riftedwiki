@@ -1,0 +1,73 @@
+{
+    "name": "Hypotar",
+    "baseAtk": 220,
+    "basePwr": 0,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 2000,
+    "baseCharge": 100,
+    "baseFluxCapacity": 5,
+    "baseSurgeCapacity": 380,
+    "baseEchoMemroyCapacity": 0,
+    "baseMaxEnergy": 0,
+    "baseCritRate": 5.0,
+    "baseCritDamage": 50.0,
+    "substat": "Energy Effieciency: 2.2%",
+    "riftedFaction": "Rifted Technology",
+    "riftedTech": "Destruction",
+    "riftedDisc": "",
+    "faction": "Agile",
+
+    "passiveName": "Trisealed Sacrifice",
+    "passiveDesc": "Hypotar's Energy Regen is decreased by 50%. Additionally, every 1% of Hypotar's Energy Regen less than 100% increases team members' Energy Regen by 0.4%.",
+    "riftedTalent": "Rifted Technology",
+    "rTalentDesc": "Hypotar's Normal and Charged Attacks generate 1 Flux.",
+
+    "talentBox": {
+        "talent1": {
+            "name": "Curse of Undying",
+            "desc": "Due to a certain curse, Hypotar cannot convert Flux into Surges on his own."
+        },
+        "talent2": {
+            "name": "Becon of Union",
+            "desc": "When a team member, opponent, or other specific condtion generates Surges or Energy, Hypotar stores 0.8% of that Surge or Energy as his own Surge."
+        }
+    },
+
+    "normalAttackName": "Normal Attack - Under My Control",
+    "normalAttackDesc": "Hypotar deals 34 (+44% Physical ATK) as Physical DMG to the opponent.",
+
+    "chargedAttackName": "Charged Attack - Resistance",
+    "chargeCost": 20,
+    "chargedAttackDesc": "Hypotar deals 64 (+58.24% Physical ATK) as Physical DMG to the opponent.",
+
+    "normalSkillName": "Normal Skill - Spear of Resilience",
+    "fluxCost": 2,
+    "memoryNodes": {},
+    "normalSkillDesc": "Hypotar strikes the target opponent with the Spear of Resilience, dealing 74 (+66.98% Physical ATK) as AoE Destruction DMG, while reducing the opponent's Hybird DEF by 14.5% of Hypotar's Physical ATK for 3 Turns.",
+
+    "riftedSkillName": "Rifted Skill - Absolute Hybernation",
+    "surgeCost": 280,
+    "energyCost": 0,
+    "riftedSkillDesc": "Hypotar creates a Hybernation Area, releasing his remaning Surges as Hybernation Energy. During the Hybernation, Hypotar consumes 40 Surges and supply each team member with 62.5% of the consumed Surge as Surges or Energy as the member need each Cycle. During the Hybernation, Hypotar cannot gains Surges and the Hybernation will ends when there's no Surge left to consume.",
+
+    "fragment1Name": "F1 - \"Our alliance will unite as one.\"",
+    "fragment1Desc": "During the Hybernation, Hypotar will heal all team members by 200% of his ATK each Cycle.",
+    "fragment2Name": "F2 - \"The destination I choose to live is no where near the end.\"",
+    "fragment2Desc": "Hypotar's Energy Efficiency is increased by 10%. When \"Beacon of Union\" is triggered, gains Curse of Resilience stack. Each Curse of Resilience stack decreases Hypotar's Energy Regen by 1%, max 10 stacks.",
+    "fragment3Name": "F3 - \"The Resistance is never ment to fail.\"",
+    "fragment3Desc": "\"Absolute Hybernation\" level is increased by 3.",
+    "fragment4Name": "F4 - \"The extinction of my kind was never meant to happen.\"",
+    "fragment4Desc": "While casting \"Spear of Resilience\", if there are more than 2 Rifted Technology members in the team, increases Physical ATK by 36% and generate 1 extra Flux for each of the team member, if there are more than 2 Rifted Disorder members in the team, increases Magic PWR by 36% and generate 1 extra Echo Memory for each of the team member.",
+    "fragment5Name": "F5 - \"The power of execution is brutal.\"",
+    "fragment5Desc": "\"Spear of Resilience\" level is increased by 3.",
+    "fragment6Name": "F6 - \"The wait is over, my nation.\"",
+    "fragment6Desc": "During the Hybernation, Hypotar gains 36% of the consumed Surges back. Additionally, opponents will enters the cursed state, delaying their actions by 40% and reducing the DMG dealt to team members by 16%.",
+
+    "log": {
+        "record1": {
+            "version": "1.3Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

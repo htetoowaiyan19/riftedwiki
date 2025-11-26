@@ -20,7 +20,7 @@
 
     "passiveName": "The Eighth Night",
     "passiveDesc": "Luxen's Attacks' Volte DMG is replaced by Electric-Volte DMG. This DMG inherit all Volte DMG effects, buffs, and debuffs. Electrified Reactions triggered by Electric-Volte DMG will be converted into Supercharged Reactions.",
-    "riftedTalent": "Rifted Disorder",
+    "riftedTalent": "Rifted Technology",
     "rTalentDesc": "Dealing Fusion-Volte DMG accumulates 8 Surges. Triggering Electrified or Supercharged Reactions generates 13 Surges.",
 
     "talentBox": {

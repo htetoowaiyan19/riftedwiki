@@ -1,0 +1,21 @@
+{
+    "relicName": "Sacrificial Fragments",
+    "mainStatType": "Physical ATK",
+    "mainStat": 44,
+    "subStatType": "Energy Effiiciency",
+    "subStat": "2.2%",
+    "faction": "Agile",
+    "relicAbility": "Endangered Echos",
+    "abilityDesc": "Decreases Energy Regen by [$_1]. If the wielder has less than 50% Energy Regen, Physical ATK is increased by [$_2]. Additionaly, If the wielder Surge or Energy increases or decreases, all team members except the wielder's Physical ATK is increased by [$_3].",
+    "forge": {
+        "value1": ["10%", "14%", "18%", "32%", "36%"],
+        "value2": ["24%", "32%", "40%", "48%", "56%"],
+        "value3": ["12%", "20%", "28%", "36%", "44%"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.4Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
