@@ -1,0 +1,69 @@
+{
+    "name": "Arke",
+    "baseAtk": 200,
+    "basePwr": 0,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1800,
+    "baseCharge": 100,
+    "baseFluxCapacity": 5,
+    "baseSurgeCapacity": 120,
+    "baseEchoMemroyCapacity": 0,
+    "baseMaxEnergy": 0,
+    "baseCritRate": 5.0,
+    "baseCritDamage": 50.0,
+    "substat": "ATK: 8.8%",
+    "riftedFaction": "Rifted Technology",
+    "riftedTech": "Intelligence",
+    "riftedDisc": "",
+    "faction": "Projectile",
+
+    "passiveName": "Energized Energy Estimation",
+    "passiveDesc": "When team members except Arke deal DMG to the opponents, deals an extra instance of True DMG equal to 2% of the opponent's Current HP. Additionally every 7 instance of this DMG dealt will scales from the opponent's Max HP instead of Current HP.",
+    "riftedTalent": "Rifted Technology",
+    "rTalentDesc": "Arke's Normal and Charged Attacks generate 1 Flux. If they're enhanced, generate 1 extra Flux.",
+
+    "talentBox": {
+        "talent1": {
+            "name": "Intelligence Network",
+            "desc": "Certain skills of Intelligence-Type characters can hijack the opponent, applying 1 stack of Hijacked, max 20 stacks.\nHijacked: Increases the Focus build-up rate of the affected opponent by 2%."
+        }
+    },
+
+    "normalAttackName": "Normal Attack - Crystaline Orb",
+    "normalAttackDesc": "Arke deals 23 (+38% Physical ATK) as Artificial DMG.",
+
+    "chargedAttackName": "Charged Attack - Energy Accumulations",
+    "chargeCost": 30,
+    "chargedAttackDesc": "Arke deals 3 instances of 18 (+26% Physical ATK) as Artificial DMG.",
+
+    "normalSkillName": "Normal Skill - Purifier X21",
+    "fluxCost": 2,
+    "memoryNodes": {},
+    "normalSkillDesc": "Arke fires a Purifier beam at the selected opponent, dealing 115 (+44% Physical ATK) as Artificial DMG, applying 3 stacks of Hijacked. Additionally, this attack ignores 12% of the opponent's DEF.\nEnhanced Skill: Execution X21 - Arke fires an enhanced Purifiier beam dealing 214 (+67% Physical ATK) (+144% Intelligence Unit) as True DMG while reducing the opponent's all Attribute RES by 24% for 4 Cycles and applying 6 stacks of Hijacked.",
+
+    "riftedSkillName": "Rifted Skill - Experiment 21",
+    "surgeCost": 120,
+    "energyCost": 0,
+    "riftedSkillDesc": "Arke conduct the Experiment 21 and initiate a Gravity Conduction Area for 4 Cycles, advancing all team members' actions by 1 Cycle. Graviity Conduction Area: Opponents inside the area have their SPD decreased by 20%. Additionally, all team members' Normal Skill DMG will be converted into True Attribute DMG. During the presence of the Gravity Conduction Area, Arke's Normal and Charged Attacks are converted into True DMG and Arke's Normal Skill \"Purifier X21\" will be enhanced to \"Execution X21\".",
+
+    "fragment1Name": "F1 - First Factorial",
+    "fragment1Desc": "When Arke or team members deal True DMG to the opponents, Arke gains 2 Surges.",
+    "fragment2Name": "F2 - Second Factorial",
+    "fragment2Desc": "\"Purifier X21\" Flux cost is increased by 1, but all it's effects are enhanced. The effect of the increase is 100%. This does not increase the Skill DMG.",
+    "fragment3Name": "F3 - Third Factorial",
+    "fragment3Desc": "\"Experiment 21\" level is increased by 3.",
+    "fragment4Name": "F4 - Fourth Factorial",
+    "fragment4Desc": "During the Gravity Conduction Area, when team members deal DMG, 3 Arke Beams will be fired at the same target opponent, each dealing 6% of the original DMG (+160% Intelligence Unit) as True DMG.",
+    "fragment5Name": "F5 - Fifth Factorial",
+    "fragment5Desc": "\"Purifier X21\" level is increased by 3.",
+    "fragment6Name": "F6 - Final Factorial",
+    "fragment6Desc": "Gravity Conduction Area duration is increased by 2 Cycles. During the Gravity Conduction Area, Arke gains a Conduction Shield equals to 200% of Arke's Knowledge Unit. While the Conduction Shield is active, all team members' Attribute PEN is increased by 20%.",
+
+    "log": {
+        "record1": {
+            "version": "2.1 [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

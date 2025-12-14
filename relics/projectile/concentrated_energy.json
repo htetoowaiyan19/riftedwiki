@@ -1,0 +1,20 @@
+{
+    "relicName": "Concentrated Energy",
+    "mainStatType": "Physical ATK",
+    "mainStat": 33,
+    "subStatType": "Intelligence Unit",
+    "subStat": "48",
+    "faction": "Projectile",
+    "relicAbility": "Unstable Concentration",
+    "abilityDesc": "Dealing True DMG gains Saturated effect, increasing the Attribute DMG Bonus by [$_1]. Additionally, when the team members except the equipped character deals True DMG, the equipped character gains [$_2] Surges or Energy. This effect can trigger once every 2 Cycles.",
+    "forge": {
+        "value1": ["12%", "20%", "28%", "36%", "44%"],
+        "value2": ["24", "36", "48", "60", "72"]
+    },
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
