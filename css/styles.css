@@ -558,3 +558,49 @@ body {
   .gameplay-header { padding: 10px 12px; }
   .gameplay-desc { padding: 8px 12px; }
 }
+
+/* ================= Mobile improvements ================= */
+@media (max-width: 768px) {
+  /* Make main tabs touch-friendly and horizontally scrollable */
+  .nav-tabs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+  }
+  .nav-tabs .nav-link {
+    white-space: nowrap;
+    padding: 10px 12px;
+    flex: 0 0 auto;
+  }
+
+  /* Force utilities that used fixed 50% to be full width on small screens */
+  .w-50 { width: 100% !important; max-width: none !important; }
+  #searchBar, #gameplaySearchBar, #relicSearchBar { max-width: none; width: 100% !important; }
+
+  .container { padding: 0 12px; }
+
+  /* tighter grid for small screens */
+  .char-list { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+  .char-item .char-row { padding: 10px 12px; gap: 8px; }
+
+  /* Larger tap targets */
+  .btn-back { padding: 10px 12px; border-radius: 8px; }
+  .box { padding: 12px; }
+
+  /* Trial chambers: stack left/right columns and allow level list to scroll horizontally */
+  #trialChambers .d-flex.gap-3 { flex-direction: column; }
+  #levelList { min-width: 0; display: flex; gap: 8px; overflow-x: auto; }
+  #levelList .level-btn { flex: 0 0 auto; }
+
+  /* Prevent heavy hover expands on small devices */
+  .opponent-card:hover { grid-column: span 1; }
+}
+
+@media (max-width: 420px) {
+  h1 { font-size: 1.4rem; }
+  .char-list { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+  .stat-table td { padding: 10px 12px; }
+  .level-btn { padding: 8px 10px; font-size: 0.95rem; }
+}
