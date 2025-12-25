@@ -1,0 +1,34 @@
+{
+  "desc1": {
+    "title": "Rifted Technology",
+    "desc": "Certain characters utilize Technology in their abilties. When Technology-Type characters trigger a certain conditiion, they can generate a Flux. While Normal Skill or other special skills requires Flux to cast. While using Flux in Normal Skill or other speical skills, it is converted into 13 Surges, which can be used to cast Rifted Skill. The generation of Surges and Surge Capacity of each Technology-Type character can be enhanced by their Energy Regen and Energy Efficiency respectively.\n\nWhen there are two or more Technology-Type characters in the team, gains the Technology Network effect, all Technology-Type characters wiill form a Flux Network, combining all Flux Capaciity of the Technology-Type characters. The maximum Flux Capacity of Flux in Flux Network is 8. Additionally, when a Technology-Type character generates or converts a Surge, all Technology-Type characters' CRIT Rate is increased by 12% for that Cycle."
+  },
+  "desc2": {
+    "title": "Rifted Disorder",
+    "desc": "Certain characters utilize Disortion Energy in their abilities. When Disorder-Type characters trigger a certain condition, or deal Disorder DMG to the opponents, generates 6 Energy and some Echo Memory. Every Disorder-Type character has their unique ways of utilizing and storing their Echo Memory. Disorder-Type characters' Rifted Skill can be casted after accumulating enough Energy.\n\nWhen there are two or more Diisorder-Type characters in the team, gains Disordered Network effect, all opponents' All Attribute RES are decreased by 8%. Additionally, when a Disorder-Type character generates Energy, additional Energy particle will be created equals to 32% of the origianl value." 
+  },
+  "desc3": {
+    "title": "Technology Attribute - Strength",
+    "desc": "Strength-Type characters have their ATK, DEF, and HP increased by 20%.\n\nAttribute Chain: Strength\nWhen there are two or more Strength-Type characters in the team, their DEF is increased by an additional 25%."
+  },
+  "desc4": {
+    "title": "Technology Attribute - Destruction",
+    "desc": "Destruction-Type characters deal 80% increased DMG to opponents with Shields and 15% increased DMG when the Shield is broken.\n\nAttribute Chain: Destruction\nWhen there are two or more Destruction-Type characters in the team, all team members' DMG dealt to Shielded opponents is increased by 40% and 20% when the Shield is broken."
+  },
+  "desc5": {
+    "title": "Technology Attribute - Quantum",
+    "desc": "Quantum-Type characters can deal Quantum DMG. Quantum DMG ignores 20% of the opponent's DEF and apply 1 stack of Entangled to the opponent, max 5 stacks. Entangled: Reduces the opponent's Max HP by 3%.\n\nAttribute Chain: Quantum\nWhen there are two or more Quantum-Type characters in the team, all opponents' Max HP is reduced by 5%."
+  },
+  "desc6": {
+    "title": "Technology Attribute - Fusion",
+    "desc": "Fusion-Type characters can utilize some Distortion Energy using Fusion Tech and can deal Disorder-Fusioned DMG.\n\nAttribute Chain: Fusion\nWhen there are two or more Fusion-Type character in the team, Fusion-Type characters' gains 12% Disorder DMG Bonus and 12% Reaction DMG Bonus."
+  },
+  "desc7": {
+    "title": "Technology Attribute - Intelligence",
+    "desc": "Intelligence-Type characters can deal Artificial DMG mostly based on their Intellgence Unit. Artificial DMG's Focus Build-Up Rate is increased by 200%. 100% of their Knowledge Unit is converted into Intelligence Unit.\n\nAttribute Chain: Intelligence\nWhen there are two or more Intelligence-Type characters in the team, their Knowledge Unit to Intelligence Unit conversion ratio is increased by 20%."
+  },
+  "desc8": {
+    "title": "Technology Attribute - Sharp",
+    "desc": "Sharp-Type characters can deal Sharp DMG. Sharp DMG applies 1 stack of Bleed to the opponent, max 8 stacks. Each of the first 4 stacks increases the DMG taken by 8%. When the opponent or team member has more than 4 stacks of Bleed, deals 24% Physical ATK (+92% Knowledge Unit) as Bleeding DMG every Cycle. The last 3 stacks increases the Bleeding DMG by 12%. Healing while Bleed is active will remove all stacks.\n\nAttribute Chain: Sharp\nWhen there are two or more Sharp-Type characters in the team, 4 extra stacks of Bleed can be applied to the opponents or team members. When the opponent has more than 8 stacks of Bleed, applies a Wounded effect. Wounded: Based on 9/10/11/12 stacks of Bleed, opponents or team members affected by Wounded gains a Wounded Wart equals to 12%/16%/20%/24% of the affected opponent or team member's Max HP. Healing while having Wounded can dispel the Wounded Wart and only after removing Wounded, will the Bleed stacks be removed."
+  }
+}

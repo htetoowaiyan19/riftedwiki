@@ -7,12 +7,16 @@ function renderCharacterList(data) {
 
   data.forEach(char => {
     const item = document.createElement("div");
-    item.className = `char-item ${char.version[1]}`;
+    const stateClass = (char.version && char.version[1] === "unreleased") ? "unreleased" : "released";
+    item.className = `char-item ${stateClass}`;
 
-    const versionBadge =
-      `<span>${char.version[1] === "unreleased" ? "Upcoming" : char.version[0]}</span>`;
+    const badgeText = (char.version && char.version[1] === "unreleased") ? "Upcoming" : (char.version ? char.version[0] : "");
 
-    item.innerHTML = `<span>${char.name}</span>${versionBadge}`;
+    item.innerHTML = `
+      <div class="char-row">
+        <div class="char-name">${char.name}</div>
+        <div class="version-badge">${badgeText}</div>
+      </div>`;
 
     item.onclick = () => loadCharacter(`characters/${char.file}`);
     list.appendChild(item);

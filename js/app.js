@@ -8,23 +8,31 @@ function showTab(tab) {
   const charTab   = document.getElementById("tab-characters");
   const relicTab  = document.getElementById("tab-relics");
   const trialTab  = document.getElementById("tab-trials");
+  const gpTab = document.getElementById("tab-gameplay");
 
   const loader        = document.getElementById("loader");
   const content       = document.getElementById("content");
   const relicLoader   = document.getElementById("relicLoader");
   const relicContent  = document.getElementById("relicContent");
+  const gameplayLoader = document.getElementById("gameplayLoader");
+  const gameplayContent = document.getElementById("gameplayContent");
   const trialContent  = document.getElementById("trialChambers");
 
   // Reset all tabs
-  charTab.classList.remove("active");
-  relicTab.classList.remove("active");
-  trialTab.classList.remove("active");
+  if (charTab) charTab.classList.remove("active");
+  if (relicTab) relicTab.classList.remove("active");
+  if (gpTab) gpTab.classList.remove("active");
+  if (trialTab) trialTab.classList.remove("active");
 
   // Hide all sections
   loader.style.display = "none";
   content.style.display = "none";
   relicLoader.style.display = "none";
   relicContent.style.display = "none";
+  if (gameplayLoader) gameplayLoader.style.display = "none";
+  if (gameplayContent) gameplayContent.style.display = "none";
+  // collapse any open gameplay dropdowns when switching away
+  if (typeof collapseGameplayDropdowns === "function") collapseGameplayDropdowns();
   if (trialContent) trialContent.style.display = "none";
 
   // Characters
@@ -48,6 +56,22 @@ function showTab(tab) {
     if (search) search.style.pointerEvents = "auto";
 
     populateRelicTypeFilter();
+  }
+
+  // Gameplay & Mechnic
+  else if (tab === "gameplay") {
+    const gpTab = document.getElementById("tab-gameplay");
+    if (gpTab) gpTab.classList.add("active");
+
+    const gameplayLoader = document.getElementById("gameplayLoader");
+    if (gameplayLoader) gameplayLoader.style.display = "block";
+
+    const search = document.getElementById("gameplaySearchBar");
+    if (search) search.style.pointerEvents = "auto";
+
+    if (typeof initGameplay === "function") {
+      initGameplay();
+    }
   }
 
   // Trial Chambers
@@ -139,4 +163,20 @@ function formatPercentMaybe(key, value) {
   if (n > 0 && n <= 1) n *= 100;
 
   return n.toFixed(1) + "%";
+}
+
+// Collapse open gameplay dropdowns (used when switching tabs)
+function collapseGameplayDropdowns() {
+  try {
+    const list = document.getElementById('gameplayList');
+    if (!list) return;
+    const openItems = list.querySelectorAll('.gameplay-item.open');
+    openItems.forEach(it => {
+      it.classList.remove('open');
+      const header = it.querySelector('.gameplay-header');
+      if (header) header.setAttribute('aria-expanded', 'false');
+    });
+  } catch (e) {
+    // silent
+  }
 }

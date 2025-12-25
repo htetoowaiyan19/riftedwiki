@@ -26,6 +26,9 @@
         <a class="nav-link" id="tab-relics" href="#" onclick="showTab('relics')">Relics</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" id="tab-gameplay" href="#" onclick="showTab('gameplay')">Gameplay</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" id="tab-trials" href="#" onclick="showTab('trials')">Trial Chambers</a>
       </li>
     </ul>
@@ -106,10 +109,20 @@
       </div>
     </div>
 
+    <!-- -------------------- Gameplay & Mechnic -------------------- -->
+    <div id="gameplayLoader" style="display:none">
+      <h2>Gameplay & Mechnic</h2>
+      <input type="text" id="gameplaySearchBar" class="form-control w-50 mb-3" placeholder="Type to search..." onkeyup="filterGameplayList()" />
+      <div class="gameplay-list" id="gameplayList"></div>
+    </div>
+
+    <div id="gameplayContent" style="display:none"></div>
+
   </div>
 
   <!-- JS -->
   <script src="js/app.js"></script>
+  <script src="js/gameplay.js"></script>
   <script src="js/characters.js"></script>
   <script src="js/relics.js"></script>
   <script src="js/trialChamber.js"></script>

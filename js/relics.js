@@ -6,15 +6,18 @@ function renderRelicList(data) {
   list.innerHTML = "";
 
   data.forEach(relic => {
-    const versionBadge = relic.version
-      ? `<span>${relic.version[1] === "unreleased" ? "Upcoming" : relic.version[0]}</span>`
-      : "";
-
     const item = document.createElement("div");
-    item.className = `char-item ${relic.version ? relic.version[1] : "released"}`;
-    item.innerHTML = `<span>${relic.relicName}</span>${versionBadge}`;
-    item.onclick = () => loadRelic(`relics/${relic.file}`);
+    const stateClass = (relic.version && relic.version[1] === "unreleased") ? "unreleased" : "released";
+    item.className = `char-item ${stateClass}`;
+    const badgeText = (relic.version && relic.version[1] === "unreleased") ? "Upcoming" : (relic.version ? relic.version[0] : "");
 
+    item.innerHTML = `
+      <div class="char-row">
+        <div class="char-name">${relic.relicName}</div>
+        <div class="version-badge">${badgeText}</div>
+      </div>`;
+
+    item.onclick = () => loadRelic(`relics/${relic.file}`);
     list.appendChild(item);
   });
 }
