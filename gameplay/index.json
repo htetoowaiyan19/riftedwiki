@@ -30,5 +30,61 @@
   "desc8": {
     "title": "Technology Attribute - Sharp",
     "desc": "Sharp-Type characters can deal Sharp DMG. Sharp DMG applies 1 stack of Bleed to the opponent, max 8 stacks. Each of the first 4 stacks increases the DMG taken by 8%. When the opponent or team member has more than 4 stacks of Bleed, deals 24% Physical ATK (+92% Knowledge Unit) as Bleeding DMG every Cycle. The last 3 stacks increases the Bleeding DMG by 12%. Healing while Bleed is active will remove all stacks.\n\nAttribute Chain: Sharp\nWhen there are two or more Sharp-Type characters in the team, 4 extra stacks of Bleed can be applied to the opponents or team members. When the opponent has more than 8 stacks of Bleed, applies a Wounded effect. Wounded: Based on 9/10/11/12 stacks of Bleed, opponents or team members affected by Wounded gains a Wounded Wart equals to 12%/16%/20%/24% of the affected opponent or team member's Max HP. Healing while having Wounded can dispel the Wounded Wart and only after removing Wounded, will the Bleed stacks be removed."
+  },
+  "desc9": {
+    "title": "Disorder Attribute - Flame",
+    "desc": "Flame-Disordered characters can deal Flame DMG. Dealing Flame DMG applies the opponent with Burning for 2 Cycles. Burning: Deals 10 (+10% Magic PWR) as Flame DMG each Turn. The Flame DMG dealt by Burning will not apply Burning.\n\nAttribute Chain: Flame\nWhen there are two or more Flame-Disordered characters in the team, all team members gains 10% Tide RES and their Adaptive ATK is increased by 20%."
+  },
+  "desc10": {
+    "title": "Disorder Attribute - Frost",
+    "desc": "Frost-Disordered characters can deal Frost DMG. Dealing Frost DMG applies the opponent with Chill for 2 Cycles. Chill: SPD is reduced by 10%.\n\nAttribute Chain: Frost\nWhen there are two or more Frost-Disordered characters in the team, all team members gains 10% Volte RES and their Crit DMG is increased by 20%."
+  },
+  "desc11": {
+    "title": "Disorder Attribute - Volte",
+    "desc": "Volte-Disordered characters can deal Volte DMG. Dealing Volte DMG applies the opponent with Shock for 2 Cycles. Shock: Dealing Volte DMG to the opponents or characters affected by Shock will spread 20% of that DMG to the nearby opponents or characters affected by Shock as Volte DMG and removes the Shock.\n\nAttribute Chain: Volte\nWhen there are two or more Volte-Disordered characters in the team, all team members gains 10% Frost RES and their Energy Regen is increased by 20%."
+  },
+  "desc12": {
+    "title": "Disorder Attribute - Tide",
+    "desc": "Tide-Disordered characters can deal Tide DMG. Dealing Tide DMG applies the opponent with Soaked for 2 Cycles. Soaked: Healing or Shield Regen is reduced by 10%.\n\nAttribute Chain: Tide\nWhen there are two or more Tide-Disordered characters in the team, all team members gains 10% Flame RES and their Max HP is increased by 20%."
+  },
+  "desc13": {
+    "title": "Disorder Attribute - Gale",
+    "desc": "Gale-Disordered characters can deal Gale DMG. Dealing Gale DMG applies the opponent with Breeze for 2 Cycles. Breeze: Gale DMG taken by the affected opponent or character is increased by 10%.\n\nAttribute Chain: Gale\nWhen there are two or more Gale-Disordered characters in the team, all team members SPD is increased by 5% and their Knowledge Unit is increased by 60."
+  },
+  "desc14": {
+    "title": "Disordered Reaction - Melt",
+    "desc": "When a character or opponent deals Flame DMG to Chilled opponent or Frost DMG to Burning opponent, triggers Melt Reaction. Melt reaction amplifies the DMG of the triggered disorder. Melt triggered by Flame DMG will deal 20% additional DMG.\n\nMelt Multiplier: ((63 (Base Amplifier) + KnowledgeUnit)% + ReactionDMGBonus%) * MeltReactionDMGBonus%"
+  },
+  "desc15": {
+    "title": "Disordered Reaction - Extinguished",
+    "desc": "When a character or opponent deals Tide DMG to Burning opponent, triggers Extinguished Reaction. Extinguished reaction amplifies the DMG of the triggered disorder.\n\nExtinguished Multiplier: ((77 (Base Amplifier) + (4% Max HP) + (163% KnowledgeUnit)%)% + ReactionDMGBonus%) * ExtinguishedDMGBonus%"
+  },
+  "desc16": {
+    "title": "Disordered Reaction - Vaporized",
+    "desc": "When a character or opponent deals Flame DMG to Soaked opponent, triggers Vaporized Reaction. Vaporized reaction amplifies the DMG of the triggered disorder.\n\nVaporized Multiplier: ((168 (Base Amplifier) + (4% Opponent's Max HP) + (163% KnowledgeUnit)%)% + ReactionDMGBonus%) * VaporizedDMGBonus%"
+  },
+  "desc17": {
+    "title": "Disordered Reaction - Detonate",
+    "desc": "When a character or opponent deals Flame DMG to Shocked opponent, triggers Detonate Reaction. Detonate reaction deals AoE Flame DMG to nearby opponents.\n\nDetonate DMG Formula: ((119 (Base DMG) + (166% Magic PWR)) * (63% KnowledgeUnit) * ReactionDMGBonus%) * DetonateDMGBonus%"
+  },
+  "desc18": {
+    "title": "Disordered Reaction - Freeze",
+    "desc": "When a character or opponent deals Frost DMG to Soaked opponent or Tide DMG to Chilled opponent, triggers Freeze Reaction. Freeze Reaction freezes the opponent for 1 Cycle. This effect has 3 Cycle Cooldown. During the Cooldown of the Freeze effect, if a Freeze reaction is triggered, deals an instance of Frost DMG instead.\n\nFreeze DMG Formula: ((16 (Base DMG) * (144% KnowledgeUnit)) * ReactionDMGBonus%) * FreezeDMGBonus%"
+  },
+  "desc19": {
+    "title": "Disordered Reaction - Conduction",
+    "desc": "When a character or opponent deals Frost DMG to Shocked opponent or Volte DMG to Chilled opponent, triggers Conduction Reaction. Conduction Reaction deals AoE Frost DMG and reduces the opponent's Physical RES by 12%.\n\nConduction DMG Formula: ((31 (Base DMG) + (67% Magic PWR) * KnowledgeUnit%) * ReactionDMGBonus%) * ConductionDMGBonus%"
+  },
+  "desc20": {
+    "title": "Disordered Reaction - Electrified",
+    "desc": "When a character or opponent deals Tide DMG to Shocked opponent or Volte DMG to Soaked opponent, triggers Electrified Reaction. Electrified Reaction deals DMG to all nearby opponents affected by Soaked or Shock.\n\nElectrified DMG Formula: ((44 (Base DMG) + (221% KnowledgeUnit)%) * ReactionDMGBonus%) * ElectrifiedDMGBonus%"
+  },
+  "desc21": {
+    "title": "Disordered Reaction - Shattered",
+    "desc": "Certain Heavy Attacks hits on Frozen opponents trigger Shattered Reaction. Shattered Reaction deals high Physical DMG.\n\nShattered DMG Formula: (((631 + KnowledgeUnit)% Physical ATK) * ReactionDMGBonus%) * ShatteredDMGBonus%"
+  },
+  "desc22": {
+    "title": "Focus",
+    "desc": "Focus Bar can be built up on the opponents by dealing DMG to them. When the Focus Bar is fulled, the opponet will enters the Focused state. During this state, all character's target is locked on to the Focused opponent and the Focused opponent's All Attribute RES is decreased to 0% and their current actions will be interrupted. For smaller opponents, when the focus bar is full, they will directly takes 1500% Physical ATK as Physical DMG.\n\nWhile all characters are Focused on to the Focused opponent, they gains 20% DMG Bonus and 40% Attribute RES. During this time, other opponents can still attack the characters but the characters will only locked to the Focused opponent.\n\nArtificial DMG significantly boosts the Focus Build-Up Rate on the opponents while dealing extra DMG to them. Certain Elite opponents or Boss opponents can utilize Focused state in different ways."
   }
 }
