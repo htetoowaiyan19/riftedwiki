@@ -18,5 +18,7 @@
   { "name": "Luxen", "file": "agile/luxen.json", "version": ["1.6Beta", "unreleased"] },
   { "name": "Faewyn", "file": "magical/faewyn.json", "version": ["1.7Beta", "unreleased"]},
   { "name": "Eylos", "file": "power/eylos.json", "version": ["1.8Beta", "unreleased"]},
+  { "name": "Rene", "file": "melee/rene.json", "version": ["2.0", "unreleased"] },
+  { "name": "Lake", "file": "power/lake.json", "version": ["2.0", "unreleased"] },
   { "name": "Arke", "file": "projectile/arke.json", "version": ["2.1", "unreleased"] }
 ]

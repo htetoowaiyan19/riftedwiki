@@ -1,0 +1,69 @@
+{
+    "name": "Rene",
+    "baseAtk": 160,
+    "basePwr": 0,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 2000,
+    "baseCharge": 100,
+    "baseFluxCapacity": 5,
+    "baseSurgeCapacity": 125,
+    "baseEchoMemroyCapacity": 0,
+    "baseMaxEnergy": 0,
+    "baseCritRate": 5.0,
+    "baseCritDamage": 50.0,
+    "substat": "ATK%: 8.8%",
+    "riftedFaction": "Rifted Technology",
+    "riftedTech": "Intelligence",
+    "riftedDisc": "",
+    "faction": "Melee",
+
+    "passiveName": "Overdue Shift",
+    "passiveDesc": "Rene gains 0.01% Energy Regen for every 100 Physical ATK.",
+    "riftedTalent": "Rifted Technology",
+    "rTalentDesc": "Rene's Normal and Charged Attacks generate 1 Flux",
+
+    "talentBox": {
+        "talent1": {
+            "name": "Intelligence Network",
+            "desc": "Certain skills of Intelligence-Type characters can hijack the opponent, applying 1 stack of Hijacked, max 20 stacks.\nHijacked: Increases the Focus build-up rate of the affected opponent by 2%."
+        }
+    },
+
+    "normalAttackName": "Normal Attack - Outcasted",
+    "normalAttackDesc": "Rene deals 14 (+36.2% Physical ATK) as Artificial DMG.",
+
+    "chargedAttackName": "Charged Attack - Weeping Sorrow",
+    "chargeCost": 20,
+    "chargedAttackDesc": "Rene deals 28 (+44% Physical ATK) as Artificial DMG.\n\nIf Rene has 3 stacks of Absolute, Weeping Sorrow will apply the opponent with 3 stacks of Hijacked.",
+
+    "normalSkillName": "Normal Skill - Projectile of Knowledge",
+    "fluxCost": 2,
+    "memoryNodes": {},
+    "normalSkillDesc": "Rene launches a Projectile of Knowledge at the selected opponent, dealing 133 (+47.6% Physical ATK) as Artificial DMG. Rene gains 1 stack of Absolute when Projectile of Knowledge deals DMG to an opponent.",
+
+    "riftedSkillName": "Rifted Skill - Payback Modules",
+    "surgeCost": 125,
+    "energyCost": 0,
+    "riftedSkillDesc": "Rene launches it's Payback Modules at each opponent, dealing 116 (+33.6% Physical ATK) as Artificial DMG. If Payback Modueles deal DMG to an opponent, Rene gains 2 stacks of Absolute and all team members gain 60 Knowledge Unit.",
+
+    "fragment1Name": "F1 - Modular System Overhaul",
+    "fragment1Desc": "When Rene casts Rifted Skill \"Payback Modules\", all team members gains 12 Knowledge Unit for every 500 Physical ATK Rene has. Additionally, when Rene casts Charged Attack \"Weeping Sorrow\" with 3 stacks of Absolute, all team members gain an extra 12 Knowledge Unit for every 1000 Physical ATK Rene has.",
+    "fragment2Name": "F2 - Absolute Feedback",
+    "fragment2Desc": "When Rene Rifted Skill \"Payback Modules\" hits an opponent, Rene gains 1 additional stack of Absolute. Additionally, Rene can gain Absolute stacks by hitting the opponents instead of needing to deal DMG to them.",
+    "fragment3Name": "F3 - Module Optimization",
+    "fragment3Desc": "\"Payback Modules\" level is increased by 3.",
+    "fragment4Name": "F4 - Hard-earned Nightshift",
+    "fragment4Desc": "When Rene Rifted Skill \"Payback Modules\" hits an opponent, Rene gains 20 Surge. This effect can occur once every 3 Cycles.",
+    "fragment5Name": "F5 - Knowledge Discovery",
+    "fragment5Desc": "\"Projectile of Knowledge\" level is increased by 3.",
+    "fragment6Name": "F6 - Knight of Koniveruer",
+    "fragment6Desc": "When Rene cast Rifted Skill \"Payback Modules\", all team members gains 20% CRIT DMG and 20% Artificial DMG Bonus for 3 Cycles.",
+
+    "log": {
+        "record1": {
+            "version": "2.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

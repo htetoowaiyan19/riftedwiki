@@ -1,0 +1,62 @@
+{
+    "name": "Lake",
+    "baseAtk": 200,
+    "basePwr": 180,
+    "basePhyDef": 30,
+    "baseMagDef": 30,
+    "baseHp": 1800,
+    "baseCharge": 100,
+    "baseFluxCapacity": 5,
+    "baseSurgeCapacity": 100,
+    "baseEchoMemroyCapacity": 0,
+    "baseMaxEnergy": 0,
+    "baseCritRate": 5.0,
+    "baseCritDamage": 50.0,
+    "substat": "CRIT DMG%: 12.2%",
+    "riftedFaction": "Rifted Technology",
+    "riftedTech": "Strength",
+    "riftedDisc": "",
+    "faction": "Power",
+
+    "passiveName": "Amethyst Protection",
+    "passiveDesc": "When Lake's is in the team, all team members' DoT DMG taken is reduced by 40%.",
+    "riftedTalent": "Rifted Technology",
+    "rTalentDesc": "Lake's Normal and Charged Attacks generate 1 Flux.",
+
+    "normalAttackName": "Normal Attack - Purity",
+    "normalAttackDesc": "Lake deals 33 (+63% Physical ATK) as Physical DMG to the opponent.",
+
+    "chargedAttackName": "Charged Attack - Amethyst Cluster",
+    "chargeCost": 30,
+    "chargedAttackDesc": "Lake charges the ground and creates a Large Amethyst Cluster, dealing 46 (+66% Physical ATK) as AoE Physical DMG to selected opponents.",
+
+    "normalSkillName": "Normal Skill - Crystalized",
+    "fluxCost": 3,
+    "memoryNodes": {},
+    "normalSkillDesc": "Lake creates an Amethyst Crystal at the selected opponent's location, dealing 188 (+81.2% Hybrid DEF) as Physical DMG and granting all team member an Amethyst Shield equal to 478 (+88% Hybrid DEF). Amethyst Resonance: The Amethyst Crystal will continuously deal 96 (+67% Magic PWR) as Magic DMG to the opponent. This DMG is considered DoT DMG. The Amethyst Crystal will be destroyed when all team members' Amethyst Shield are broken or after 6 Cycles, dealing 222 (+72% Hybrid DEF) as Physical DMG.",
+
+    "riftedSkillName": "Rifted Skill - Crystal Experiment Zone",
+    "surgeCost": 110,
+    "energyCost": 0,
+    "riftedSkillDesc": "Lake converts the area into the Crystal Experiment Zone for 4 Cycles. Crystal Experiment Zone: All opponents inside the Zone will takes 40% more DoT DMG and their SPD are reduced by 20%. Additionally, for every 200 Hybrid DEF, DoT DMG taken by opponents is increased further by 4%, up to 40%.",
+
+    "fragment1Name": "F1 - Energized Amethyst",
+    "fragment1Desc": "When Lake's Charged Attack \"Amethyst Cluster\" hits an Ametyst Crystal, the Crystal will explode immediately, dealing 500% of the original DMG as AoE Physical DMG. This attack will generate 3 Flux and can be triggered only once every 3 Cycles.",
+    "fragment2Name": "F2 - Resonance Amplifier",
+    "fragment2Desc": "Amethyst Resonance DMG is increased by 60% of Lake's Hybrid DEF. When Lake's Normal and Charged Attacks hit an Amethyst Crystal, the Crystal will trigger Amethyst Resonance immediately.",
+    "fragment3Name": "F3 - Mist Thickens",
+    "fragment3Desc": "\"Crystal Experiment Zone\" level is increased by 3.",
+    "fragment4Name": "F4 - Decomposition",
+    "fragment4Desc": "When an Amethyst Crystal breaks, heals all team members by 300% of Lake's Hybrid DEF. This effect can be triggered once every 3 Cycles.",
+    "fragment5Name": "F5 - Fine-Tuning",
+    "fragment5Desc": "\"Amethyst Cluster\" level is increased by 3.",
+    "fragment6Name": "F6 - Perfect-Tuning",
+    "fragment6Desc": "The duration of DoT effects will be halted while inside the Crystal Experiment Zone.",
+
+    "log": {
+        "record1": {
+            "version": "2.0 [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
