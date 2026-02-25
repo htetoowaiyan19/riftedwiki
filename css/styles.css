@@ -562,20 +562,6 @@ body {
 
 /* ================= Mobile improvements ================= */
 @media (max-width: 768px) {
-  /* Make main tabs touch-friendly and horizontally scrollable */
-  .nav-tabs {
-    display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 6px;
-  }
-  .nav-tabs .nav-link {
-    white-space: nowrap;
-    padding: 10px 12px;
-    flex: 0 0 auto;
-  }
-
   /* Force utilities that used fixed 50% to be full width on small screens */
   .w-50 { width: 100% !important; max-width: none !important; }
   #searchBar, #gameplaySearchBar, #relicSearchBar { max-width: none; width: 100% !important; }
@@ -604,4 +590,282 @@ body {
   .char-list { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
   .stat-table td { padding: 10px 12px; }
   .level-btn { padding: 8px 10px; font-size: 0.95rem; }
+}
+
+/* ================= Custom Navigation ================= */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1200;
+  backdrop-filter: blur(8px);
+  background: rgba(7, 19, 41, 0.92);
+  border-bottom: 1px solid rgba(130, 196, 255, 0.22);
+  margin: -20px -20px 18px -20px;
+  padding: 10px 20px;
+}
+
+.top-nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brand {
+  color: #e8f1ff;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  font-size: 1.1rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link-item {
+  text-decoration: none;
+  color: #c7dcff;
+  font-weight: 600;
+  border: 1px solid rgba(130, 196, 255, 0.2);
+  border-radius: 999px;
+  padding: 8px 12px;
+  transition: all 0.18s ease;
+  background: rgba(16, 40, 76, 0.45);
+}
+
+.nav-link-item:hover {
+  color: #f3f8ff;
+  border-color: rgba(130, 196, 255, 0.5);
+  background: rgba(30, 69, 123, 0.55);
+}
+
+.nav-link-item.active {
+  color: #08182f;
+  background: linear-gradient(135deg, #8ed6ff, #68b5ff);
+  border-color: #9dd7ff;
+}
+
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid rgba(130, 196, 255, 0.4);
+  border-radius: 8px;
+  width: 42px;
+  height: 38px;
+  padding: 6px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  background: #c7dcff;
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.nav-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ================= Rifted Matters ================= */
+.matters-toolbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.matters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 10px;
+  align-items: start;
+}
+
+.matter-card {
+  border: 1px solid rgba(130, 196, 255, 0.28);
+  border-radius: 12px;
+  padding: 14px;
+  background: linear-gradient(165deg, rgba(19, 43, 80, 0.76), rgba(12, 28, 54, 0.88));
+  box-shadow: 0 4px 14px rgba(5, 25, 60, 0.3);
+  align-self: start;
+}
+
+.matter-card.fusion {
+  border-color: rgba(255, 174, 107, 0.48);
+  background: linear-gradient(165deg, rgba(73, 42, 17, 0.72), rgba(32, 22, 13, 0.9));
+}
+
+.matter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.matter-title {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #eaf3ff;
+}
+
+.matter-type-badge {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: rgba(130, 196, 255, 0.18);
+  color: #aeddff;
+}
+
+.matter-card.fusion .matter-type-badge {
+  background: rgba(255, 174, 107, 0.2);
+  color: #ffd6ab;
+}
+
+.matter-preview {
+  font-size: 0.84rem;
+  color: #a9c8ef;
+  margin: 2px 0 8px;
+}
+
+.matter-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.matter-expand-btn {
+  border: 1px solid rgba(130, 196, 255, 0.35);
+  background: rgba(18, 48, 89, 0.6);
+  color: #d9ebff;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 0.83rem;
+  font-weight: 600;
+}
+
+.matter-card.is-open .matter-expand-btn {
+  opacity: 0.6;
+}
+
+.matter-body {
+  position: relative;
+  margin-top: 10px;
+  padding-top: 6px;
+  animation: matterExpand 0.18s ease;
+}
+
+.matter-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 10px;
+}
+
+.matter-chip {
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 0.78rem;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.matter-set-block {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.matter-set-block h5 {
+  margin: 0 0 4px;
+  font-size: 0.83rem;
+  color: #9bc9ff;
+}
+
+.matter-set-block p {
+  margin: 0;
+  line-height: 1.45;
+  color: #dfeaff;
+}
+
+@keyframes matterExpand {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  body { padding: 12px; }
+
+  .top-nav {
+    margin: -12px -12px 12px -12px;
+    padding: 10px 12px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: min(280px, 82vw);
+    background: linear-gradient(180deg, rgba(8, 21, 44, 0.98), rgba(8, 23, 47, 0.98));
+    border-right: 1px solid rgba(130, 196, 255, 0.2);
+    box-shadow: 6px 0 20px rgba(0, 0, 0, 0.45);
+    transform: translateX(-100%);
+    transition: transform 0.22s ease;
+    padding: 72px 12px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    z-index: 1201;
+  }
+
+  .main-nav.open {
+    transform: translateX(0);
+  }
+
+  .nav-link-item {
+    border-radius: 10px;
+    padding: 10px 12px;
+  }
+
+  .matters-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .matters-grid {
+    grid-template-columns: 1fr;
+  }
 }

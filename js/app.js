@@ -2,13 +2,15 @@
 
 let characters = [];
 let relics = [];
+let matters = [];
 
 // -------------------- Tab Switching --------------------
 function showTab(tab) {
   const charTab   = document.getElementById("tab-characters");
   const relicTab  = document.getElementById("tab-relics");
   const trialTab  = document.getElementById("tab-trials");
-  const gpTab = document.getElementById("tab-gameplay");
+  const gpTab     = document.getElementById("tab-gameplay");
+  const mattersTab = document.getElementById("tab-matters");
 
   const loader        = document.getElementById("loader");
   const content       = document.getElementById("content");
@@ -17,12 +19,14 @@ function showTab(tab) {
   const gameplayLoader = document.getElementById("gameplayLoader");
   const gameplayContent = document.getElementById("gameplayContent");
   const trialContent  = document.getElementById("trialChambers");
+  const mattersLoader = document.getElementById("mattersLoader");
 
   // Reset all tabs
   if (charTab) charTab.classList.remove("active");
   if (relicTab) relicTab.classList.remove("active");
   if (gpTab) gpTab.classList.remove("active");
   if (trialTab) trialTab.classList.remove("active");
+  if (mattersTab) mattersTab.classList.remove("active");
 
   // Hide all sections
   loader.style.display = "none";
@@ -34,6 +38,7 @@ function showTab(tab) {
   // collapse any open gameplay dropdowns when switching away
   if (typeof collapseGameplayDropdowns === "function") collapseGameplayDropdowns();
   if (trialContent) trialContent.style.display = "none";
+  if (mattersLoader) mattersLoader.style.display = "none";
 
   // Characters
   if (tab === "characters") {
@@ -60,7 +65,6 @@ function showTab(tab) {
 
   // Gameplay & Mechnic
   else if (tab === "gameplay") {
-    const gpTab = document.getElementById("tab-gameplay");
     if (gpTab) gpTab.classList.add("active");
 
     const gameplayLoader = document.getElementById("gameplayLoader");
@@ -87,6 +91,39 @@ function showTab(tab) {
       initTrialChambers();
     }
   }
+
+  // Rifted Matters
+  else if (tab === "matters") {
+    if (mattersTab) mattersTab.classList.add("active");
+    if (mattersLoader) mattersLoader.style.display = "block";
+    if (typeof initMatters === "function") initMatters();
+  }
+
+  closeNavMenu();
+}
+
+function toggleNavMenu() {
+  const nav = document.getElementById("mainNav");
+  const overlay = document.getElementById("navOverlay");
+  const toggle = document.getElementById("navToggle");
+  if (!nav || !overlay || !toggle) return;
+
+  const willOpen = !nav.classList.contains("open");
+  nav.classList.toggle("open", willOpen);
+  overlay.classList.toggle("open", willOpen);
+  toggle.classList.toggle("open", willOpen);
+  toggle.setAttribute("aria-expanded", String(willOpen));
+}
+
+function closeNavMenu() {
+  const nav = document.getElementById("mainNav");
+  const overlay = document.getElementById("navOverlay");
+  const toggle = document.getElementById("navToggle");
+  if (!nav || !overlay || !toggle) return;
+  nav.classList.remove("open");
+  overlay.classList.remove("open");
+  toggle.classList.remove("open");
+  toggle.setAttribute("aria-expanded", "false");
 }
 
 // -------------------- JSON Loading --------------------
@@ -111,6 +148,18 @@ fetch("relics/index.json")
   .catch(() => {
     document.getElementById("relicList").innerHTML =
       "<p class='text-danger'>Error loading relic list.</p>";
+  });
+
+fetch("matters/index.json")
+  .then(res => res.json())
+  .then(data => {
+    const matterList = Array.isArray(data?.matters) ? data.matters : [];
+    matters = matterList;
+    if (typeof renderMattersList === "function") renderMattersList(matterList);
+  })
+  .catch(() => {
+    const el = document.getElementById("mattersList");
+    if (el) el.innerHTML = "<p class='text-danger'>Error loading matters list.</p>";
   });
 
 // -------------------- Shared Utilities --------------------

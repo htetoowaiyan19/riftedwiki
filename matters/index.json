@@ -1,0 +1,64 @@
+{
+  "matters": [
+    {
+      "name": "Traveller",
+      "type": "normal",
+      "set2": "Healing Bonus +20%",
+      "set4": "When the equipping character takes DMG, recovers 30% of the DMG as HP. This can occour once every 4 Cycles.",
+      "set": "When the equipping character takes DMG more than 30% of their Max HP, the extra DMG dealt will be reduced by 50%. Additionally, creates a Shield equals to 15% of their Max HP. The Shield can be generated in this way every 6 Cycles."
+    },
+    {
+      "name": "Merchant",
+      "type": "normal",
+      "set2": "Max HP +2,000",
+      "set4": "When the equipping character HP is lower than 30%, DMG taken is reduced by 10%.",
+      "set": "For every 1,000 HP of the equipping character, DEF is increased by 2%."
+    },
+    {
+      "name": "Travelling Merchant",
+      "type": "fusion",
+      "fusionSet": ["Traveller", "Merchant"],
+      "set": "When the equipping character HP is above 60%, CRIT DMG of Normal Skill and Rifted Skill is increased by 40%."
+    },
+    {
+      "name": "Knight",
+      "type": "normal",
+      "set2": "Rifted Skill DMG Bonus +16%",
+      "set4": "When the equipping character uses Normal Skill, CRIT Rate is increased by 10% for 4 Cycles.",
+      "set": "After the equipping character triggers a critical hit, their next Normal Skill deals 48% increased DMG. This effect cannot stack."
+    },
+    {
+      "name": "Swamp",
+      "type": "normal",
+      "set2": "Magic PWR +16%",
+      "set4": "DoT DMG Bonus +20%",
+      "set": "When the equipping character receives healing, increases Magic PWR by 24% for 4 Cycles. Additionally, when the equipping character heals themselves, increases Magic PWR by an additional 24%."
+    },
+    {
+      "name": "Knight Nightmares",
+      "type": "fusion",
+      "fusionSet": ["Knight", "Swamp"],
+      "set": "Increases Magic PWR by 24%. When the equipping character uses Normal Skill, gains 1 stack of Nightmare Fuel for 4 Cycles, max 3 stacks. Each stack increases Rifted Skill DMG by 24%. All Nightmare Fuel stacks will be consumed after using Rifted Skill."
+    },
+    {
+      "name": "Rage",
+      "type": "normal",
+      "set2": "Follow-up DMG Bonus +16%",
+      "set4": "Physical ATK +20%",
+      "set": "When the equipping character consumes their HP, their Normal Attack DMG is increased by 24% for 2 Cycles. Additionally, after the equipping character deals Follow-up DMG, increases their Physical ATK by 24% for 2 Cycles."
+    },
+    {
+      "name": "Target",
+      "type": "normal",
+      "set2": "Energy Regen +20%",
+      "set4": "Energy Efficiency +20%",
+      "set": "If the equipping character takes no DMG while being targeted, increases their CRIT DMG by 20% and 60% CRIT DMG can be gained through this way. If the equipping character takes DMG, the aforementioned effect will be removed."
+    },
+    {
+      "name": "Weak Point",
+      "type": "fusion",
+      "fusionSet": ["Rage", "Target"],
+      "set": "After the equipping character casts Normal Skill, the next Normal Skill whithin 3 Cycles will have its DMG increased by 36% and thier next Follow-up CRIT DMG is increased by 60%."
+    }
+  ]
+}
