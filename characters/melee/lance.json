@@ -24,21 +24,26 @@
     "rTalentDesc": "Lance's Normal and Charged Attacks generate 1 Flux.",
 
     "normalAttackName": "Normal Attack - Sword Strike",
-    "normalAttackDesc": "Lance deals 40% Physical ATK as Physical DMG to the opponent.",
+    "normalAttackDesc": "Lance deals [$_1, 0.4]% Physical ATK as Physical DMG to the opponent.",
+    "normalAttackMultipliers": [0.194923],
 
     "chargedAttackName": "Charged Attack - Piercing",
     "chargeCost": 30,
-    "chargedAttackDesc": "Lance deals 60% Physical ATK as Physical DMG to the opponent while reducing opponent's Physical DEF by 20% for 1 Cycle.",
+    "chargedAttackDesc": "Lance deals [$_1, 0.6]% Physical ATK as Physical DMG to the opponent while reducing opponent's Physical DEF by 20% for 1 Cycle.",
+    "chargedAttackMultipliers": [0.201842],
 
     "normalSkillName": "Normal Skill - Slash",
     "fluxCost": 2,
     "memoryNodes": {},
-    "normalSkillDesc": "Lance slashes the opponent dealing 122 (+67% Physical ATK) as Physical DMG.",
+    "normalSkillDesc": "Lance slashes the opponent dealing [$_1, 122] (+[$_2, 0.67]% Physical ATK) as Physical DMG.",
+    "normalSkillMultipliers": [44, 0.197471],
 
     "riftedSkillName": "Rifted Skill - Lion's Claw",
     "surgeCost": 60,
     "energyCost": 0,
-    "riftedSkillDesc": "Lance summons Lion's Claw and slashes the opponent dealing 214 (+43% Physical ATK) (+22% Opponent Lost HP) as True DMG.",
+    "riftedSkillDesc": "Lance summons Lion's Claw and slashes the opponent dealing [$_1, 214] (+[$_2, 0.43]% Physical ATK) (+[$_3, 0.22]% Opponent Lost HP) as True DMG.",
+    "riftedSkillMultipliers": [91, 0.239102, 0.017291],
+    "maxLevel": 5,
 
     "fragment1Name": "F1 - Nourishing Energy",
     "fragment1Desc": "Casting Normal Skill \"Slash\" increases Lance's Physical ATK and Physical DEF by 20% for 2 Cycles.",
