@@ -25,12 +25,12 @@
 
     "normalAttackName": "Normal Attack - Sword Strike",
     "normalAttackDesc": "Lance deals [$_1, 0.4]% Physical ATK as Physical DMG to the opponent.",
-    "normalAttackMultipliers": [0.194923],
+    "normalAttackMultipliers": [0.110284],
 
     "chargedAttackName": "Charged Attack - Piercing",
     "chargeCost": 30,
-    "chargedAttackDesc": "Lance deals [$_1, 0.6]% Physical ATK as Physical DMG to the opponent while reducing opponent's Physical DEF by 20% for 1 Cycle.",
-    "chargedAttackMultipliers": [0.201842],
+    "chargedAttackDesc": "Lance deals [$_1, 0.6]% Physical ATK as Physical DMG to the opponent while reducing opponent's Physical DEF by [$_2, 0.2]% for 1 Cycle. This effect cannot stack.",
+    "chargedAttackMultipliers": [0.147295, 0.02],
 
     "normalSkillName": "Normal Skill - Slash",
     "fluxCost": 2,
