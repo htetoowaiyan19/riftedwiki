@@ -43,7 +43,6 @@
     "energyCost": 0,
     "riftedSkillDesc": "Lance summons Lion's Claw and slashes the opponent dealing [$_1, 214] (+[$_2, 0.43]% Physical ATK) (+[$_3, 0.22]% Opponent Lost HP) as True DMG.",
     "riftedSkillMultipliers": [91, 0.239102, 0.017291],
-    "maxLevel": 5,
 
     "fragment1Name": "F1 - Nourishing Energy",
     "fragment1Desc": "Casting Normal Skill \"Slash\" increases Lance's Physical ATK and Physical DEF by 20% for 2 Cycles.",

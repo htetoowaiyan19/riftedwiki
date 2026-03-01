@@ -24,21 +24,25 @@
     "rTalentDesc": "Bob's Normal and Charged Attacks generate 1 Flux. Triggering Poison Dart generates 1 extra Flux.",
 
     "normalAttackName": "Normal Attack - Dart",
-    "normalAttackDesc": "Bob deals 40% Physical ATK as Physical DMG to the opponent.",
+    "normalAttackDesc": "Bob deals [$_1, 0.4]% Physical ATK as Physical DMG to the opponent.",
+    "normalAttackMultipliers": [0.110284],
 
     "chargedAttackName": "Charged Attack - Darter",
     "chargeCost": 20,
-    "chargedAttackDesc": "Bob deals 60% Physical ATK as Physical DMG to the opponent.",
+    "chargedAttackDesc": "Bob deals [$_1, 0.6]% Physical ATK as Physical DMG to the opponent.",
+    "chargedAttackMultipliers": [0.147295],
 
     "normalSkillName": "Normal Skill - Large Dart",
     "fluxCost": 1,
     "memoryNodes": {},
-    "normalSkillDesc": "Bob throws a Large Dart towards the opponent dealing 188 (+48% Physical ATK) as Physical DMG.",
+    "normalSkillDesc": "Bob throws a Large Dart towards the opponent dealing [$_1, 200] (+[$_2, 0.3]% Physical ATK) as Physical DMG.",
+    "normalSkillMultipliers": [33, 0.159921],
 
     "riftedSkillName": "Rifted Skill - Poison Fumes",
     "surgeCost": 60,
     "energyCost": 0,
-    "riftedSkillDesc": "Bob gas out Poison Fumes applying Poison to all opponents while continuously healing himself by 42 (+8% Physical ATK) (+16% Magic PWR) HP each Cycle. The Poison Fumes last 3 Cycles.",
+    "riftedSkillDesc": "Bob gas out Poison Fumes applying Poison to all opponents while continuously healing himself by [$_1, 42] (+[$_2, 0.08]% Physical ATK) (+[$_3, 0.16]% Magic PWR) HP each Cycle. The Poison Fumes last 3 Cycles.",
+    "riftedSkillMultipliers": [81, 0.038829, 0.079281],
 
     "fragment1Name": "F1 - Heavy Load",
     "fragment1Desc": "Magic PWR is increased by 80% Physical ATK.",
