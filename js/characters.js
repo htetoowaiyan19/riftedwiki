@@ -52,11 +52,69 @@ function loadCharacter(path) {
 const CHARACTER_STAT_SCALE = {
   baseHp: 0.06441,
   baseAtk: 0.038294,
+  basePwr: 0.038294,
   basePhyDef: 0.040182,
   baseMagDef: 0.040182
 };
 const MAIN_STAT_MAX_LEVEL = 90;
 const SKILL_MAX_LEVEL = 15;
+const SUBSTAT_UNLOCK_LEVEL = 40;
+const SUBSTAT_MAX_SCALING_LEVEL = 80;
+const SUBSTAT_STEP_LEVEL = 10;
+const SUBSTAT_GLOBAL_MULTIPLIER = 1.162128;
+
+function parseLegacySubStat(substat) {
+  if (typeof substat !== "string") return null;
+  const parts = substat.split(":");
+  if (parts.length < 2) return null;
+  const rawName = parts[0].trim();
+  const rawValue = parts.slice(1).join(":").trim();
+  const valueMatch = rawValue.match(/-?\d+(?:\.\d+)?/);
+  if (!valueMatch) return null;
+
+  return {
+    subStat: rawName.replace(/%/g, "").trim(),
+    subStatValue: Number(valueMatch[0]),
+    isPercent: rawValue.includes("%") || rawName.includes("%")
+  };
+}
+
+function resolveSubStatFields(data) {
+  if (data && typeof data.subStat === "string" && Number.isFinite(Number(data.subStatValue))) {
+    const normalized = data.subStat.replace(/%/g, "").trim();
+    const isPercent = typeof data.subStatIsPercent === "boolean"
+      ? data.subStatIsPercent
+      : !/knowledge unit/i.test(normalized);
+
+    return {
+      subStat: normalized,
+      subStatValue: Number(data.subStatValue),
+      isPercent
+    };
+  }
+
+  const legacy = parseLegacySubStat(data?.substat);
+  return legacy || { subStat: "", subStatValue: Number.NaN, isPercent: true };
+}
+
+function getScaledSubstat(subStat, subStatValue, level, isPercent = true) {
+  if (!subStat) return "";
+  const baseValue = Number(subStatValue);
+  if (!Number.isFinite(baseValue)) return subStat;
+
+  if (level < SUBSTAT_UNLOCK_LEVEL) {
+    return `${subStat}: ${isPercent ? "0%" : "0"}`;
+  }
+
+  const cappedLevel = Math.min(level, SUBSTAT_MAX_SCALING_LEVEL);
+  const stepCount = Math.max(0, Math.floor((cappedLevel - SUBSTAT_UNLOCK_LEVEL) / SUBSTAT_STEP_LEVEL));
+  const unlockValue = baseValue;
+  const scaledValue = unlockValue * Math.pow(SUBSTAT_GLOBAL_MULTIPLIER, stepCount);
+  const formattedValue = isPercent
+    ? formatScaledNumber(scaledValue, 1)
+    : String(Math.round(scaledValue));
+  return `${subStat}: ${formattedValue}${isPercent ? "%" : ""}`;
+}
 
 function formatScaledNumber(value, decimals = 2) {
   if (!Number.isFinite(value)) return String(value ?? "");
@@ -124,7 +182,7 @@ function displayData(data) {
   const rightStats = [
     "baseCritRate","baseCritDamage","riftedFaction",
     data.riftedFaction === "Rifted Technology" ? "riftedTech" : "riftedDisc",
-    "faction","substat"
+    "faction","subStat"
   ];
 
   const specialStats =
@@ -151,11 +209,20 @@ function displayData(data) {
     for (let i = 0; i < Math.max(leftStats.length, rightStats.length); i++) {
       const leftKey = leftStats[i];
       const rightKey = rightStats[i];
+      const subStatInfo = resolveSubStatFields(data);
 
       const scaledLeft = getScaledCoreStat(leftKey, data[leftKey], mainStatLevel);
       const leftRawValue = scaledLeft === "" ? data[leftKey] : scaledLeft;
+      const rightRawValue = rightKey === "subStat"
+        ? getScaledSubstat(
+          subStatInfo.subStat,
+          subStatInfo.subStatValue,
+          mainStatLevel,
+          subStatInfo.isPercent
+        )
+        : data[rightKey];
       const leftVal = formatPercentMaybe(leftKey, leftRawValue);
-      const rightVal = formatPercentMaybe(rightKey, data[rightKey]);
+      const rightVal = formatPercentMaybe(rightKey, rightRawValue);
 
       localRows += `
         <tr>

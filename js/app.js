@@ -173,7 +173,7 @@ function formatKey(key) {
     riftedDisc: "Rifted Disorder", faction: "Faction",
     baseFluxCapacity: "Flux Capacity", baseSurgeCapacity: "Surge Capacity",
     baseEchoMemroyCapacity: "Echo Memory Capacity", baseMaxEnergy: "Max Energy",
-    substat: "Substat"
+    substat: "Substat", subStat: "Substat"
   };
   return map[key] || key;
 }
