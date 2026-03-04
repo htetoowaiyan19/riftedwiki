@@ -1,4 +1,63 @@
 // relics.js
+const RELIC_MAX_LEVEL = 90;
+const RELIC_MAIN_STAT_MULTIPLIER = 0.181824;
+const RELIC_SUB_STAT_MULTIPLIER = 0.228290;
+const RELIC_SUB_STAT_STEP_LEVEL = 5;
+
+function clampRelicLevel(value, min, max) {
+  const n = Number(value);
+  if (!Number.isFinite(n)) return min;
+  return Math.min(max, Math.max(min, Math.round(n)));
+}
+
+function parseRelicStatValue(value) {
+  if (Number.isFinite(Number(value))) {
+    return { number: Number(value), isPercent: false };
+  }
+
+  if (typeof value !== "string") {
+    return { number: Number.NaN, isPercent: false };
+  }
+
+  const trimmed = value.trim();
+  const match = trimmed.match(/-?\d+(?:\.\d+)?/);
+  if (!match) {
+    return { number: Number.NaN, isPercent: trimmed.includes("%") };
+  }
+
+  return {
+    number: Number(match[0]),
+    isPercent: trimmed.includes("%")
+  };
+}
+
+function formatRelicScaledNumber(value, decimals = 2) {
+  if (!Number.isFinite(value)) return String(value ?? "");
+  const fixed = value.toFixed(decimals);
+  return fixed.replace(/\.0+$/, "").replace(/(\.\d*[1-9])0+$/, "$1");
+}
+
+function getScaledRelicMainStat(mainStat, level) {
+  const baseValue = Number(mainStat);
+  if (!Number.isFinite(baseValue)) return mainStat ?? "";
+  const scaled = baseValue * (1 + RELIC_MAIN_STAT_MULTIPLIER * (level - 1));
+  return Math.round(scaled);
+}
+
+function getScaledRelicSubStat(subStat, level) {
+  const parsed = parseRelicStatValue(subStat);
+  if (!Number.isFinite(parsed.number)) return subStat ?? "";
+
+  const cappedLevel = Math.min(level, RELIC_MAX_LEVEL);
+  const stepCount = Math.floor(cappedLevel / RELIC_SUB_STAT_STEP_LEVEL);
+  const scaled = parsed.number * (1 + RELIC_SUB_STAT_MULTIPLIER * stepCount);
+
+  if (parsed.isPercent) {
+    return `${formatRelicScaledNumber(scaled, 1)}%`;
+  }
+
+  return String(Math.round(scaled));
+}
 
 // -------------------- Relic List --------------------
 function renderRelicList(data) {
@@ -76,10 +135,10 @@ function loadRelic(path) {
 // -------------------- Relic Details --------------------
 function displayRelicData(data) {
   document.getElementById("relicName").textContent = data.relicName;
+  let relicLevel = 1;
 
   // Stats
   const relicStatsTable = document.getElementById("relicStats");
-  let rows = "";
 
   const statRow = (label, value) => `
     <tr>
@@ -87,14 +146,72 @@ function displayRelicData(data) {
       <td style="width:80%; text-align:left; padding-left:4px;">${value ?? ""}</td>
     </tr>`;
 
-  rows += statRow(data.mainStatType ?? "", data.mainStat);
-  rows += statRow(data.subStatType ?? "", data.subStat);
-  rows += statRow("Faction", data.faction);
-  if (data.relicGroup) {
-    rows += statRow("Relic Group", data.relicGroup);
-  }
+  function renderRelicStats() {
+    let rows = "";
+    rows += `
+      <tr>
+        <td colspan="2">
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <strong>Relic Level</strong>
+            <div class="forge-ui forge-ui-small" style="margin:0;">
+              <button class="forge-btn forge-btn-small" id="relicLevelLeft">&lt;</button>
+              <input type="number" min="1" max="${RELIC_MAX_LEVEL}" step="1" class="forge-indicator forge-indicator-small" id="relicLevelInput" value="${relicLevel}" style="width:64px;text-align:center;padding-right:6px;" />
+              <button class="forge-btn forge-btn-small" id="relicLevelRight">&gt;</button>
+            </div>
+          </div>
+        </td>
+      </tr>`;
 
-  relicStatsTable.innerHTML = rows;
+    rows += statRow(data.mainStatType ?? "", getScaledRelicMainStat(data.mainStat, relicLevel));
+    rows += statRow(data.subStatType ?? "", getScaledRelicSubStat(data.subStat, relicLevel));
+    rows += statRow("Faction", data.faction);
+    if (data.relicGroup) {
+      rows += statRow("Relic Group", data.relicGroup);
+    }
+
+    relicStatsTable.innerHTML = rows;
+
+    const leftBtn = document.getElementById("relicLevelLeft");
+    const rightBtn = document.getElementById("relicLevelRight");
+    const levelInput = document.getElementById("relicLevelInput");
+
+    levelInput.value = String(relicLevel);
+    leftBtn.disabled = relicLevel === 1;
+    rightBtn.disabled = relicLevel === RELIC_MAX_LEVEL;
+
+    leftBtn.onclick = () => {
+      if (relicLevel > 1) {
+        relicLevel--;
+        renderRelicStats();
+      }
+    };
+
+    rightBtn.onclick = () => {
+      if (relicLevel < RELIC_MAX_LEVEL) {
+        relicLevel++;
+        renderRelicStats();
+      }
+    };
+
+    function commitRelicLevelInput() {
+      const next = clampRelicLevel(levelInput.value, 1, RELIC_MAX_LEVEL);
+      if (next !== relicLevel) {
+        relicLevel = next;
+        renderRelicStats();
+        return;
+      }
+      levelInput.value = String(relicLevel);
+    }
+
+    levelInput.onchange = commitRelicLevelInput;
+    levelInput.onblur = commitRelicLevelInput;
+    levelInput.onkeydown = (e) => {
+      if (e.key === "Enter") {
+        commitRelicLevelInput();
+      }
+    };
+  }
+  renderRelicStats();
 
   // Forge UI
   const abilityBox = document.getElementById("relicAbilityBox");
