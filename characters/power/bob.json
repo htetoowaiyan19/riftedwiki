@@ -20,7 +20,7 @@
     "faction": "Power",
 
     "passiveName": "Poison Dart",
-    "passiveDesc": "Every 4th attacks, infuses the attack with Poison, continuously dealing 38 (+22% Magic PWR) as Magic DMG to the opponent for 3 Cycles.",
+    "passiveDesc": "Every 4th attacks, infuses the next attack attack with Poison effect.",
     "riftedTalent": "Rifted Technology",
     "rTalentDesc": "Bob's Normal and Charged Attacks generate 1 Flux. Triggering Poison Dart generates 1 extra Flux.",
 
@@ -42,8 +42,8 @@
     "riftedSkillName": "Rifted Skill - Poison Fumes",
     "surgeCost": 60,
     "energyCost": 0,
-    "riftedSkillDesc": "Bob gas out Poison Fumes applying Poison to all opponents while continuously healing himself by [$_1, 42] (+[$_2, 0.08]% Physical ATK) (+[$_3, 0.16]% Magic PWR) HP each Cycle. The Poison Fumes last 3 Cycles.",
-    "riftedSkillMultipliers": [81, 0.038829, 0.079281],
+    "riftedSkillDesc": "Bob gas out Poison Fumes applying Poison to all opponents while continuously healing himself by [$_1, 42] (+[$_2, 0.08]% Physical ATK) (+[$_3, 0.16]% Magic PWR) HP each Cycle. The Poison Fumes last 3 Cycles.\n\nPoison: Continuously deals [$_4, 38] (+[$_5, 0.22]% Magic PWR) as Magic DMG to the opponent for 6 Turns.",
+    "riftedSkillMultipliers": [81, 0.038829, 0.079281, 13, 0.043819],
 
     "fragment1Name": "F1 - Heavy Load",
     "fragment1Desc": "Magic PWR is increased by 80% Physical ATK.",
