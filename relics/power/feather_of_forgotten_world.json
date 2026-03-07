@@ -1,0 +1,14 @@
+{
+    "relicName": "Feather of Forgotten World",
+    "mainStatType": "Magic PWR",
+    "mainStat": 22,
+    "subStatType": "HP",
+    "subStat": "4.0%",
+    "faction": "Power",
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

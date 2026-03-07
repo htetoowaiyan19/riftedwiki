@@ -1,0 +1,12 @@
+{
+    "relicName": "Fermented Feather",
+    "mainStatType": "Magic PWR",
+    "mainStat": 14,
+    "faction": "Power",
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

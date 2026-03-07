@@ -1,0 +1,12 @@
+{
+    "relicName": "Archery Bow",
+    "mainStatType": "Physcal ATK",
+    "mainStat": 14,
+    "faction": "Projectile",
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

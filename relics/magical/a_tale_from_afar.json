@@ -1,0 +1,14 @@
+{
+    "relicName": "A Tale from Afar",
+    "mainStatType": "Magic PWR",
+    "mainStat": 22,
+    "subStatType": "Energy Regen",
+    "subStat": "2.4%",
+    "faction": "Magical",
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

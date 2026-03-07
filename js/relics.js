@@ -1,8 +1,27 @@
 // relics.js
 const RELIC_MAX_LEVEL = 90;
+const RELIC_DEFAULT_CLASS = 5;
 const RELIC_MAIN_STAT_MULTIPLIER = 0.181824;
 const RELIC_SUB_STAT_MULTIPLIER = 0.228290;
 const RELIC_SUB_STAT_STEP_LEVEL = 5;
+
+function normalizeRelicClass(value) {
+  const relicClass = Number(value);
+  if (!Number.isFinite(relicClass)) return RELIC_DEFAULT_CLASS;
+  return Math.min(5, Math.max(1, Math.round(relicClass)));
+}
+
+function getRelicMaxLevelByClass(relicClass) {
+  const c = normalizeRelicClass(relicClass);
+  if (c <= 2) return 60;
+  if (c === 3) return 80;
+  return 90;
+}
+
+function isAtkOrPwrStat(statType) {
+  const label = String(statType ?? "").toLowerCase();
+  return label.includes("atk") || label.includes("pwr");
+}
 
 function clampRelicLevel(value, min, max) {
   const n = Number(value);
@@ -44,11 +63,11 @@ function getScaledRelicMainStat(mainStat, level) {
   return Math.round(scaled);
 }
 
-function getScaledRelicSubStat(subStat, level) {
+function getScaledRelicSubStat(subStat, level, maxLevel = RELIC_MAX_LEVEL) {
   const parsed = parseRelicStatValue(subStat);
   if (!Number.isFinite(parsed.number)) return subStat ?? "";
 
-  const cappedLevel = Math.min(level, RELIC_MAX_LEVEL);
+  const cappedLevel = Math.min(level, maxLevel);
   const stepCount = Math.floor(cappedLevel / RELIC_SUB_STAT_STEP_LEVEL);
   const scaled = parsed.number * (1 + RELIC_SUB_STAT_MULTIPLIER * stepCount);
 
@@ -125,9 +144,18 @@ function loadRelic(path) {
   fetch(path)
     .then(res => res.json())
     .then(data => {
+      const normalizedPath = path.replace(/^relics\//, "");
+      const relicMeta = Array.isArray(relics)
+        ? relics.find(r => r.file === normalizedPath || `relics/${r.file}` === path)
+        : null;
+      const mergedData = {
+        ...data,
+        class: relicMeta?.class ?? data.class ?? RELIC_DEFAULT_CLASS
+      };
+
       document.getElementById("relicLoader").style.display = "none";
       document.getElementById("relicContent").style.display = "block";
-      displayRelicData(data);
+      displayRelicData(mergedData);
     })
     .catch(err => alert("Error loading relic file: " + err.message));
 }
@@ -135,6 +163,10 @@ function loadRelic(path) {
 // -------------------- Relic Details --------------------
 function displayRelicData(data) {
   document.getElementById("relicName").textContent = data.relicName;
+  const relicClass = normalizeRelicClass(data.class);
+  const relicMaxLevel = getRelicMaxLevelByClass(relicClass);
+  const hasSubStat = relicClass >= 2;
+  const hasPassiveEffect = relicClass >= 3;
   let relicLevel = 1;
 
   // Stats
@@ -155,15 +187,27 @@ function displayRelicData(data) {
             <strong>Relic Level</strong>
             <div class="forge-ui forge-ui-small" style="margin:0;">
               <button class="forge-btn forge-btn-small" id="relicLevelLeft">&lt;</button>
-              <input type="number" min="1" max="${RELIC_MAX_LEVEL}" step="1" class="forge-indicator forge-indicator-small" id="relicLevelInput" value="${relicLevel}" style="width:64px;text-align:center;padding-right:6px;" />
+              <input type="number" min="1" max="${relicMaxLevel}" step="1" class="forge-indicator forge-indicator-small" id="relicLevelInput" value="${relicLevel}" style="width:64px;text-align:center;padding-right:6px;" />
               <button class="forge-btn forge-btn-small" id="relicLevelRight">&gt;</button>
             </div>
           </div>
         </td>
       </tr>`;
 
-    rows += statRow(data.mainStatType ?? "", getScaledRelicMainStat(data.mainStat, relicLevel));
-    rows += statRow(data.subStatType ?? "", getScaledRelicSubStat(data.subStat, relicLevel));
+    if (relicClass === 1) {
+      if (isAtkOrPwrStat(data.mainStatType)) {
+        rows += statRow(data.mainStatType ?? "", getScaledRelicMainStat(data.mainStat, relicLevel));
+      }
+      if (hasSubStat && isAtkOrPwrStat(data.subStatType)) {
+        rows += statRow(data.subStatType ?? "", getScaledRelicSubStat(data.subStat, relicLevel, relicMaxLevel));
+      }
+    } else {
+      rows += statRow(data.mainStatType ?? "", getScaledRelicMainStat(data.mainStat, relicLevel));
+      if (hasSubStat) {
+        rows += statRow(data.subStatType ?? "", getScaledRelicSubStat(data.subStat, relicLevel, relicMaxLevel));
+      }
+    }
+    rows += statRow("Class", `${relicClass} Star`);
     rows += statRow("Faction", data.faction);
     if (data.relicGroup) {
       rows += statRow("Relic Group", data.relicGroup);
@@ -177,7 +221,7 @@ function displayRelicData(data) {
 
     levelInput.value = String(relicLevel);
     leftBtn.disabled = relicLevel === 1;
-    rightBtn.disabled = relicLevel === RELIC_MAX_LEVEL;
+    rightBtn.disabled = relicLevel === relicMaxLevel;
 
     leftBtn.onclick = () => {
       if (relicLevel > 1) {
@@ -187,14 +231,14 @@ function displayRelicData(data) {
     };
 
     rightBtn.onclick = () => {
-      if (relicLevel < RELIC_MAX_LEVEL) {
+      if (relicLevel < relicMaxLevel) {
         relicLevel++;
         renderRelicStats();
       }
     };
 
     function commitRelicLevelInput() {
-      const next = clampRelicLevel(levelInput.value, 1, RELIC_MAX_LEVEL);
+      const next = clampRelicLevel(levelInput.value, 1, relicMaxLevel);
       if (next !== relicLevel) {
         relicLevel = next;
         renderRelicStats();
@@ -215,9 +259,19 @@ function displayRelicData(data) {
 
   // Forge UI
   const abilityBox = document.getElementById("relicAbilityBox");
+  const logBox = document.getElementById("relicLogBox");
   let forgeValue = 1;
   let maxForge = 1;
   let forgeData = null;
+
+  if (!hasPassiveEffect) {
+    abilityBox.innerHTML = `
+      <h2>No Passive Effect</h2>
+      <p class="description">Class 1-2 relics do not grant passive effects.</p>
+    `;
+    logBox.style.display = "none";
+    return;
+  }
 
   if (data.forge && typeof data.forge === "object") {
     forgeData = data.forge;
@@ -279,7 +333,6 @@ function displayRelicData(data) {
   updateForgeUI();
 
   // Logs
-  const logBox = document.getElementById("relicLogBox");
 
   if (data.log && typeof data.log === "object") {
     const logRecords = Object.values(data.log).filter(

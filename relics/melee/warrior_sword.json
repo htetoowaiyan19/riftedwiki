@@ -1,0 +1,12 @@
+{
+    "relicName": "Warrior's Sword",
+    "mainStatType": "Physical ATK",
+    "mainStat": 14,
+    "faction": "Melee",
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "relicName": "Corrupted Cannon",
+    "mainStatType": "Phsical ATK",
+    "mainStat": 22,
+    "subStatType": "Physical ATK",
+    "subStat": "3.2%",
+    "faction": "Agile",
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}

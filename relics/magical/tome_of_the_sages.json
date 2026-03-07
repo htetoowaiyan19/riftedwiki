@@ -1,0 +1,12 @@
+{
+    "relicName": "Tome of The Sages",
+    "mainStatType": "Magic PWR",
+    "mainStat": 14,
+    "faction": "Magical",
+    "log": {
+        "record1": {
+            "version": "1.0Beta [Unknown]",
+            "description": "Unreleased"
+        }
+    }
+}
