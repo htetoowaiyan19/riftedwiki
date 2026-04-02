@@ -1,90 +1,117 @@
-{
-  "desc1": {
+[
+  {
     "title": "Rifted Technology",
-    "desc": "Certain characters utilize Technology in their abilties. When Technology-Type characters trigger a certain conditiion, they can generate a Flux. While Normal Skill or other special skills requires Flux to cast. While using Flux in Normal Skill or other speical skills, it is converted into 13 Surges, which can be used to cast Rifted Skill. The generation of Surges and Surge Capacity of each Technology-Type character can be enhanced by their Energy Regen and Energy Efficiency respectively.\n\nWhen there are two or more Technology-Type characters in the team, gains the Technology Network effect, all Technology-Type characters wiill form a Flux Network, combining all Flux Capaciity of the Technology-Type characters. The maximum Flux Capacity of Flux in Flux Network is 8. Additionally, when a Technology-Type character generates or converts a Surge, all Technology-Type characters' CRIT Rate is increased by 12% for that Cycle."
+    "desc": "Technology-type characters generate Flux under certain conditions and spend it for Normal or special skills. Flux can be converted into Surges to cast Rifted Skills, with Energy Regen and Energy Efficiency improving Surge generation and capacity.",
+    "fullDesc": "Certain characters utilize Technology in their abilties. When Technology-Type characters trigger a certain conditiion, they can generate a Flux. Normal Skill or other special skills requires Flux to cast. When using Flux in Normal Skill or other speical skills, it is converted into 13 Surges, which can be used to cast Rifted Skill. The generation of Surges and Surge Capacity of each Technology-Type character can be enhanced by their Energy Regen and Energy Efficiency respectively.\n\nWhen there are two or more Technology-Type characters in the team, gains the Technology Network effect, all Technology-Type characters will form a Flux Network, combining all Flux Capacity of the Technology-Type characters. The maximum Flux Capacity of Flux in Flux Network is 8. Additionally, when a Technology-Type character generates or converts a Surge, all Technology-Type characters' CRIT Rate is increased by 12% for that Cycle."
   },
-  "desc2": {
+  {
     "title": "Rifted Disorder",
-    "desc": "Certain characters utilize Disortion Energy in their abilities. When Disorder-Type characters trigger a certain condition, or deal Disorder DMG to the opponents, generates 6 Energy and some Echo Memory. Every Disorder-Type character has their unique ways of utilizing and storing their Echo Memory. Disorder-Type characters' Rifted Skill can be casted after accumulating enough Energy.\n\nWhen there are two or more Diisorder-Type characters in the team, gains Disordered Network effect, all opponents' All Attribute RES are decreased by 8%. Additionally, when a Disorder-Type character generates Energy, additional Energy particle will be created equals to 32% of the origianl value." 
+    "desc": "Disorder-type characters generate Energy and Echo Memory when triggering conditions or dealing Disorder DMG, and use Energy to cast Rifted Skills.",
+    "fullDesc": "Certain characters utilize Disortion Energy in their abilities. When Disorder-Type characters trigger a certain condition, or deal Disorder DMG to the opponents, generates 6 Energy and some Echo Memory. Every Disorder-Type character has their unique ways of utilizing and storing their Echo Memory. Disorder-Type characters' Rifted Skill can be casted after accumulating enough Energy.\n\nWhen there are two or more Diisorder-Type characters in the team, gains Disordered Network effect, all opponents' All Attribute RES are decreased by 8%. Additionally, when a Disorder-Type character generates Energy, additional Energy particle will be created equals to 32% of the origianl value."
   },
-  "desc3": {
+  {
     "title": "Technology Attribute - Strength",
-    "desc": "Strength-Type characters have their ATK, DEF, and HP increased by 20%.\n\nAttribute Chain: Strength\nWhen there are two or more Strength-Type characters in the team, their DEF is increased by an additional 25%."
+    "desc": "Strength-type characters gain increased ATK, DEF, and HP.",
+    "fullDesc": "Strength-Type characters have their ATK, DEF, and HP increased by 20%.\n\nAttribute Chain: Strength\nWhen there are two or more Strength-Type characters in the team, their DEF is increased by an additional 25%."
   },
-  "desc4": {
+  {
     "title": "Technology Attribute - Destruction",
-    "desc": "Destruction-Type characters deal 80% increased DMG to opponents with Shields and 15% increased DMG when the Shield is broken.\n\nAttribute Chain: Destruction\nWhen there are two or more Destruction-Type characters in the team, all team members' DMG dealt to Shielded opponents is increased by 40% and 20% when the Shield is broken."
+    "desc": "Destruction-type characters deal higher DMG to shielded opponents and bonus DMG when shields break.",
+    "fullDesc": "Destruction-Type characters deal 80% increased DMG to opponents with Shields and 15% increased DMG when the Shield is broken.\n\nAttribute Chain: Destruction\nWhen there are two or more Destruction-Type characters in the team, all team members' DMG dealt to Shielded opponents is increased by 40% and 20% when the Shield is broken."
   },
-  "desc5": {
+  {
     "title": "Technology Attribute - Quantum",
-    "desc": "Quantum-Type characters can deal Quantum DMG. Quantum DMG ignores 20% of the opponent's DEF and apply 1 stack of Entangled to the opponent, max 5 stacks. Entangled: Reduces the opponent's Max HP by 3%.\n\nAttribute Chain: Quantum\nWhen there are two or more Quantum-Type characters in the team, all opponents' Max HP is reduced by 5%."
+    "desc": "Quantum-type characters deal Quantum DMG that ignores DEF and applies Entangled stacks.",
+    "fullDesc": "Quantum-Type characters can deal Quantum DMG. Quantum DMG ignores 20% of the opponent's DEF and apply 1 stack of Entangled to the opponent, max 5 stacks. Entangled: Reduces the opponent's Max HP by 3%.\n\nAttribute Chain: Quantum\nWhen there are two or more Quantum-Type characters in the team, all opponents' Max HP is reduced by 5%."
   },
-  "desc6": {
+  {
     "title": "Technology Attribute - Fusion",
-    "desc": "Fusion-Type characters can utilize some Distortion Energy using Fusion Tech and can deal Disorder-Fusioned DMG.\n\nAttribute Chain: Fusion\nWhen there are two or more Fusion-Type character in the team, Fusion-Type characters' gains 12% Disorder DMG Bonus and 12% Reaction DMG Bonus."
+    "desc": "Fusion-type characters can utilize Distortion Energy with Fusion Tech to deal Disorder-Fusioned DMG.",
+    "fullDesc": "Fusion-Type characters can utilize some Distortion Energy using Fusion Tech and can deal Disorder-Fusioned DMG.\n\nAttribute Chain: Fusion\nWhen there are two or more Fusion-Type character in the team, Fusion-Type characters' gains 12% Disorder DMG Bonus and 12% Reaction DMG Bonus."
   },
-  "desc7": {
+  {
     "title": "Technology Attribute - Intelligence",
-    "desc": "Intelligence-Type characters can deal Artificial DMG mostly based on their Intellgence Unit. Artificial DMG's Focus Build-Up Rate is increased by 200%. 100% of their Knowledge Unit is converted into Intelligence Unit.\n\nAttribute Chain: Intelligence\nWhen there are two or more Intelligence-Type characters in the team, their Knowledge Unit to Intelligence Unit conversion ratio is increased by 20%."
+    "desc": "Intelligence-type characters deal Artificial DMG based on Intelligence Unit and convert Knowledge Unit into Intelligence Unit.",
+    "fullDesc": "Intelligence-Type characters can deal Artificial DMG mostly based on their Intellgence Unit. Artificial DMG's Focus Build-Up Rate is increased by 200%. 100% of their Knowledge Unit is converted into Intelligence Unit.\n\nAttribute Chain: Intelligence\nWhen there are two or more Intelligence-Type characters in the team, their Knowledge Unit to Intelligence Unit conversion ratio is increased by 20%."
   },
-  "desc8": {
+  {
     "title": "Technology Attribute - Sharp",
-    "desc": "Sharp-Type characters can deal Sharp DMG. Sharp DMG applies 1 stack of Bleed to the opponent, max 8 stacks. Each of the first 4 stacks increases the DMG taken by 8%. When the opponent or team member has more than 4 stacks of Bleed, deals 24% Physical ATK (+92% Knowledge Unit) as Bleeding DMG every Cycle. The last 3 stacks increases the Bleeding DMG by 12%. Healing while Bleed is active will remove all stacks.\n\nAttribute Chain: Sharp\nWhen there are two or more Sharp-Type characters in the team, 4 extra stacks of Bleed can be applied to the opponents or team members. When the opponent has more than 8 stacks of Bleed, applies a Wounded effect. Wounded: Based on 9/10/11/12 stacks of Bleed, opponents or team members affected by Wounded gains a Wounded Wart equals to 12%/16%/20%/24% of the affected opponent or team member's Max HP. Healing while having Wounded can dispel the Wounded Wart and only after removing Wounded, will the Bleed stacks be removed."
+    "desc": "Sharp-type characters apply Bleed stacks that increase DMG taken and trigger periodic Bleeding DMG.",
+    "fullDesc": "Sharp-Type characters can deal Sharp DMG. Sharp DMG applies 1 stack of Bleed to the opponent, max 8 stacks. Each of the first 4 stacks increases the DMG taken by 8%. When the opponent or team member has more than 4 stacks of Bleed, deals 24% Physical ATK (+92% Knowledge Unit) as Bleeding DMG every Cycle. The last 3 stacks increases the Bleeding DMG by 12%. Healing while Bleed is active will remove all stacks.\n\nAttribute Chain: Sharp\nWhen there are two or more Sharp-Type characters in the team, 4 extra stacks of Bleed can be applied to the opponents or team members. When the opponent has more than 8 stacks of Bleed, applies a Wounded effect. Wounded: Based on 9/10/11/12 stacks of Bleed, opponents or team members affected by Wounded gains a Wounded Wart equals to 12%/16%/20%/24% of the affected opponent or team member's Max HP. Healing while having Wounded can dispel the Wounded Wart and only after removing Wounded, will the Bleed stacks be removed."
   },
-  "desc9": {
+  {
     "title": "Disorder Attribute - Flame",
-    "desc": "Flame-Disordered characters can deal Flame DMG. Dealing Flame DMG applies the opponent with Burning for 2 Cycles. Burning: Deals 10 (+10% Magic PWR) as Flame DMG each Turn. The Flame DMG dealt by Burning will not apply Burning.\n\nAttribute Chain: Flame\nWhen there are two or more Flame-Disordered characters in the team, all team members gains 10% Tide RES and their Adaptive ATK is increased by 20%."
+    "desc": "Flame-Disordered characters apply Burning for 2 Cycles when dealing Flame DMG.",
+    "fullDesc": "Flame-Disordered characters can deal Flame DMG. Dealing Flame DMG applies the opponent with Burning for 2 Cycles. Burning: Deals 10 (+10% Magic PWR) as Flame DMG each Turn. The Flame DMG dealt by Burning will not apply Burning.\n\nAttribute Chain: Flame\nWhen there are two or more Flame-Disordered characters in the team, all team members gains 10% Tide RES and their Adaptive ATK is increased by 20%."
   },
-  "desc10": {
+  {
     "title": "Disorder Attribute - Frost",
-    "desc": "Frost-Disordered characters can deal Frost DMG. Dealing Frost DMG applies the opponent with Chill for 2 Cycles. Chill: SPD is reduced by 10%.\n\nAttribute Chain: Frost\nWhen there are two or more Frost-Disordered characters in the team, all team members gains 10% Volte RES and their Crit DMG is increased by 20%."
+    "desc": "Frost-Disordered characters apply Chill for 2 Cycles when dealing Frost DMG.",
+    "fullDesc": "Frost-Disordered characters can deal Frost DMG. Dealing Frost DMG applies the opponent with Chill for 2 Cycles. Chill: SPD is reduced by 10%.\n\nAttribute Chain: Frost\nWhen there are two or more Frost-Disordered characters in the team, all team members gains 10% Volte RES and their Crit DMG is increased by 20%."
   },
-  "desc11": {
+  {
     "title": "Disorder Attribute - Volte",
-    "desc": "Volte-Disordered characters can deal Volte DMG. Dealing Volte DMG applies the opponent with Shock for 2 Cycles. Shock: Dealing Volte DMG to the opponents or characters affected by Shock will spread 20% of that DMG to the nearby opponents or characters affected by Shock as Volte DMG and removes the Shock.\n\nAttribute Chain: Volte\nWhen there are two or more Volte-Disordered characters in the team, all team members gains 10% Frost RES and their Energy Regen is increased by 20%."
+    "desc": "Volte-Disordered characters apply Shock for 2 Cycles when dealing Volte DMG.",
+    "fullDesc": "Volte-Disordered characters can deal Volte DMG. Dealing Volte DMG applies the opponent with Shock for 2 Cycles. Shock: Dealing Volte DMG to the opponents or characters affected by Shock will spread 20% of that DMG to the nearby opponents or characters affected by Shock as Volte DMG and removes the Shock.\n\nAttribute Chain: Volte\nWhen there are two or more Volte-Disordered characters in the team, all team members gains 10% Frost RES and their Energy Regen is increased by 20%."
   },
-  "desc12": {
+  {
     "title": "Disorder Attribute - Tide",
-    "desc": "Tide-Disordered characters can deal Tide DMG. Dealing Tide DMG applies the opponent with Soaked for 2 Cycles. Soaked: Healing or Shield Regen is reduced by 10%.\n\nAttribute Chain: Tide\nWhen there are two or more Tide-Disordered characters in the team, all team members gains 10% Flame RES and their Max HP is increased by 20%."
+    "desc": "Tide-Disordered characters apply Soaked for 2 Cycles when dealing Tide DMG.",
+    "fullDesc": "Tide-Disordered characters can deal Tide DMG. Dealing Tide DMG applies the opponent with Soaked for 2 Cycles. Soaked: Healing or Shield Regen is reduced by 10%.\n\nAttribute Chain: Tide\nWhen there are two or more Tide-Disordered characters in the team, all team members gains 10% Flame RES and their Max HP is increased by 20%."
   },
-  "desc13": {
+  {
     "title": "Disorder Attribute - Gale",
-    "desc": "Gale-Disordered characters can deal Gale DMG. Dealing Gale DMG applies the opponent with Breeze for 2 Cycles. Breeze: Gale DMG taken by the affected opponent or character is increased by 10%.\n\nAttribute Chain: Gale\nWhen there are two or more Gale-Disordered characters in the team, all team members SPD is increased by 5% and their Knowledge Unit is increased by 60."
+    "desc": "Gale-Disordered characters apply Breeze for 2 Cycles when dealing Gale DMG.",
+    "fullDesc": "Gale-Disordered characters can deal Gale DMG. Dealing Gale DMG applies the opponent with Breeze for 2 Cycles. Breeze: Gale DMG taken by the affected opponent or character is increased by 10%.\n\nAttribute Chain: Gale\nWhen there are two or more Gale-Disordered characters in the team, all team members SPD is increased by 5% and their Knowledge Unit is increased by 60."
   },
-  "desc14": {
+  {
     "title": "Disordered Reaction - Melt",
-    "desc": "When a character or opponent deals Flame DMG to Chilled opponent or Frost DMG to Burning opponent, triggers Melt Reaction. Melt reaction amplifies the DMG of the triggered disorder. Melt triggered by Flame DMG will deal 20% additional DMG.\n\nMelt Multiplier: ((63 (Base Amplifier) + KnowledgeUnit)% + ReactionDMGBonus%) * MeltReactionDMGBonus%"
+    "desc": "Flame DMG on Chilled targets or Frost DMG on Burning targets triggers Melt, amplifying the triggered disorder.",
+    "fullDesc": "When a character or opponent deals Flame DMG to Chilled opponent or Frost DMG to Burning opponent, triggers Melt Reaction. Melt reaction amplifies the DMG of the triggered disorder. Melt triggered by Flame DMG will deal 20% additional DMG.\n\nMelt Multiplier: ((63 (Base Amplifier) + KnowledgeUnit)% + ReactionDMGBonus%) * MeltReactionDMGBonus%"
   },
-  "desc15": {
+  {
     "title": "Disordered Reaction - Extinguished",
-    "desc": "When a character or opponent deals Tide DMG to Burning opponent, triggers Extinguished Reaction. Extinguished reaction amplifies the DMG of the triggered disorder.\n\nExtinguished Multiplier: ((77 (Base Amplifier) + (4% Max HP) + (163% KnowledgeUnit)%)% + ReactionDMGBonus%) * ExtinguishedDMGBonus%"
+    "desc": "Tide DMG on Burning targets triggers Extinguished, amplifying the triggered disorder.",
+    "fullDesc": "When a character or opponent deals Tide DMG to Burning opponent, triggers Extinguished Reaction. Extinguished reaction amplifies the DMG of the triggered disorder.\n\nExtinguished Multiplier: ((77 (Base Amplifier) + (4% Max HP) + (163% KnowledgeUnit)%)% + ReactionDMGBonus%) * ExtinguishedDMGBonus%"
   },
-  "desc16": {
+  {
     "title": "Disordered Reaction - Vaporized",
-    "desc": "When a character or opponent deals Flame DMG to Soaked opponent, triggers Vaporized Reaction. Vaporized reaction amplifies the DMG of the triggered disorder.\n\nVaporized Multiplier: ((168 (Base Amplifier) + (4% Opponent's Max HP) + (163% KnowledgeUnit)%)% + ReactionDMGBonus%) * VaporizedDMGBonus%"
+    "desc": "Flame DMG on Soaked targets triggers Vaporized, amplifying the triggered disorder.",
+    "fullDesc": "When a character or opponent deals Flame DMG to Soaked opponent, triggers Vaporized Reaction. Vaporized reaction amplifies the DMG of the triggered disorder.\n\nVaporized Multiplier: ((168 (Base Amplifier) + (4% Opponent's Max HP) + (163% KnowledgeUnit)%)% + ReactionDMGBonus%) * VaporizedDMGBonus%"
   },
-  "desc17": {
+  {
     "title": "Disordered Reaction - Detonate",
-    "desc": "When a character or opponent deals Flame DMG to Shocked opponent, triggers Detonate Reaction. Detonate reaction deals AoE Flame DMG to nearby opponents.\n\nDetonate DMG Formula: ((119 (Base DMG) + (166% Magic PWR)) * (63% KnowledgeUnit) * ReactionDMGBonus%) * DetonateDMGBonus%"
+    "desc": "Flame DMG on Shocked targets triggers Detonate, dealing AoE Flame DMG to nearby opponents.",
+    "fullDesc": "When a character or opponent deals Flame DMG to Shocked opponent, triggers Detonate Reaction. Detonate reaction deals AoE Flame DMG to nearby opponents.\n\nDetonate DMG Formula: ((119 (Base DMG) + (166% Magic PWR)) * (63% KnowledgeUnit) * ReactionDMGBonus%) * DetonateDMGBonus%"
   },
-  "desc18": {
+  {
     "title": "Disordered Reaction - Freeze",
-    "desc": "When a character or opponent deals Frost DMG to Soaked opponent or Tide DMG to Chilled opponent, triggers Freeze Reaction. Freeze Reaction freezes the opponent for 1 Cycle. This effect has 3 Cycle Cooldown. During the Cooldown of the Freeze effect, if a Freeze reaction is triggered, deals an instance of Frost DMG instead.\n\nFreeze DMG Formula: ((16 (Base DMG) * (144% KnowledgeUnit)) * ReactionDMGBonus%) * FreezeDMGBonus%"
+    "desc": "Frost DMG on Soaked targets or Tide DMG on Chilled targets triggers Freeze, freezing the opponent for 1 Cycle with a cooldown.",
+    "fullDesc": "When a character or opponent deals Frost DMG to Soaked opponent or Tide DMG to Chilled opponent, triggers Freeze Reaction. Freeze Reaction freezes the opponent for 1 Cycle. This effect has 3 Cycle Cooldown. During the Cooldown of the Freeze effect, if a Freeze reaction is triggered, deals an instance of Frost DMG instead.\n\nFreeze DMG Formula: ((16 (Base DMG) * (144% KnowledgeUnit)) * ReactionDMGBonus%) * FreezeDMGBonus%"
   },
-  "desc19": {
+  {
     "title": "Disordered Reaction - Conduction",
-    "desc": "When a character or opponent deals Frost DMG to Shocked opponent or Volte DMG to Chilled opponent, triggers Conduction Reaction. Conduction Reaction deals AoE Frost DMG and reduces the opponent's Physical RES by 12%.\n\nConduction DMG Formula: ((31 (Base DMG) + (67% Magic PWR) * KnowledgeUnit%) * ReactionDMGBonus%) * ConductionDMGBonus%"
+    "desc": "Frost DMG on Shocked targets or Volte DMG on Chilled targets triggers Conduction, dealing AoE Frost DMG and reducing Physical RES.",
+    "fullDesc": "When a character or opponent deals Frost DMG to Shocked opponent or Volte DMG to Chilled opponent, triggers Conduction Reaction. Conduction Reaction deals AoE Frost DMG and reduces the opponent's Physical RES by 12%.\n\nConduction DMG Formula: ((31 (Base DMG) + (67% Magic PWR) * KnowledgeUnit%) * ReactionDMGBonus%) * ConductionDMGBonus%"
   },
-  "desc20": {
+  {
     "title": "Disordered Reaction - Electrified",
-    "desc": "When a character or opponent deals Tide DMG to Shocked opponent or Volte DMG to Soaked opponent, triggers Electrified Reaction. Electrified Reaction deals DMG to all nearby opponents affected by Soaked or Shock.\n\nElectrified DMG Formula: ((44 (Base DMG) + (221% KnowledgeUnit)%) * ReactionDMGBonus%) * ElectrifiedDMGBonus%"
+    "desc": "Tide DMG on Shocked targets or Volte DMG on Soaked targets triggers Electrified, damaging nearby affected opponents.",
+    "fullDesc": "When a character or opponent deals Tide DMG to Shocked opponent or Volte DMG to Soaked opponent, triggers Electrified Reaction. Electrified Reaction deals DMG to all nearby opponents affected by Soaked or Shock.\n\nElectrified DMG Formula: ((44 (Base DMG) + (221% KnowledgeUnit)%) * ReactionDMGBonus%) * ElectrifiedDMGBonus%"
   },
-  "desc21": {
+  {
     "title": "Disordered Reaction - Shattered",
-    "desc": "Certain Heavy Attacks hits on Frozen opponents trigger Shattered Reaction. Shattered Reaction deals high Physical DMG.\n\nShattered DMG Formula: (((631 + KnowledgeUnit)% Physical ATK) * ReactionDMGBonus%) * ShatteredDMGBonus%"
+    "desc": "Certain heavy attacks on Frozen opponents trigger Shattered, dealing high Physical DMG.",
+    "fullDesc": "Certain Heavy Attacks hits on Frozen opponents trigger Shattered Reaction. Shattered Reaction deals high Physical DMG.\n\nShattered DMG Formula: (((631 + KnowledgeUnit)% Physical ATK) * ReactionDMGBonus%) * ShatteredDMGBonus%"
   },
-  "desc22": {
+  {
     "title": "Focus",
-    "desc": "Focus Bar can be built up on the opponents by dealing DMG to them. When the Focus Bar is fulled, the opponet will enters the Focused state. During this state, all character's target is locked on to the Focused opponent and the Focused opponent's All Attribute RES is decreased to 0% and their current actions will be interrupted. For smaller opponents, when the focus bar is full, they will directly takes 1500% Physical ATK as Physical DMG.\n\nWhile all characters are Focused on to the Focused opponent, they gains 20% DMG Bonus and 40% Attribute RES. During this time, other opponents can still attack the characters but the characters will only locked to the Focused opponent.\n\nArtificial DMG significantly boosts the Focus Build-Up Rate on the opponents while dealing extra DMG to them. Certain Elite opponents or Boss opponents can utilize Focused state in different ways."
+    "desc": "Focus builds by dealing DMG; when full, the opponent is Focused, RES is reduced, and actions are interrupted.",
+    "fullDesc": "Focus Bar can be built up on the opponents by dealing DMG to them. When the Focus Bar is fulled, the opponet will enters the Focused state. During this state, all character's target is locked on to the Focused opponent and the Focused opponent's All Attribute RES is decreased to 0% and their current actions will be interrupted. For smaller opponents, when the focus bar is full, they will directly takes 1500% Physical ATK as Physical DMG.\n\nWhile all characters are Focused on to the Focused opponent, they gains 20% DMG Bonus and 40% Attribute RES. During this time, other opponents can still attack the characters but the characters will only locked to the Focused opponent.\n\nArtificial DMG significantly boosts the Focus Build-Up Rate on the opponents while dealing extra DMG to them. Certain Elite opponents or Boss opponents can utilize Focused state in different ways."
+  },
+  {
+    "title": "Polymetric Combustion",
+    "desc": "Characters mostly from Hong Outskirts can trigger Polymetric Combustion by dealing multiple instances of DMG in a single Cycle, converting accumulated DMG into powerful Combustion DMG that partially ignores opponent's DEF and RES.\n\nWhen there are two or more Hong Outskirts characters in the team, all team members can trigger Polymetric Combustion",
+    "fullDesc": "Polymetric Combustion consists of three phases: Tri, Tetra, and Penta. Higher phases require more instances of DMG within a single Cycle and apply stronger Phase Multipliers to accumulated DMG. Instances beyond the required threshold provide diminishing returns.\n\nCombustion DMG is calculated using the following formula:\n\nCombustion DMG = [Accumulated DMG × Phase Multiplier] × Hit Efficiency × Enemy Scaling × Soft Cap\n\nWhere:\n• Accumulated DMG = Total DMG dealt within the Cycle (excluding Combustion DMG)\n• Phase Multiplier = Depends on current phase\n• Hit Efficiency = min(1, (Hits / Required Instances)^0.5)\n• Enemy Scaling = 1 + (Total Enemy Max HP / 100,000)^0.3\n• Soft Cap = 1 / (1 + (Raw Combustion DMG / Enemy Max HP × 3))\n• Raw Combustion DMG = Accumulated DMG × Phase Multiplier × Hit Efficiency × Enemy Scaling\n\n[Phase] | [Required Instances] | [Phase Multiplier]\nTri: 10 + (10% All Opponents' Max HP Combined / 10,000) | 0.07\nTetra: 18 + (30% All Opponents' Max HP Combined / 10,000) | 0.2\nPenta: 28 + (50% All Opponents' Max HP Combined / 10,000) | 0.5\n\n[Additional Rules]\n• Hit Efficiency applies diminishing returns when exceeding required instances.\n• Enemy Scaling increases Combustion DMG based on total enemy durability.\n• Soft Cap reduces excessive Combustion DMG based on enemy Max HP.\n• Combustion DMG ignores opponent DEF and RES.\n• Combustion DMG does not contribute to further accumulation."
   }
-}
+]

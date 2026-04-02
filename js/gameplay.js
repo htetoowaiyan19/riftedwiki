@@ -24,7 +24,11 @@ function renderGameplayList(data) {
   if (!listEl) return;
   listEl.innerHTML = '';
 
-  Object.entries(data).forEach(([key, item]) => {
+  const items = Array.isArray(data)
+    ? data.map((item, index) => ({ ...item, _index: index }))
+    : Object.entries(data).map(([key, item], index) => ({ ...item, _key: key, _index: index }));
+
+  items.forEach((item) => {
     const container = document.createElement('div');
     container.className = 'gameplay-item mb-2';
 
@@ -33,7 +37,8 @@ function renderGameplayList(data) {
     header.setAttribute('role', 'button');
     header.setAttribute('tabindex', '0');
     header.setAttribute('aria-expanded', 'false');
-    header.innerHTML = `<div class="gameplay-title fw-bold">${item.title || key}</div>`;
+    const titleText = item.title || item.name || item._key || `Gameplay ${item._index + 1}`;
+    header.innerHTML = `<div class="gameplay-title fw-bold">${titleText}</div>`;
 
     const arrow = document.createElement('span');
     arrow.className = 'arrow';
@@ -42,7 +47,23 @@ function renderGameplayList(data) {
 
     const desc = document.createElement('div');
     desc.className = 'gameplay-desc';
-    desc.innerHTML = highlightKeywords(item.desc || '');
+    const summaryText = item.desc || '';
+    const fullText = item.fullDesc || '';
+    const summaryHtml = `
+      <div class="gameplay-section gameplay-summary">
+        <div class="gameplay-label">Summary</div>
+        <div class="gameplay-body">${highlightKeywords(summaryText)}</div>
+      </div>
+    `;
+    const fullHtml = fullText
+      ? `
+      <div class="gameplay-section gameplay-full">
+        <div class="gameplay-label">Full Description</div>
+        <div class="gameplay-body">${highlightKeywords(fullText)}</div>
+      </div>
+    `
+      : '';
+    desc.innerHTML = summaryHtml + fullHtml;
 
     function toggleOpen() {
       const isOpen = container.classList.toggle('open');

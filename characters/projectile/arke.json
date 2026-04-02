@@ -28,6 +28,10 @@
         "talent1": {
             "name": "Intelligence Network",
             "desc": "Certain skills of Intelligence-Type characters can hijack the opponent, applying 1 stack of Hijacked, max 20 stacks.\nHijacked: Increases the Focus build-up rate of the affected opponent by 2%."
+        },
+        "talent2": {
+            "name": "Polymetric Combustion",
+            "desc": "Arke can trigger Polymetric Combustion. When Arke is in the team, Polymetric Combustion DMG is elevated by 3%."
         }
     },
 

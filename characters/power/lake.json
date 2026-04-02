@@ -24,6 +24,13 @@
     "riftedTalent": "Rifted Technology",
     "rTalentDesc": "Lake's Normal and Charged Attacks generate 1 Flux.",
 
+    "talentBox": {
+        "talent1": {
+            "name": "Polymetric Combustion",
+            "desc": "Lake can trigger Polymetric Combustion. When Lake is in the team, Polymetric Combustion DMG is elevated by 3%."
+        }
+    },
+
     "normalAttackName": "Normal Attack - Purity",
     "normalAttackDesc": "Lake deals 33 (+63% Physical ATK) as Physical DMG to the opponent.",
 
