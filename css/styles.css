@@ -6,6 +6,16 @@ body {
       padding: 20px;
     }
 
+    .notice-banner {
+      background-color: #ffcc00;
+      color: #000;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      border: 2px solid #ffaa00;
+      margin-bottom: 20px;
+    }
+
     h1, h2, h5 {
       color: #9bc9ff;
     }
